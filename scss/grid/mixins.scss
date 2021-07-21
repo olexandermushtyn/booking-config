@@ -1,0 +1,27 @@
+@mixin row-cols($count) {
+  > * {
+    flex: 0 0 auto;
+    width: divide(100%, $count);
+  }
+}
+
+@mixin make-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin make-container($gutter: $container-padding-x) {
+  width: 100%;
+  padding-right: var(--#{$variable-prefix}gutter-x, #{$gutter});
+  padding-left: var(--#{$variable-prefix}gutter-x, #{$gutter});
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin padding($padding...) {
+  padding: $padding;
+}
+
+@mixin margin($margin...) {
+  margin: $margin;
+}

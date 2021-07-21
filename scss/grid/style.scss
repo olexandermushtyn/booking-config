@@ -1,0 +1,22 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+@for $i from $grid-columns through 1 {
+  .col-#{$i} {
+    width: $col-width * $i;
+  }
+}
+
+@each $point, $scree-size in $grid-breakpoints {
+  @media screen and (min-width: $scree-size) {
+    @for $i from $grid-columns through 1 {
+      .col-#{$i}-#{$point} {
+        width: $col-width * $i;
+      }
+    }
+  }
+}
+
+.row {
+  @include make-row;
+}
