@@ -76,6 +76,13 @@
   --color-black-default: rgba(0, 0, 0, 1);
   --color-black-t1-default: rgba(0, 0, 0, 0.06);
 
+  /* Color for shadows*/
+
+  --color-black-shadow-1: rgba(0, 0, 0, 0.10);
+  --color-black-shadow-2: rgba(0, 0, 0, 0.12);
+  --color-black-shadow-3: rgba(0, 0, 0, 0.15);
+  --color-black-shadow-4: rgba(0, 0, 0, 0.20);
+
   /* borders-radius */
   --br-1: 5.8px;
   --br-2: 3px;
@@ -234,6 +241,20 @@
   --vietnam-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/vn/90b17da2aafaebce7b0c34189747e1e10dba8041.png";
   --philippines-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ph/7048127466891462116ee2774154585fb5607aba.png";
   --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
+
+
+  /* Shadows */
+
+  --shadow-main-search-panel: 0px 2px 8px var(--color-black-shadow-3);
+  --shadow-search-window-1: 0px 2px 16px var(--color-black-shadow-3);
+  --shadow-search-window-2: 0px 2px 4px var(--color-black-shadow-1);
+  --shadow-chosen-panel: 0px 1px 8px 0px var(--color-black-shadow-2);
+
+  /* Shadow inside image*/
+  
+  --shadow-show-inside: inset 0px 20px 10px var(--color-black-shadow-4);
+
+  --text-shadow: none;
 
   /* padding */
   --p-xxxs: 2;
