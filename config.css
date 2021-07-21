@@ -234,6 +234,28 @@
   --vietnam-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/vn/90b17da2aafaebce7b0c34189747e1e10dba8041.png";
   --philippines-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ph/7048127466891462116ee2774154585fb5607aba.png";
   --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
+
+  /* padding */
+  --p-xxxs: 2;
+  --p-xxs: 4;
+  --p-xs: 8;
+  --p-sm: 12;
+  --p-md: 16;
+  --p-lg: 24;
+  --p-xl: 28;
+  --p-xxl: 32;
+  --p-xxxl: 42;
+
+  /* margin */
+  --m-xxxs: 2;
+  --m-xxs: 4;
+  --m-xs: 8;
+  --m-sm: 12;
+  --m-md: 16;
+  --m-lg: 24;
+  --m-xl: 28;
+  --m-xxl: 32;
+  --m-xxxl: 42;
 }
 /* helper classes */
 /* colors */
