@@ -654,3 +654,19 @@
 .close-btn {
   background: var(--close-btn);
 }
+/* text-aligns */
+.ta-left {
+  text-align: var(--ta-left);
+}
+
+.ta-right {
+  text-align: var(--ta-right);
+}
+
+.ta-center {
+  text-align: var(--ta-center);
+}
+
+.ta-justify {
+  text-align: var(--ta-justify);
+}
