@@ -1,23 +1,26 @@
-@import url(/Booking_fractal_3/booking-config/config.css);
+@import url(config.css);
 
-
-.shadow_main_search_panel {
-    box-shadow: 0px 2px 8px rgb(0, 0, 0 / 15%);
+.shadow-main-search-panel {
+    box-shadow: var(--shadow-main-search-panel);
 }
 
-.shadow_search_window-1 {
-    box-shadow: 0px 2px 16px rgb(0, 0, 0 / 15%);;
+.shadow-search-window-1 {
+    box-shadow: var(--shadow-search-window-1);
 }
 
-.shadow_search_window-2 {
-    box-shadow: 0px 2px 4px rgb(0, 0, 0 / 10%);;
+.shadow-search-window-2 {
+    box-shadow: var(--shadow-search-window-2);
 }
 
-.shadow_chosen_panel {
-    box-shadow: 0px 1px 8px 0px rgb(0, 0, 0 / 20%);
+.shadow-chosen-panel {
+    box-shadow: var(--shadow-chosen-panel);
 }
 
 
-.text_shadow {
-    text-shadow: none;
+.text-shadow {
+    text-shadow: var(--text-shadow);
 }
+
+.shadow-show-inside {
+    box-shadow: var(shadow-show-inside);
+}    
