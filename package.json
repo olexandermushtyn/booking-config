@@ -1,0 +1,19 @@
+{
+  "name": "booking-config",
+  "version": "1.0.0",
+  "description": "config package for booking.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olexandermushtyn/booking-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olexandermushtyn/booking-config/issues"
+  },
+  "homepage": "https://github.com/olexandermushtyn/booking-config#readme"
+}
