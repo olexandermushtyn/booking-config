@@ -1,8 +1,6 @@
 :root {
   /* colors */
   /* Primary */
-  --pc-16g: 25px;
-
   --color-primary-default: rgba(0, 53, 128, 1); /* #003580 */
   --color-primary-darken1: rgba(0, 34, 79, 1); /* #00224f */
 
@@ -151,13 +149,6 @@
   /*--line-height-big-3: 28px;*/
   /*--line-height-big-4: 32px;*/
 
-  /* Text align */
-  --ta-left: left;
-  --ta-right: right;
-  --ta-center: center;
-  --ta-justify: justify;
-
-
   /* cursor */
   --cursor-pointer: pointer;
   --cursor-not-allowed: not-allowed;
@@ -237,3 +228,40 @@
   --philippines-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ph/7048127466891462116ee2774154585fb5607aba.png";
   --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
 }
+
+.h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-body3);
+}
+
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h1);
+}
+
+.h3 {
+  font-size: var(--fs-body1);
+  line-height: var(--lh-body2);
+}
+
+.h4 {
+  font-size: var(--fs-body4);
+  line-height: var(--lh-h3);
+}
+
+.tab-item {
+  font-size: var(--fs-caption1);
+  line-height: var(--lh-h2);
+}
+
+body {
+  font-family: var(--ff-default);
+  font-size: var(--fs-body2);
+}
+
+.caption {
+  font-size: var(--fs-caption2);
+  line-height: var(--lh-body1);
+}
+
+/*# sourceMappingURL=/typographi.85758f4e.css.map */
