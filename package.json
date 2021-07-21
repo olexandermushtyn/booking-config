@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/olexandermushtyn/booking-config/issues"
   },
-  "homepage": "https://github.com/olexandermushtyn/booking-config#readme"
+  "homepage": "https://github.com/olexandermushtyn/booking-config#readme",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
 }
