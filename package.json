@@ -1,6 +1,6 @@
 {
   "name": "booking-config-fractal3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "config package for booking.com",
   "main": "index.js",
   "scripts": {
