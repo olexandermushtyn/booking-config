@@ -18,5 +18,10 @@
   "homepage": "https://github.com/olexandermushtyn/booking-config#readme",
   "devDependencies": {
     "sass": "^1.35.2"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "keywords": []
 }
