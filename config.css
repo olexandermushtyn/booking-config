@@ -44,7 +44,7 @@
 
   /* Color gray */
   --color-gray-default: rgba(217, 217, 217, 1); /* #d9d9d9 */
-  --coloe-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
+  --color-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
   --color-gray-darken2: rgba(179, 179, 179, 1); /* #b3b3b3 */
   --color-gray-darken3: rgba(165, 165, 165, 1); /* #a5a5a5 */
   --color-gray-darken4: rgba(131, 131, 131, 1); /* #838383 */
@@ -236,26 +236,26 @@
   --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
 
   /* padding */
-  --p-xxxs: 2;
-  --p-xxs: 4;
-  --p-xs: 8;
-  --p-sm: 12;
-  --p-md: 16;
-  --p-lg: 24;
-  --p-xl: 28;
-  --p-xxl: 32;
-  --p-xxxl: 42;
+  --p-xxxs: 2px;
+  --p-xxs: 4px;
+  --p-xs: 8px;
+  --p-sm: 12px;
+  --p-md: 16px;
+  --p-lg: 24px;
+  --p-xl: 28px;
+  --p-xxl: 32px;
+  --p-xxxl: 42px;
 
   /* margin */
-  --m-xxxs: 2;
-  --m-xxs: 4;
-  --m-xs: 8;
-  --m-sm: 12;
-  --m-md: 16;
-  --m-lg: 24;
-  --m-xl: 28;
-  --m-xxl: 32;
-  --m-xxxl: 42;
+  --m-xxxs: 2px;
+  --m-xxs: 4px;
+  --m-xs: 8px;
+  --m-sm: 12px;
+  --m-md: 16px;
+  --m-lg: 24px;
+  --m-xl: 28px;
+  --m-xxl: 32px;
+  --m-xxxl: 42px;
 }
 /* helper classes */
 /* colors */
