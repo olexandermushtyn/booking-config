@@ -1,5 +1,10 @@
 @import '../../config.css';
 .img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  vertical-align: bottom;
+  display: inline-block;
   &-fluid {
     max-width: 100%;
     height: auto;
@@ -35,14 +40,43 @@
     &-border:hover {
       border: 1px solid var(--color-warning-lighten1);
     }
-    &-shadow-top {
+    &-shadow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      &:hover {
+        box-shadow: var(--shadow-show-inside);
+      }
     }
     &-text-change {
+      --padding: var(--p-xs);
+      padding: var(--padding);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      line-height: 2;
+      height: 24px;
+      &:hover {
+        height: calc(100%- (var(--padding) * 2));
+      }
+    }
+    &-zoom {
+      transition: transform 0.4s;
+      &:hover {
+        transform: scale(1.1);
+        border: 1px solid var(--color-warning-lighten1);
+      }
     }
   }
   &-container {
+    display: inline-block;
     position: relative;
     color: var(--color-white-default);
+    overflow: hidden;
   }
   &-text {
     &-top {
