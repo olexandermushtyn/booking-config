@@ -25,6 +25,7 @@
   /* success */
   --color-success-lighten1: rgba(231, 253, 233, 1); /* e7fde9 */
   --color-success-default: rgba(0, 128, 9, 1); /* #008009 */
+  --color-success-darken: rgba(0, 102, 7, 1);
 
   /* danger */
   --color-danger-lighten2: rgba(255, 240, 224, 1); /* #fff0e0 */
@@ -85,11 +86,12 @@
 
   /* borders-radius */
   --br-1: 5.8px;
-  --br-2: 3px;
-  --br-3: 2px;
-  --br-4: 1.8px;
-  --br-5: 1px;
-  --br-6: 0px;
+  --br-2: 5px;
+  --br-3: 3px;
+  --br-4: 2px;
+  --br-5: 1.8px;
+  --br-6: 1px;
+  --br-7: 0px;
 
   /* border-width */
   --bw-1: 3px;
