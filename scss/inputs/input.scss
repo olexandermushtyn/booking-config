@@ -1,0 +1,70 @@
+@import "../../config.css";
+@import url(../offsets/offsets.scss);
+
+// input size + webkit
+.input-xm{
+    height: 36px;
+}
+.input-sm {
+    height: 38px;
+}
+.input-md{
+    height: 48px;
+}
+.input-lg{
+    height: 52px;
+}
+.input-sizing {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 230px;
+    font-size: var(--fs-body2);
+}
+.input-webkit::-webkit-input-placeholder { 
+    color:  var(--color-gray-darken6);
+}
+input:focus::-webkit-input-placeholder { 
+    color:  var( --color-gray-darken2);
+}
+
+// border style
+.bc-white {
+    border-color: var(--color-white-default);
+}    
+.bc-brown-h:hover {
+    border-color: var(--color-brown-default);
+}
+.br-gray {
+    border-color: var(--color-gray-darken1);
+}
+.br-secondaty-f:focus {
+    border-color: var(--color-secondary-default);
+}
+.br-shadow-f:focus {
+    box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.2);
+}
+.bc-brown-f:focus {
+    border-color: var(--color-brown-default);
+}
+.br-outline {
+    outline: none;
+}
+.input-px {
+    padding: 0 35px 0 50px;
+}
+.input-pm {
+    padding: 7px;
+    margin-right: var(--m-xs);
+    }
+
+.input-p {
+    padding: 10px;
+}
+
+.input-pxy {
+    padding: 8px 8px 8px 35px;
+}
+
+
+
+
