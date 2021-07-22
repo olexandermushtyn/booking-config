@@ -94,6 +94,10 @@
   --br-6: 1px;
   --br-7: 0px;
 
+  /* border-radius for avatar*/
+
+  --br-circle: 50%;
+
   /* border-width */
   --bw-1: 3px;
   --bw-2: 2px;
