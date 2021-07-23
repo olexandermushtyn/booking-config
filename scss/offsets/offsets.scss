@@ -1,4 +1,8 @@
 // padding
+.p-none{
+    padding: 0;
+}
+
 .p-xxxs {
     padding: 2px;
 }
@@ -223,6 +227,9 @@
 
 
 // margin
+.m-none{
+    margin: 0;
+}
 .m-xxxs {
     margin: 2px;
 }
@@ -368,6 +375,14 @@
 }
 
 // margin x
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
 .mx-xxxs {
     margin-left: 2px;
     margin-right: 2px;
