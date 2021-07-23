@@ -1,0 +1,20 @@
+@import url('../../config.css');
+
+.card {
+  margin-right: var(--m-md);
+  &-img {
+    max-width: 100%;
+  }
+  &-body {
+    padding: var(--p-sm) 0;
+  }
+  &-lg {
+    padding: var(--p-md);
+  }
+  &-md {
+    padding: var(--p-sm);
+  }
+  &-sm {
+    padding: var(--p-xs);
+  }
+}
