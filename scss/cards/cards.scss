@@ -1,12 +1,11 @@
-@import url('../../config.css');
+@import url("../../config.css");
 
 .card {
-  margin-right: var(--m-md);
   &-img {
     max-width: 100%;
   }
   &-body {
-    padding: var(--p-sm) 0;
+    padding: var(--p-sm);
   }
   &-lg {
     padding: var(--p-md);

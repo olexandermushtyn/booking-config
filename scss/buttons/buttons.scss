@@ -44,6 +44,9 @@
 .btn-xxs {
   height: 27.6px;
 }
+
+// TODO height = (padding bot + top) + line height
+
 .btn-primary-hover:hover {
   background: var(--color-secondary-darken2);
 }

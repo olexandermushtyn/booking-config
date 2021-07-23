@@ -17,6 +17,9 @@
   }
 }
 
+.container {
+} // TODO check bootstrap
+
 .row {
   @include make-row;
 }
