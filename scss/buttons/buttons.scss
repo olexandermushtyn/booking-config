@@ -1,0 +1,61 @@
+@import url(../../config.css);
+
+.btn {
+  border-style: var(--bs-solid);
+  font-family: var(--ff-default);
+  cursor: var(--cursor-pointer);
+}
+.btn-primary {
+  background-color: var(--color-primary-default);
+  color: var(--color-white-default);
+}
+.btn-secondary {
+  background-color: var(--color-white-default);
+  color: var(--color-primary-default);
+}
+.btn-outlined {
+  background-color: transparent;
+}
+.btn-info {
+  background-color: transparent;
+}
+.btn-carousel-clicker {
+  opacity: 1;
+  visibility: visible;
+}
+.btn-circle {
+  border-radius: 50%;
+}
+.btn-xl {
+  height: 52px;
+}
+.btn-lg {
+  height: 48px;
+}
+.btn-md {
+  height: 40px;
+}
+.btn-sm {
+  height: 36px;
+}
+.btn-xs {
+  height: 32px;
+}
+.btn-xxs {
+  height: 27.6px;
+}
+.btn-primary-hover:hover {
+  background: var(--color-secondary-darken2);
+}
+.btn-secondary-hover:hover {
+  background-color: var(--color-secondary-default);
+}
+.btn-outlined-dark-hover:hover {
+  background-color: var(--color-white-t2-default);
+}
+.btn-outlined-light-hover:hover {
+  background: var(--color-white-t3-default);
+}
+.btn-info-hover:hover {
+  background-color: var(--color-white-t3-default);
+}
