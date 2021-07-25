@@ -1,26 +1,13 @@
 {
-  "name": "booking-config-fractal3",
-  "version": "1.0.1",
-  "description": "config package for booking.com",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/olexandermushtyn/booking-config.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/olexandermushtyn/booking-config/issues"
-  },
-  "homepage": "https://github.com/olexandermushtyn/booking-config#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "sass": "^1.35.2"
   },
   "dependencies": {
     "parcel": "^2.0.0-beta.2"
+=======
+    "sass": "^1.36.0"
+>>>>>>> buttons
   }
 }
