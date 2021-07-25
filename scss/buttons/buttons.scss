@@ -8,6 +8,7 @@
 .btn-primary{
     background-color: var(--color-primary-default);
     color:var(--color-white-default);
+
 }
 .btn-secondary{
     background-color: var(--color-white-default);
@@ -22,6 +23,7 @@
 .btn-carousel-clicker{
     opacity: 1; 
     visibility: visible; 
+    background: var(--color-white-default);
 }
 .btn-circle{
     border-radius: 50%;
