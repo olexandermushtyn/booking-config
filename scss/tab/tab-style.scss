@@ -1,21 +1,5 @@
 @import '../../config.css';
 
-.tabs {
-  font-size: 0;
-}
-
-.tabs>input[type="radio"] {
-  display: none;
-}
-
-.tabs>div {
-  /* скрыть контент по умолчанию */
-  display: none;
-  border-top: 1px solid var(--color-secondary-default);
-  padding: 10px 15px;
-  font-size: 16px;
-}
-
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
 #tab-btn-1:checked~#content-1,
 #tab-btn-2:checked~#content-2,
@@ -23,33 +7,48 @@
   display: block;
 }
 
-.tabs>label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: var(--color-white-default);
-  border-bottom: 1px solid var(--color-secondary-default);
-  padding: 2px 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  top: 1px;
-}
+.tabs{
+  font-size: 0;
 
-.tabs>label:not(:first-of-type) {
-  border-left: none;
-}
+  input[type="radio"]{
+    display: none;
+  }
 
-.tabs>input[type="radio"]:hover+label {
-  color: var(--color-secondary-default);
-}
+  .border-line{
+    border-top: 1px solid var(--color-secondary-default);
+  }
 
-.tabs>input[type="radio"]:checked+label {
-  background-color: var(--color-secondary-default);
-  border-bottom: 1px solid var(--color-secondary-default);
-  color: var(--color-white-default);
-}
+  div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
 
+  .tabs-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: var(--cursor-pointer);
+    position: relative;
+  }
+
+  .tabs-item:not(:first-of-type){
+    border-left: none;
+  }
+
+  input[type="radio"]:hover+.tabs-item{
+    color: var(--color-secondary-default);
+  }
+
+  input[type="radio"]:checked+.tabs-item {
+    background-color: var(--color-secondary-default);
+    border-bottom: 1px solid var(--color-secondary-default);
+    color: var(--color-white-default);
+  }
+  
+}
