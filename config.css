@@ -84,7 +84,8 @@
   --color-black-shadow-2: rgba(0, 0, 0, 0.12);
   --color-black-shadow-3: rgba(0, 0, 0, 0.15);
   --color-black-shadow-4: rgba(0, 0, 0, 0.2);
-  --color-secondary-shadow:rgb(0, 113, 194, .24%);
+  --color-secondary-shadow: rgb(0, 113, 194, 0.24%);
+
   /* borders-radius */
   --br-1: 5.8px;
   --br-2: 5px;

@@ -20,15 +20,17 @@
 .container,
   // 100% wide container at all breakpoints
   .container-fluid {
-    @include make-container();
-  }
+  @include make-container();
+}
 
-  // Responsive containers that are 100% wide until a breakpoint
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    .container-#{$breakpoint} {
-      @extend .container-fluid;
-    }
+// Responsive containers that are 100% wide until a breakpoint
+@each $breakpoint, $container-max-width in $container-max-widths {
+  .container-#{$breakpoint} {
+    @extend .container-fluid;
+    max-width: $container-max-width;
   }
+}
+
 .row {
   @include make-row;
 }
