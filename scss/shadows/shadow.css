@@ -1,0 +1,35 @@
+@import url(config.css);
+.shadow-main-search-panel {
+  -webkit-box-shadow: var(--shadow-main-search-panel);
+          box-shadow: var(--shadow-main-search-panel);
+}
+
+.shadow-search-window-1 {
+  -webkit-box-shadow: var(--shadow-search-window-1);
+          box-shadow: var(--shadow-search-window-1);
+}
+
+.shadow-search-window-2 {
+  -webkit-box-shadow: var(--shadow-search-window-2);
+          box-shadow: var(--shadow-search-window-2);
+}
+
+.shadow-chosen-panel {
+  -webkit-box-shadow: var(--shadow-chosen-panel);
+          box-shadow: var(--shadow-chosen-panel);
+}
+
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+
+.text-shadow-1 {
+  -webkit-box-shadow: var(--text-shadow-1);
+          box-shadow: var(--text-shadow-1);
+}
+
+.shadow-show-inside {
+  -webkit-box-shadow: var(--shadow-show-inside);
+          box-shadow: var(--shadow-show-inside);
+}
+/*# sourceMappingURL=shadow.css.map */
