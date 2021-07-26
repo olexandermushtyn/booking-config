@@ -1,8 +1,10 @@
 @import '../../config.css';
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   vertical-align: bottom;
   display: inline-block;
   &-fluid {
@@ -11,6 +13,7 @@
   }
   &-xxl {
     height: 320px;
+    border-radius: var(--br-2);
   }
   &-xl {
     height: 270px;
@@ -51,31 +54,33 @@
       }
     }
     &-text-change {
-      --padding: var(--p-xs);
-      padding: var(--padding);
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      line-height: 2;
-      height: 24px;
-      &:hover {
-        height: calc(100%- (var(--padding) * 2));
+      & p {
+        margin: 0;
+        --padding: var(--p-xs);
+        padding: var(--padding);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        line-height: 2;
+        height: 24px;
+      }
+      &:hover > .qwe{
+        height: 100%;
       }
     }
     &-zoom {
       transition: transform 0.4s;
       &:hover {
         transform: scale(1.1);
-        border: 1px solid var(--color-warning-lighten1);
       }
     }
   }
   &-container {
-    display: inline-block;
     position: relative;
     color: var(--color-white-default);
+    box-sizing: border-box;
     overflow: hidden;
   }
   &-text {
