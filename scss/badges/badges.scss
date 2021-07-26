@@ -2,69 +2,130 @@
 
 // TO DO badges structure like buttons .badge badge-sm... badge-primary...
 
-.badge-rewiew-score-filled {
-  width: 28px;
-  height: 28px;
-  border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
-  background-color: var(--color-secondary-darken2);
-  color: var(--color-white-default);
-  display: flex;
-  justify-content: center;
-  vertical-align: baseline;
-  align-items: center;
+$badge-review-sizes: (
+  sm: 22px,
+  md: 28px,
+  lg: 34px,
+);
+
+.badge {
   font-family: var(--ff-default);
-  font-size: var(--fs-body2);
-  line-height: var(--lh-h4);
-  font-weight: var(--fw-medium);
 }
 
-.badge-rewiew-score-outline {
-  width: 28px;
-  height: 28px;
+@each $point, $badge-size in $badge-review-sizes {
+  .badge-review-#{$point} {
+    width: $badge-size;
+    height: $badge-size;
+    border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
+    display: flex;
+    justify-content: center;
+    vertical-align: baseline;
+    align-items: center;
+    font-family: var(--ff-default);
+    font-size: var(--fs-body2);
+    line-height: var(--lh-h4);
+    font-weight: var(--fw-medium);
+  }
+}
+
+.badge-review-filled {
+  background-color: var(--color-secondary-darken2);
+  color: var(--color-white-default);
+}
+
+.badge-review-outline {
   box-sizing: border-box;
   border: var(--bw-3) var(--bs-solid) var(--color-black-default);
-  border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
   color: var(--color-black-default);
+}
+
+.hotel-type-badge {
+  box-sizing: border-box;
+  margin-top: -3px;
+  border-radius: var(--br-4);
+  font-size: var(--fs-caption2);
+  line-height: var(--lh-body1);
+  font-weight: var(--fw-normal);
+  padding: 1px 4px;
   display: flex;
   justify-content: center;
   vertical-align: baseline;
   align-items: center;
-  font-family: var(--ff-default);
-  font-size: var(--fs-body2);
-  line-height: var(--lh-h4);
-  font-weight: var(--fw-medium);
 }
 
 .hotel-type-badge-primary {
-  box-sizing: border-box;
-  margin-top: -3px;
   background: var(--color-success-darken);
   color: var(--color-white-default);
-  font-family: var(--ff-default);
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
   border: var(--bw-3) var(--bs-solid) transparent;
-  border-radius: var(--br-4);
-  font-size: var(--fs-caption2);
-  line-height: var(--lh-body1);
-  font-weight: var(--fw-normal);
-  padding: 1px 4px;
 }
-
 .hotel-type-badge-secondary {
-  box-sizing: border-box;
-  margin-top: -3px;
   background: var(--color-gray-darken3);
   color: var(--color-white-default);
-  font-family: var(--ff-default);
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
   border: var(--bw-3) var(--bs-solid) transparent;
-  border-radius: var(--br-4);
-  font-size: var(--fs-caption2);
-  line-height: var(--lh-body1);
-  font-weight: var(--fw-normal);
-  padding: 1px 4px;
 }
+// .badge-rewiew-score-filled {
+//   width: 28px;
+//   height: 28px;
+//   border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
+//   background-color: var(--color-secondary-darken2);
+//   color: var(--color-white-default);
+//   display: flex;
+//   justify-content: center;
+//   vertical-align: baseline;
+//   align-items: center;
+//   font-family: var(--ff-default);
+//   font-size: var(--fs-body2);
+//   line-height: var(--lh-h4);
+//   font-weight: var(--fw-medium);
+// }
+
+// .badge-rewiew-score-outline {
+//   width: 28px;
+//   height: 28px;
+//   box-sizing: border-box;
+//   border: var(--bw-3) var(--bs-solid) var(--color-black-default);
+//   border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
+//   color: var(--color-black-default);
+//   display: flex;
+//   justify-content: center;
+//   vertical-align: baseline;
+//   align-items: center;
+//   font-family: var(--ff-default);
+//   font-size: var(--fs-body2);
+//   line-height: var(--lh-h4);
+//   font-weight: var(--fw-medium);
+// }
+
+// .hotel-type-badge-primary {
+//   box-sizing: border-box;
+//   margin-top: -3px;
+//   background: var(--color-success-darken);
+//   color: var(--color-white-default);
+//   font-family: var(--ff-default);
+//   vertical-align: middle;
+//   display: inline-flex;
+//   align-items: center;
+//   border: var(--bw-3) var(--bs-solid) transparent;
+//   border-radius: var(--br-4);
+//   font-size: var(--fs-caption2);
+//   line-height: var(--lh-body1);
+//   font-weight: var(--fw-normal);
+//   padding: 1px 4px;
+// }
+
+// .hotel-type-badge-secondary {
+//   box-sizing: border-box;
+//   margin-top: -3px;
+//   background: var(--color-gray-darken3);
+//   color: var(--color-white-default);
+//   font-family: var(--ff-default);
+//   vertical-align: middle;
+//   display: inline-flex;
+//   align-items: center;
+//   border: var(--bw-3) var(--bs-solid) transparent;
+//   border-radius: var(--br-4);
+//   font-size: var(--fs-caption2);
+//   line-height: var(--lh-body1);
+//   font-weight: var(--fw-normal);
+//   padding: 1px 4px;
+// }
