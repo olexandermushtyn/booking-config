@@ -77,12 +77,6 @@
   --color-black-default: rgba(0, 0, 0, 1);
   --color-black-t1-default: rgba(0, 0, 0, 0.06);
 
-<<<<<<< HEAD
-  /* Transparent*/
-  --color-transparent: rgba(0,0,0,0);
-
-=======
->>>>>>> main
   /* Color for shadows*/
 
   --color-black-shadow-0: rgb(0, 0, 0);
