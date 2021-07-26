@@ -63,8 +63,8 @@
 .btn-border-active:active{
     box-shadow: 0 0 0 3px rgb(0 113 194 / 24%);
 }
-@each $header, $size in (btn-xxl: 52px, btn-xl: 48px, btn-lg: 40px, btn-md: 38px, btn-sm: 36px, btn-xs: 27.6px, btn-xxs: 24px ){
-    .#{$header} {
+@each $header, $size in (xxl: 52px, xl: 48px, lg: 40px, md: 38px, sm: 36px, xs: 27.6px, xxs: 24px ){
+    .btn-#{$header}{
         height: $size;
     }
 }
