@@ -84,6 +84,7 @@
   --color-black-shadow-2: rgba(0, 0, 0, 0.12);
   --color-black-shadow-3: rgba(0, 0, 0, 0.15);
   --color-black-shadow-4: rgba(0, 0, 0, 0.2);
+  --color-secondary-shadow: rgb(0, 113, 194, 0.24%);
 
   /* borders-radius */
   --br-1: 5.8px;
@@ -255,6 +256,7 @@
   --shadow-search-window-1: 0px 2px 16px var(--color-black-shadow-3);
   --shadow-search-window-2: 0px 2px 4px var(--color-black-shadow-1);
   --shadow-chosen-panel: 0px 1px 8px 0px var(--color-black-shadow-2);
+  --shadow-border: 0 0 0 3px var(--color-secondary-shadow);
 
   /* Shadow inside image */
 
