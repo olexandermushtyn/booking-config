@@ -10,14 +10,12 @@
   background-color: var(--color-secondary-default);
   color: var(--color-white-default);
   border: none;
-  border-radius: var(--br-4);
 }
 
 .btn-white {
   background-color: var(--color-white-default);
   color: var(--color-secondary-default);
   border: none;
-  border-radius: var(--br-4);
 }
 
 .btn-outlined {
@@ -25,7 +23,6 @@
   color: var(--color-white-default);
   border-width: var(--bw-3);
   border-color: var(--color-white-default);
-  border-radius: var(--br-4);
 }
 
 .btn-info {
@@ -41,19 +38,15 @@
 }
 
 .btn-carousel-clicker {
-  opacity: 1;
-  visibility: visible;
+  /*opacity: 1;
+  visibility: visible;*/
   background: var(--color-white-default);
-  border-radius: 50%;
+  border-radius: var(--br-circle);
   border: none;
 }
 
-.btn-circle {
-  border-radius: 50%;
-}
-
 .btn-background-dark-hover:hover {
-  background: var(--color-secondary-darken2);
+  background-color: var(--color-secondary-darken2);
 }
 
 .btn-background-light-hover:hover {
@@ -69,11 +62,11 @@
 }
 
 .btn-border-focus:focus {
-  box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.24);
+  box-shadow: var(--shadow-border);
 }
 
 .btn-border-active:active {
-  box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.24);
+  box-shadow: var(--shadow-border);
 }
 
 .btn-xxl {
@@ -102,6 +95,10 @@
 
 .btn-xxs {
   height: 24px;
+}
+
+.btn-circle {
+  border-radius: var(--br-circle);
 }
 
 /*# sourceMappingURL=filename.css.map */
