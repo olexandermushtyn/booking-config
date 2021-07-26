@@ -17,9 +17,18 @@
   }
 }
 
-.container {
-} // TODO check bootstrap
+.container,
+  // 100% wide container at all breakpoints
+  .container-fluid {
+    @include make-container();
+  }
 
+  // Responsive containers that are 100% wide until a breakpoint
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+      @extend .container-fluid;
+    }
+  }
 .row {
   @include make-row;
 }
