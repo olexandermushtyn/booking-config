@@ -10,15 +10,20 @@
     background-color: var(--color-secondary-default);
     color:var(--color-white-default);
     border: none;
+    border-radius: var(--br-4);
 }
 .btn-white{
     background-color: var(--color-white-default);
     color: var(--color-secondary-default);
+    border:none;
+    border-radius: var(--br-4);
 }
 .btn-outlined{
     background-color: transparent;
     color: var(--color-white-default);
+    border-width: var(--bw-3);
     border-color: var(--color-white-default);
+    border-radius: var(--br-4);
 }
 .btn-info{
     background-color: transparent;
