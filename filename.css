@@ -1,0 +1,107 @@
+@import url(../../config.css);
+.btn {
+  border-style: var(--bs-solid);
+  font-family: var(--ff-default);
+  cursor: var(--cursor-pointer);
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: var(--color-secondary-default);
+  color: var(--color-white-default);
+  border: none;
+  border-radius: var(--br-4);
+}
+
+.btn-white {
+  background-color: var(--color-white-default);
+  color: var(--color-secondary-default);
+  border: none;
+  border-radius: var(--br-4);
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: var(--color-white-default);
+  border-width: var(--bw-3);
+  border-color: var(--color-white-default);
+  border-radius: var(--br-4);
+}
+
+.btn-info {
+  background-color: transparent;
+  border: none;
+  color: var(--color-white-default);
+}
+
+.btn-math-clicker {
+  background-color: var(--color-white-default);
+  color: var(--color-secondary-default);
+  border-color: var(--color-secondary-default);
+}
+
+.btn-carousel-clicker {
+  opacity: 1;
+  visibility: visible;
+  background: var(--color-white-default);
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-circle {
+  border-radius: 50%;
+}
+
+.btn-background-dark-hover:hover {
+  background: var(--color-secondary-darken2);
+}
+
+.btn-background-light-hover:hover {
+  background-color: var(--color-secondary-lighten3);
+}
+
+.btn-background-dark-active:active {
+  background: var(--color-secondary-darken2);
+}
+
+.btn-background-light-active:active {
+  background-color: var(--color-secondary-lighten3);
+}
+
+.btn-border-focus:focus {
+  box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.24);
+}
+
+.btn-border-active:active {
+  box-shadow: 0 0 0 3px rgba(0, 113, 194, 0.24);
+}
+
+.btn-xxl {
+  height: 52px;
+}
+
+.btn-xl {
+  height: 48px;
+}
+
+.btn-lg {
+  height: 40px;
+}
+
+.btn-md {
+  height: 38px;
+}
+
+.btn-sm {
+  height: 36px;
+}
+
+.btn-xs {
+  height: 27.6px;
+}
+
+.btn-xxs {
+  height: 24px;
+}
+
+/*# sourceMappingURL=filename.css.map */
