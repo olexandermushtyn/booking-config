@@ -18,7 +18,7 @@
 }
 
 .h4 {
-  font-size: var(--fs-body4);
+  font-size: var(--fs-h4);
   line-height: var(--lh-h3);
 }
 
@@ -29,10 +29,10 @@
 
 body {
   font-family: var(--ff-default);
-  font-size: var(--fs-body2);
+  font-size: var(--fs-body);
 }
 
 .caption {
-  font-size: var(--fs-caption2);
+  font-size: var(--fs-caption-default);
   line-height: var(--lh-body1);
 }
