@@ -1,0 +1,9 @@
+@import "../../config.css";
+@import "../offsets/offsets.scss";
+
+html{
+  box-sizing: border-box;
+}
+.fieldset:last-child{
+  border-bottom: none;
+}

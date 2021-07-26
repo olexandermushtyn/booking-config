@@ -1,0 +1,93 @@
+@import '../../config.css';
+.img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  vertical-align: bottom;
+  display: inline-block;
+  &-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  &-xxl {
+    height: 320px;
+  }
+  &-xl {
+    height: 270px;
+    border-radius: var(--br-2);
+  }
+  &-lg {
+    height: 240px;
+    border-radius: var(--br-3);
+  }
+  &-md {
+    height: 200px;
+    border-radius: var(--br-3);
+  }
+  &-sm {
+    height: 170px;
+    border-radius: var(--br-3);
+  }
+  &-xs {
+    height: 135px;
+    border-radius: var(--br-6);
+  }
+  &-xxs {
+    height: 110px;
+    border-radius: var(--br-6);
+  }
+  &-hover {
+    &-border:hover {
+      border: 1px solid var(--color-warning-lighten1);
+    }
+    &-shadow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      &:hover {
+        box-shadow: var(--shadow-show-inside);
+      }
+    }
+    &-text-change {
+      --padding: var(--p-xs);
+      padding: var(--padding);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      line-height: 2;
+      height: 24px;
+      &:hover {
+        height: calc(100%- (var(--padding) * 2));
+      }
+    }
+    &-zoom {
+      transition: transform 0.4s;
+      &:hover {
+        transform: scale(1.1);
+        border: 1px solid var(--color-warning-lighten1);
+      }
+    }
+  }
+  &-container {
+    display: inline-block;
+    position: relative;
+    color: var(--color-white-default);
+    overflow: hidden;
+  }
+  &-text {
+    &-top {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    &-bottom {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
+  }
+}

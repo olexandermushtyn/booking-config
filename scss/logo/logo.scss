@@ -1,0 +1,44 @@
+@import url(../../config.css);
+
+.header-logo {
+  box-sizing: border-box;
+  display: block;
+  font-family: var(--ff-default);
+  font-size: var(--fs-caption1);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body3);
+  -webkit-box-direction: normal;
+}
+
+.logo-bg {
+  background-color: var(--color-primary-default);
+}
+
+.logo {
+  text-align: center;
+  width: 144px;
+  height: 24px;
+  display: block;
+  font-size: var(--fs-caption1);
+  line-height: var(--lh-body1);
+  max-height: 256px;
+  max-width: 256px;
+  -webkit-box-direction: normal;
+}
+
+@media only screen and (max-width: 990px) {
+  .logo {
+    height: 20px;
+  }
+}
+
+.logo-palete {
+  min-width: 250px;
+  min-height: 32px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #333;
+  width: 250px;
+  height: 32px;
+}

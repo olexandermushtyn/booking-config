@@ -1,5 +1,13 @@
 {
   "devDependencies": {
+<<<<<<< HEAD
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+=======
     "sass": "^1.36.0"
+>>>>>>> buttons
   }
 }
