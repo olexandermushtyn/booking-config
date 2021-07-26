@@ -1,0 +1,30 @@
+@import "../../config.css";
+@import url(../offsets/offsets.scss);
+
+.input-b {
+    border: solid 1px;
+}
+
+.input-bc-white {
+    border-color: var(--color-white-default);
+}
+
+.input-bch-brown:hover {
+    border-color: var(--color-brown-default);
+}
+
+.input-bc-gray {
+    border-color: var(--color-gray-darken1);
+}
+
+.outline {
+    outline: none;
+}
+
+.input-bcf-blue:focus {
+    border-color: var(--color-secondary-darken1);
+}
+
+.input-shadow-f:focus {
+    box-shadow: 0 0 0 3px var(--color-secondary-darken1);
+}
