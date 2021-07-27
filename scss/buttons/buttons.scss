@@ -10,10 +10,17 @@
         &-hover:hover {
             background-color: var(--color-secondary-darken2);
         }
+        &-active:active {
+            background: var(--color-secondary-darken2);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
     }
     &-white {
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
+        border: none;
         &-hover:hover {
             background-color: var(--color-secondary-lighten3);
         }
@@ -42,6 +49,7 @@
     &-info {
         background-color: var(--color-transparent);
         color: var(--color-white-default);
+        border: none;
         &-hover:hover {
             background-color: var(--color-secondary-darken2);
         }
@@ -52,10 +60,11 @@
             box-shadow: var(--shadow-border);
         }
     }
-    &-math-clicker {
+    &-clicker {
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
         border-color: var(--color-secondary-default);
+        border-width: var(--bw-3);
         &-hover:hover {
             background-color: var(--color-secondary-lighten3);
         }
@@ -66,19 +75,19 @@
             box-shadow: var(--shadow-border);
         }
     }
-    &-carousel-clicker {
+    &-carousel {
         background-color: var(--color-white-default);
         border-radius: var(--br-circle);
     }
     &-xxl {
         padding: var(--p-xxs) var(--p-xxxl);
-        line-height: 42px;
+        line-height:var(--btn-lh-lg);
         font-size: var(--fs-h4);
         font-weight: var( --fw-medium);
     }
     &-xl {
         padding: var(--p-none) var(--p-md);
-        line-height: var(--lh-h3);
+        line-height: var(--btn-lh-xl);
         font-size: var(--fs-h4);
         font-weight: var(--fw-semi-normal);
     }
@@ -114,15 +123,16 @@
     }
     &-circle {
         border-radius: var(--br-circle);
+        border: none;
     }
     &-square {
         border-radius: var(--br-7); //0px
     }
-    &-rounded-noBorder-md {
+    &-rounded-noborder-md {
         border: none;
         border-radius: var(--br-4); //2px
     }
-    &-rounded-noBorder-lg {
+    &-rounded-noborder-lg {
         border: none;
         border-radius: var(--br-3); //3px
     }
