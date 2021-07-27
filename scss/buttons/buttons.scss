@@ -71,8 +71,20 @@
         border-radius: var(--br-circle);
     }
     $paddings: (
-        
-    )
+        padding-xxl: var(--p-none), //: 0px;
+        padding-xl: var(--p-xxxs),  //: 4px;
+        padding-lg: var(--p-xxs),   //: 5px;
+        padding-md: var(--p-xs),    //: 8px;
+        padding-sm: var(--p-sm),    //: 12px;
+        padding-xs: var(--p-md),    //: 15px
+        padding-xxs: var(--p-lg)    //: 16px;
+    );
+    $line-height: (
+        lh-xl: var(--)
+        lh-lg:
+        lh-md:
+        lh-sm:
+    );
 }
 
 
