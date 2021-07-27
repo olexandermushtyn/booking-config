@@ -144,9 +144,10 @@
 
   /* font-weight */
   --fw-thin: 100;
+  --fw-semi-normal: 300;
   --fw-normal: 400;
   --fw-medium: 500;
-  --fw-semi-Bold: 600;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   /* line-height */
