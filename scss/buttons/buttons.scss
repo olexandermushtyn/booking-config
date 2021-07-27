@@ -7,14 +7,14 @@
     &-primary {
         background-color: var(--color-secondary-default);
         color: var(--color-white-default);
-        &-hover:hover{
+        &-hover:hover {
             background-color: var(--color-secondary-darken2);
         }
     }
     &-white {
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
-        &-hover:hover{
+        &-hover:hover {
             background-color: var(--color-secondary-lighten3);
         }
         &-active:active {
@@ -29,7 +29,7 @@
         color: var(--color-white-default);
         border-width: var(--bw-3);
         border-color: var(--color-white-default);
-        &-hover:hover{
+        &-hover:hover {
             background-color: var(--color-secondary-darken2);
         }
         &-active:active {
@@ -42,7 +42,7 @@
     &-info {
         background-color: var(--color-transparent);
         color: var(--color-white-default);
-        &-hover:hover{
+        &-hover:hover {
             background-color: var(--color-secondary-darken2);
         }
         &-active:active {
@@ -56,7 +56,7 @@
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
         border-color: var(--color-secondary-default);
-        &-hover:hover{
+        &-hover:hover {
             background-color: var(--color-secondary-lighten3);
         }
         &-active:active {
@@ -66,76 +66,72 @@
             box-shadow: var(--shadow-border);
         }
     }
-    &-carousel-clicker{
+    &-carousel-clicker {
         background-color: var(--color-white-default);
         border-radius: var(--br-circle);
     }
-    &-xxl{
+    &-xxl {
         padding: var(--p-xxs) var(--p-xxxl);
-        line-height: var(--lh-h3);
+        line-height: 42px;
         font-size: var(--fs-h4);
         font-weight: var( --fw-medium);
     }
-    &-xl{
+    &-xl {
         padding: var(--p-none) var(--p-md);
         line-height: var(--lh-h3);
         font-size: var(--fs-h4);
         font-weight: var(--fw-semi-normal);
     }
-    &-lg{
+    &-lg {
         padding: var(--p-xs) var(--p-lg);
         line-height: var(--lh-h6);
         font-size: var(--fs-h4);
         font-weight: var(--fw-semi-normal);
     }
-    &-md{
+    &-md {
         padding: var(--p-xs);
         line-height: var(--lh-h6);
         font-size: var(--fs-body);
         font-weight: var(--fw-medium);
     }
-    &-sm{
+    &-sm {
         padding: var(--p-xs) var(--p-lg);
         line-height: var(--lh-h6);
         font-size: var(--fs-body);
         font-weight: var(--fw-medium);
     }
-    &-xs{
+    &-xs {
         padding: var(--p-none) var(--p-md);
         line-height: var(--lh-h4);
         font-size: var(--fs-caption1);
         font-weight: var(--fw-normal);
     }
-    &-xxs{
+    &-xxs {
         padding: var(--p-sm);
         line-height: var(--lh-h4);
         font-size: var(--fs-caption1);
         font-weight: var(--fw-normal);
     }
-    &-circle{
+    &-circle {
         border-radius: var(--br-circle);
     }
-    &-square{
+    &-square {
         border-radius: var(--br-7); //0px
     }
-    &-rounded-noBorder-md{
+    &-rounded-noBorder-md {
         border: none;
         border-radius: var(--br-4); //2px
     }
-    &-rounded-noBorder-lg{
+    &-rounded-noBorder-lg {
         border: none;
         border-radius: var(--br-3); //3px
     }
-    &-rounded-bordered-md{
-        border-width: var(--bw-3);   //1px
-        border-radius: var(--br-4);  //2px
+    &-rounded-bordered-md {
+        border-width: var(--bw-3); //1px
+        border-radius: var(--br-4); //2px
     }
-    &-rounded-bordered-lg{
-        border-width: var(--bw-3);   //1px
-        border-radius: var(--br-3);  //3px
+    &-rounded-bordered-lg {
+        border-width: var(--bw-3); //1px
+        border-radius: var(--br-3); //3px
     }
 }
-
-
-
-
