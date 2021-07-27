@@ -44,6 +44,7 @@
   --color-warning-lighten1: rgba(255, 128, 0, 1); /* #ff8000 */
 
   /* Color gray */
+  --color-gray-lighten1: rgba(107, 107, 107, 1); /* #6b6b6b */
   --color-gray-default: rgba(217, 217, 217, 1); /* #d9d9d9 */
   --color-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
   --color-gray-darken2: rgba(179, 179, 179, 1); /* #b3b3b3 */
@@ -135,17 +136,18 @@
   --fs-h1: 1.75rem; /*28px*/
   --fs-h2: 1.5rem; /*24px*/
   --fs-h3: 1.438rem; /*23.003px*/
-  /* --fs-h4: 1.25rem; 20px */
-  --fs-h4: 1rem; /*16px*/
+  --fs-h4: 1.25rem; /*20px */
+  --fs-h5: 1rem; /*16px*/
   --fs-body: 0.875rem; /*14px*/
   --fs-caption1: 0.813rem; /*13px*/
   --fs-caption-default: 0.75rem; /*12px*/
 
   /* font-weight */
   --fw-thin: 100;
+  --fw-semi-normal: 300;
   --fw-normal: 400;
   --fw-medium: 500;
-  --fw-semi-Bold: 600;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   /* line-height */
@@ -276,7 +278,7 @@
   --p-xxs: 5px;
   --p-xs: 8px;
   --p-sm: 12px;
-  --p-md: 15px
+  --p-md: 15px;
   --p-lg: 16px;
   --p-xl: 24px;
   --p-xxl: 28px;
