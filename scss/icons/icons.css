@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url(d:\-= РАБОЧАЯ ПАПКА =-\code\booking-config\config.css);
+@import url(d:\-= РАБОЧАЯ ПАПКА =-\code\booking-config\fonts\material-icons\iconfont\material-icons.css);
+.page {
+  max-width: 144px;
+  min-width: 144px;
+  min-height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("booking.svg");
+}
+
+.border-color {
+  border-color: var(--color-black-default);
+}
+
+.font-family {
+  font-family: 'sans-serif';
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.user {
+  height: 48px;
+  width: 48px;
+}
+/*# sourceMappingURL=icons.css.map */

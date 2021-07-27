@@ -1,0 +1,100 @@
+@import url(../../config.css);
+body {
+  background: black;
+}
+
+.input-primary-xs-light {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption2);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body1);
+  text-decoration: none;
+}
+
+.input-primary-xs-light:hover {
+  text-decoration: underline;
+}
+
+.input-primary-xs-bold {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption2);
+  font-weight: var(--fw-semi-Bold);
+  line-height: var(--lh-body1);
+  text-decoration: underline;
+}
+
+.input-primary-xs-bold:hover {
+  text-decoration: none;
+}
+
+.input-secondary-sm {
+  color: var(--color-white-default);
+  font-size: var(--fs-caption1);
+  font-weight: var(--fw-semi-Bold);
+  line-height: var(--lh-body3);
+  text-decoration: underline;
+}
+
+.input-primary-sm {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-caption1);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body4);
+  text-decoration: none;
+}
+
+.input-primary-sm:hover {
+  color: var(--color-brown-default);
+}
+
+.input-primary-xl {
+  color: var(--color-secondary-default);
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semi-Bold);
+  line-height: var(--lh-body4);
+  text-decoration: none;
+}
+
+.input-primary-xl:hover {
+  color: var(--color-brown-default);
+}
+
+.input-primary-md {
+  font-size: var(--fs-body2);
+  color: var(--color-secondary-default);
+  line-height: var(--lh-h6);
+  text-decoration: none;
+}
+
+.input-lh-h3 {
+  line-height: var(--lh-h3);
+}
+
+.input-underline {
+  text-decoration: underline;
+}
+
+.input-underline:hover {
+  text-decoration: underline;
+}
+
+.input-no-underline:hover {
+  text-decoration: none;
+}
+
+.input-color-primary:hover {
+  color: var(--color-brown-default);
+}
+
+.input-color-secondary:hover {
+  color: var(--color-brown-default);
+}
+
+.input-block-color:hover {
+  background-color: var(--color-secondary-lighten3);
+}
+
+.input-block:hover {
+  background-color: rgba(255, 255, 255, 0.61);
+}
+/*# sourceMappingURL=links.css.map */

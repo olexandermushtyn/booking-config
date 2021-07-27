@@ -261,7 +261,6 @@
   --shadow-search-window-2: 0px 2px 4px var(--color-black-shadow-1);
   --shadow-chosen-panel: 0px 1px 8px 0px var(--color-black-shadow-2);
   --shadow-border: 0 0 0 3px var(--color-secondary-shadow);
-
   /* Shadow inside image */
 
   --shadow-show-inside: inset 0px 20px 10px var(--color-black-shadow-4);

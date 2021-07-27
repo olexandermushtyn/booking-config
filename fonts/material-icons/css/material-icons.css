@@ -1,6 +1,6 @@
 /**
- * @deprecated Use .material-icons instead of .mi
- */
+   * @deprecated Use .material-icons instead of .mi
+   */
 .mi {
   font-family: "Material Icons";
   font-weight: normal;
@@ -16,12 +16,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 
 /**
- * @deprecated Use .material-icons-outlined instead of .mi-outlined
- */
+   * @deprecated Use .material-icons-outlined instead of .mi-outlined
+   */
 .mi-outlined {
   font-family: "Material Icons Outlined";
   font-weight: normal;
@@ -37,12 +38,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 
 /**
- * @deprecated Use .material-icons-round instead of .mi-round
- */
+   * @deprecated Use .material-icons-round instead of .mi-round
+   */
 .mi-round {
   font-family: "Material Icons Round";
   font-weight: normal;
@@ -58,12 +60,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 
 /**
- * @deprecated Use .material-icons-sharp instead of .mi-sharp
- */
+   * @deprecated Use .material-icons-sharp instead of .mi-sharp
+   */
 .mi-sharp {
   font-family: "Material Icons Sharp";
   font-weight: normal;
@@ -79,12 +82,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 
 /**
- * @deprecated Use .material-icons-two-tone instead of .mi-two-tone
- */
+   * @deprecated Use .material-icons-two-tone instead of .mi-two-tone
+   */
 .mi-two-tone {
   font-family: "Material Icons Two Tone";
   font-weight: normal;
@@ -100,7 +104,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
 }
 
 .mi-360::before {
@@ -7838,3 +7843,4 @@
 .mi-zoom-out-map::before {
   content: "\e56b";
 }
+/*# sourceMappingURL=material-icons.css.map */
