@@ -113,8 +113,10 @@
         font-weight: var(--fw-normal);
     }
     &-circle{
-        border: none;
         border-radius: var(--br-circle);
+    }
+    &-square{
+        border-radius: var(--br-7); //0px
     }
     &-rounded-noBorder-md{
         border: none;
@@ -126,12 +128,10 @@
     }
     &-rounded-bordered-md{
         border-width: var(--bw-3);   //1px
-        border-color: var(--color-white-default);
         border-radius: var(--br-4);  //2px
     }
     &-rounded-bordered-lg{
         border-width: var(--bw-3);   //1px
-        border-color: var(--color-white-default);
         border-radius: var(--br-3);  //3px
     }
 }
