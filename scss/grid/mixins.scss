@@ -23,3 +23,8 @@
 @mixin margin($margin...) {
   margin: $margin;
 }
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+}

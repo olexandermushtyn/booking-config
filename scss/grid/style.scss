@@ -28,3 +28,7 @@
 .row {
   @include make-row;
 }
+
+.col {
+  @include make-col-auto;
+}
