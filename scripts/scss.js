@@ -1,9 +1,9 @@
 const fs = require('fs')
 const sass = require('node-sass')
 
-//path to scss file and result folder
-const sass_path = '../scss/root.scss'
-const css_path = 'path to css folder'
+//set up there your values
+const sass_path = 'path_to_scss_root_file'
+const css_path = 'path_to_css_folder'
 
 //converting scss to css
 const result = sass.renderSync({
