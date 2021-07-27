@@ -80,11 +80,16 @@
         padding-xxs: var(--p-lg)    //: 16px;
     );
     $line-height: (
-        lh-xl: var(--)
-        lh-lg:
-        lh-md:
-        lh-sm:
+        lh-lg: var(--lh-h3),
+        lh-md: var(--lh-h4),
+        lh-sm: var(--lh-h6)
     );
+    $font-size: (
+        fs-lg: var(--fs-caption1),  //13
+        fs-md: var(--fs-body),//14
+        fs-sm: var(--lh-h6) //20
+    );
+
 }
 
 
