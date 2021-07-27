@@ -726,3 +726,20 @@
 .ta-justify {
   text-align: var(--ta-justify);
 }
+
+ body{
+   margin: 0;
+ }
+.mmm{
+  
+}
+
+.br{
+  width: 24px;
+  height: 24px;
+}
+
+.bat{
+  width: 40px;
+  height: 40px;
+}
