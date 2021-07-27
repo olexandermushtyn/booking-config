@@ -26,9 +26,9 @@
 }
 
 .row {
-  @include make-row;
+  @include make-row();
 }
 
 .col {
-  @include make-col-auto;
+  flex: 1 0 0%;
 }
