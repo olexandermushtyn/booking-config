@@ -87,8 +87,14 @@
     $font-size: (
         fs-lg: var(--fs-caption1),  //13
         fs-md: var(--fs-body),      //14
-        fs-sm: var(--lh-h6)         //20
+        fs-sm: var(--fs-h4)         //20
     );
+    $font-weight: (
+        fw-md: var(--fw-medium),  //500
+        fw-sm: var(--fw-normal),      //400
+        fw-xs: var(--fs-h4)         //20
+    );
+
 
 }
 
