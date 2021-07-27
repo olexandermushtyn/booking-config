@@ -1,0 +1,63 @@
+@import url(../root.scss);
+
+.box1{
+    
+    font-family: var(--ff-default);
+    font-size: var(--fs-caption1);
+    line-height: var(--lh-body3);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.title-type{
+    display: block;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-darken6);
+    padding-left: 16px;
+}
+
+.card{
+    border-radius: var(--br-4);
+    padding: var(--p-md);
+    cursor: var(--cursor-pointer);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+
+    &-image{
+        border-radius: var(--br-4);
+        height: 180px;
+    }
+
+    &-content{
+        line-height: var(--lh-body3);
+        text-align: left;
+        text-decoration: none;
+        flex-grow: 1;
+        padding-top: var(--p-md);
+
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+
+        &-title{
+            font-weight: var(--fw-bold);
+            font-size: var(--fs-h4);
+            line-height: var(--lh-h4);
+            color: var(--color-black-default);
+            text-decoration: none;
+            outline: none;
+        }
+
+        &-subtitle{
+            font-weight: var(--fw-normal);
+            color: var(--color-gray-lighten1);
+        }
+    }
+}

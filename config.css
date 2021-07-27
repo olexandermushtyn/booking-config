@@ -44,6 +44,7 @@
   --color-warning-lighten1: rgba(255, 128, 0, 1); /* #ff8000 */
 
   /* Color gray */
+  --color-gray-lighten1: rgba(107, 107, 107, 1); /* #6b6b6b */
   --color-gray-default: rgba(217, 217, 217, 1); /* #d9d9d9 */
   --color-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
   --color-gray-darken2: rgba(179, 179, 179, 1); /* #b3b3b3 */
