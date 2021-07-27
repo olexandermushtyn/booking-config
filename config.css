@@ -269,15 +269,18 @@
   --text-shadow-1: 1px 1px 1px var(--color-black-shadow-0);
 
   /* padding */
-  --p-xxxs: 2px;
-  --p-xxs: 4px;
+  --p-none: 0px;
+  --p-xxxxs: 2px;
+  --p-xxxs: 4px;
+  --p-xxs: 5px;
   --p-xs: 8px;
   --p-sm: 12px;
-  --p-md: 16px;
-  --p-lg: 24px;
-  --p-xl: 28px;
-  --p-xxl: 32px;
-  --p-xxxl: 42px;
+  --p-md: 15px
+  --p-lg: 16px;
+  --p-xl: 24px;
+  --p-xxl: 28px;
+  --p-xxxl: 32px;
+  --p-xxxxl: 42px;
 
   /* margin */
   --m-xxxs: 2px;
