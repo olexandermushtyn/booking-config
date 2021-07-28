@@ -184,7 +184,6 @@
     --cursor-not-allowed: not-allowed;
     /* logos */
     /* --logo-booking: url("/img/booking.com.png");
-=======
   /* colors */
   /* Primary */
 
@@ -211,6 +210,9 @@
 
   /* success */
   --color-success-lighten1: rgb(46, 146, 55); /* e7fde9 */
+
+  /* success */
+  --color-success-lighten1: rgba(231, 253, 233, 1); /* e7fde9 */
   --color-success-default: rgba(0, 128, 9, 1); /* #008009 */
   --color-success-darken: rgba(0, 102, 7, 1);
 
@@ -272,6 +274,11 @@
   --color-black-shadow-2: rgba(0, 0, 0, 0.12);
   --color-black-shadow-3: rgba(0, 0, 0, 0.15);
   --color-black-shadow-4: rgba(0, 0, 0, 0.2);
+  --color-secondary-shadow: rgba(0, 113, 194, 0.24);
+
+  --color-transparent: transparent;
+
+  --b-none: none;
 
   /* borders-radius */
   --br-1: 5.8px;
@@ -364,7 +371,10 @@
 
   /* logos */
   /* --logo-booking: url("/img/booking.com.png");
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
   --logo-priceline: url("/img/priceline.com.png");
   --logo-kayak: url("/img/kayak.png");
   --logo-agoda: url("/img/agoda.png");
@@ -391,84 +401,98 @@
   --criss-cross: "M13.31,12l8-8A.93.93,0,0,0,20,2.66l-8,8-8-8A.93.93,0,0,0,2.66,4l8,8-8,8a.94.94,0,0,0,0,1.32.94.94,0,0,0,1.32,0l8-8,8,8a.94.94,0,0,0,1.32,0,.94.94,0,0,0,0-1.32Z";
   --map: "M15 8.25a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zM12 1.5a6.75 6.75 0 0 1 6.75 6.75c0 2.537-3.537 9.406-6.75 14.25-3.214-4.844-6.75-11.713-6.75-14.25A6.75 6.75 0 0 1 12 1.5zM12 0a8.25 8.25 0 0 0-8.25 8.25c0 2.965 3.594 9.945 7 15.08a1.5 1.5 0 0 0 2.5 0c3.406-5.135 7-12.115 7-15.08A8.25 8.25 0 0 0 12 0z";
   --close-btn: url("../img/xrestuk.png"); */
-    /* flags */
-    --great-britain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gb/daba79fdd4066d133e8bf59070fd6819b951c403.png";
-    --usa-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png";
-    --germany-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/de/668350ee17050ec21845c27503ae960695f341a9.png";
-    --nederlands-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/nl/65e3bcc466c4026a08bdb2671799ca26c3228d19.png";
-    --france-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/fr/c48bc65c9dc57035fa983df37e9732c0f0a2663f.png";
-    --spain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/es/b3bd4690290a78b1303198dd6576bdab8d7f9a80.png";
-    --argentina-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ar/9cce2b91336709016282f06432a8b6366069e0c2.png";
-    --mexico-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/mx/f3a3f562a0185d68fb04b2ec01db2062ca6bdb76.png";
-    --catalonia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/catalonia/8578246a75d8b9dceaacb174072d0c6acafcc2df.png";
-    --italy-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/it/b8db3771480bd0c7971b9f94cad3640c89521882.png";
-    --portugal-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/pt/6542345c7408e3bd0d4c2e8f38d4396bba9b0e69.png";
-    --brazil-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/br/0cf5e55d996fdcf96a2d31733addf5c10bad1f74.png";
-    --norway-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/no/827be8d24af5667778b4bc651fe03f738a812b60.png";
-    --finland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/fi/465d3b73ff07d1d696cb5dd26fbb91097c175e1b.png";
-    --sweden-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/se/5e126775c25a54a24956ddcc72c8bbcaeed20872.png";
-    --denmark-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/dk/744575dd4e87590a543b7c8cbacaef6c3de4e4d2.png";
-    --czech-republic-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/cz/32002e60fead55ce886ff9827dfcf4af8cf4e277.png";
-    --hungary-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/hu/fc7cb24c5c7cb9de74a74fad271d6838daabc4cb.png";
-    --romania-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ro/2d67b91f7beb87bd9286975da3e6dadc70d9c64b.png";
-    --japan-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/jp/9bf7e50bc6dc66599aeede9189ca16de461c60b6.png";
-    --china-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/cn/5a221730f540facc62563bfa6192ce155a9f677e.png";
-    --poland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/pl/4d6b6e962b0b049a03924fc618b959395d60ae39.png";
-    --greece-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gr/e0e42a97a7b860fc9be71954262902f2a4e94aa6.png";
-    --russia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ru/2277320023a64803843c36ca6aa48ad77523dd0d.png";
-    --turkey-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/tr/f7ad0cb74f4ea5e7193cb6029c7f977e9786cfa2.png";
-    --bulgaria-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/bg/540f2da5fee31b7385af127619ab5ca4fc3783b5.png";
-    --saudi-arabia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/sa/44ab510f37755d1d9d4c4dfa9b1f25bed9b2a95c.png";
-    --korea-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/kr/4cb76b458a73ca4c1de034c7623475278d363ce6.png";
-    --israel-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/il/fc1907ccd86aa051f7fbe22649d1e31ac6aee016.png";
-    --latvia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/lv/393103a26c1d5f1fbd7d9674732bbdfc42296399.png";
-    --ukraine-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ua/2ea50f1c1fb480c4557a5578f71657fc3152c3a1.png";
-    --indonesia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/id/e7d3d00965d8c994a72807b43b21c648250cf906.png";
-    --malaysia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/my/6d811cf6127cea0a957ca0243546a03339fa19ac.png";
-    --thailand-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/th/53a76d6856962953d739d07ac61f04adee50a3d1.png";
-    --estonia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ee/509074558f4fe7c71ceed57584dec0382274dd16.png";
-    --croatia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/hr/e7a46f4dad977aecafa6a3680972e0c137a1bc41.png";
-    --lithuania-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/lt/5bb712a60a82b7e075deba5b102aa36348bbb255.png";
-    --slovakia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/sk/29e3667f5aca74c157af9225d5a97a74a41e52ef.png";
-    --serbian-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/rs/c1bc4fc1d782713cfec17a071dadca6b755a233e.png";
-    --slovenia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/si/f0619cdd45548522566c6d72a660ddc011906184.png";
-    --vietnam-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/vn/90b17da2aafaebce7b0c34189747e1e10dba8041.png";
-    --philippines-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ph/7048127466891462116ee2774154585fb5607aba.png";
-    --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
-    /* Shadows */
-    --shadow-main-search-panel: 0px 2px 8px var(--color-black-shadow-3);
-    --shadow-search-window-1: 0px 2px 16px var(--color-black-shadow-3);
-    --shadow-search-window-2: 0px 2px 4px var(--color-black-shadow-1);
-    --shadow-chosen-panel: 0px 1px 8px 0px var(--color-black-shadow-2);
-    --shadow-border: 0px 0px 0px 3px var(--color-secondary-shadow);
-    /* Shadow inside image */
-    --shadow-show-inside: inset 0px 20px 10px var(--color-black-shadow-4);
-    /* Text shadow */
-    --text-shadow: none;
-    --text-shadow-1: 1px 1px 1px var(--color-black-shadow-0);
-    /* padding */
-    --p-none: 0px;
-    --p-xxxxs: 2px;
-    --p-xxxs: 4px;
-    --p-xxs: 5px;
-    --p-xs: 8px;
-    --p-sm: 12px;
-    --p-md: 15px;
-    --p-lg: 16px;
-    --p-xl: 24px;
-    --p-xxl: 28px;
-    --p-xxxl: 32px;
-    --p-xxxxl: 42px;
-    /* margin */
-    --m-xxxs: 2px;
-    --m-xxs: 4px;
-    --m-xs: 8px;
-    --m-sm: 12px;
-    --m-md: 16px;
-    --m-lg: 24px;
-    --m-xl: 28px;
-    --m-xxl: 32px;
-    --m-xxxl: 42px;
+
+
+  /* flags */
+  --great-britain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gb/daba79fdd4066d133e8bf59070fd6819b951c403.png";
+  --usa-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png";
+  --germany-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/de/668350ee17050ec21845c27503ae960695f341a9.png";
+  --nederlands-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/nl/65e3bcc466c4026a08bdb2671799ca26c3228d19.png";
+  --france-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/fr/c48bc65c9dc57035fa983df37e9732c0f0a2663f.png";
+  --spain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/es/b3bd4690290a78b1303198dd6576bdab8d7f9a80.png";
+  --argentina-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ar/9cce2b91336709016282f06432a8b6366069e0c2.png";
+  --mexico-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/mx/f3a3f562a0185d68fb04b2ec01db2062ca6bdb76.png";
+  --catalonia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/catalonia/8578246a75d8b9dceaacb174072d0c6acafcc2df.png";
+  --italy-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/it/b8db3771480bd0c7971b9f94cad3640c89521882.png";
+  --portugal-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/pt/6542345c7408e3bd0d4c2e8f38d4396bba9b0e69.png";
+  --brazil-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/br/0cf5e55d996fdcf96a2d31733addf5c10bad1f74.png";
+  --norway-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/no/827be8d24af5667778b4bc651fe03f738a812b60.png";
+  --finland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/fi/465d3b73ff07d1d696cb5dd26fbb91097c175e1b.png";
+  --sweden-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/se/5e126775c25a54a24956ddcc72c8bbcaeed20872.png";
+  --denmark-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/dk/744575dd4e87590a543b7c8cbacaef6c3de4e4d2.png";
+  --czech-republic-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/cz/32002e60fead55ce886ff9827dfcf4af8cf4e277.png";
+  --hungary-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/hu/fc7cb24c5c7cb9de74a74fad271d6838daabc4cb.png";
+  --romania-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ro/2d67b91f7beb87bd9286975da3e6dadc70d9c64b.png";
+  --japan-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/jp/9bf7e50bc6dc66599aeede9189ca16de461c60b6.png";
+  --china-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/cn/5a221730f540facc62563bfa6192ce155a9f677e.png";
+  --poland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/pl/4d6b6e962b0b049a03924fc618b959395d60ae39.png";
+  --greece-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gr/e0e42a97a7b860fc9be71954262902f2a4e94aa6.png";
+  --russia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ru/2277320023a64803843c36ca6aa48ad77523dd0d.png";
+  --turkey-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/tr/f7ad0cb74f4ea5e7193cb6029c7f977e9786cfa2.png";
+  --bulgaria-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/bg/540f2da5fee31b7385af127619ab5ca4fc3783b5.png";
+  --saudi-arabia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/sa/44ab510f37755d1d9d4c4dfa9b1f25bed9b2a95c.png";
+  --korea-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/kr/4cb76b458a73ca4c1de034c7623475278d363ce6.png";
+  --israel-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/il/fc1907ccd86aa051f7fbe22649d1e31ac6aee016.png";
+  --latvia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/lv/393103a26c1d5f1fbd7d9674732bbdfc42296399.png";
+  --ukraine-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ua/2ea50f1c1fb480c4557a5578f71657fc3152c3a1.png";
+  --indonesia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/id/e7d3d00965d8c994a72807b43b21c648250cf906.png";
+  --malaysia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/my/6d811cf6127cea0a957ca0243546a03339fa19ac.png";
+  --thailand-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/th/53a76d6856962953d739d07ac61f04adee50a3d1.png";
+  --estonia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ee/509074558f4fe7c71ceed57584dec0382274dd16.png";
+  --croatia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/hr/e7a46f4dad977aecafa6a3680972e0c137a1bc41.png";
+  --lithuania-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/lt/5bb712a60a82b7e075deba5b102aa36348bbb255.png";
+  --slovakia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/sk/29e3667f5aca74c157af9225d5a97a74a41e52ef.png";
+  --serbian-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/rs/c1bc4fc1d782713cfec17a071dadca6b755a233e.png";
+  --slovenia-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/si/f0619cdd45548522566c6d72a660ddc011906184.png";
+  --vietnam-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/vn/90b17da2aafaebce7b0c34189747e1e10dba8041.png";
+  --philippines-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/ph/7048127466891462116ee2774154585fb5607aba.png";
+  --iceland-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/is/7d644655f895f8e346b964dc18cf5b6608a98d52.png";
+
+  /* Shadows */
+
+  --shadow-main-search-panel: 0px 2px 8px var(--color-black-shadow-3);
+  --shadow-search-window-1: 0px 2px 16px var(--color-black-shadow-3);
+  --shadow-search-window-2: 0px 2px 4px var(--color-black-shadow-1);
+  --shadow-chosen-panel: 0px 1px 8px 0px var(--color-black-shadow-2);
+  --shadow-border: 0 0 0 3px var(--color-secondary-shadow);
+
+  /* Shadow inside image */
+
+  --shadow-show-inside: inset 0px 20px 10px var(--color-black-shadow-4);
+
+  /* Text shadow */
+
+  --text-shadow: none;
+  --text-shadow-1: 1px 1px 1px var(--color-black-shadow-0);
+
+  /* padding */
+  --p-none: 0px;
+  --p-xxxs: 2px;
+  --p-xxs: 4px;
+  --p-xs: 8px;
+  --p-sm: 12px;
+  --p-md: 16px;
+  --p-lg: 24px;
+  --p-xl: 28px;
+  --p-xxl: 32px;
+  --p-xxxl: 42px;
+  --p-xxxxl: 50px;
+
+
+  --p-input-xs: 13px;
+
+  /* margin */
+  --m-xxxs: 2px;
+  --m-xxs: 4px;
+  --m-xs: 8px;
+  --m-sm: 12px;
+  --m-md: 16px;
+  --m-lg: 24px;
+  --m-xl: 28px;
+  --m-xxl: 32px;
+  --m-xxxl: 42px;
+
+  --ai-center: center;
 }
 
 
