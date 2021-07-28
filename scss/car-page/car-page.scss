@@ -15,10 +15,7 @@ button[name="info1"]{
     width: 24px;
     height: 24px;  
 }
-.question{
-    line-height: 24px;
-}
-.alert-info {
-    border-color:var(--color-warning-lighten1);
-    background-color: var(--color-danger-lighten2);
+.info-icon{
+    color: var(--color-black-default);
+    
 }
