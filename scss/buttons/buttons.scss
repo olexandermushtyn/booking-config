@@ -1,79 +1,147 @@
 @import url(../../config.css);
-
 .btn {
-  border-style: var(--bs-solid);
-  font-family: var(--ff-default);
-  cursor: var(--cursor-pointer);
-  box-sizing: border-box;
-}
-.btn-primary {
-  background-color: var(--color-secondary-default);
-  color: var(--color-white-default);
-  border: none;
-}
-.btn-white {
-  background-color: var(--color-white-default);
-  color: var(--color-secondary-default);
-  border: none;
-}
-.btn-outlined {
-  background-color: transparent;
-  color: var(--color-white-default);
-  border-width: var(--bw-3);
-  border-color: var(--color-white-default);
-}
-.btn-info {
-  background-color: transparent;
-  border: none;
-  color: var(--color-white-default);
-}
-.btn-math-clicker {
-  background-color: var(--color-white-default);
-  color: var(--color-secondary-default);
-  border-color: var(--color-secondary-default);
-}
-.btn-carousel-clicker {
-  opacity: 1;
-  visibility: visible;
-  background: var(--color-white-default);
-  border-radius: 50%;
-  border: none;
-}
-.btn-circle {
-  border-radius: 50%;
-}
-.btn-background-dark-hover:hover {
-  background: var(--color-secondary-darken2);
-}
-.btn-background-light-hover:hover {
-  background-color: var(--color-secondary-lighten3);
-}
-.btn-background-dark-active:active {
-  background: var(--color-secondary-darken2);
-}
-.btn-background-light-active:active {
-  background-color: var(--color-secondary-lighten3);
-}
-.btn-border-focus:focus {
-  box-shadow: 0 0 0 3px rgb(0, 113, 194, 0.24%);
-}
-.btn-border-active:active {
-  box-shadow: 0 0 0 3px rgb(0, 113, 194, 0.24%);
-}
-
-@each $header,
-  $size
-    in (
-      xxl: 52px,
-      xl: 48px,
-      lg: 40px,
-      md: 38px,
-      sm: 36px,
-      xs: 27.6px,
-      xxs: 24px
-    )
-{
-  .btn-#{$header} {
-    height: $size;
-  }
+    border-style: var(--bs-solid);
+    font-family: var(--ff-default);
+    cursor: var(--cursor-pointer);
+    box-sizing: border-box;
+    &-primary {
+        background-color: var(--color-secondary-default);
+        color: var(--color-white-default);
+        &-hover:hover {
+            background-color: var(--color-secondary-darken2);
+        }
+        &-active:active {
+            background: var(--color-secondary-darken2);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-white {
+        background-color: var(--color-white-default);
+        color: var(--color-secondary-default);
+        border: none;
+        &-hover:hover {
+            background-color: var(--color-secondary-lighten3);
+        }
+        &-active:active {
+            background: var(--color-secondary-lighten3);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-outlined {
+        background-color: var(--color-transparent);
+        color: var(--color-white-default);
+        border-width: var(--bw-3);
+        border-color: var(--color-white-default);
+        &-hover:hover {
+            background-color: var(--color-secondary-darken2);
+        }
+        &-active:active {
+            background: var(--color-secondary-darken2);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-info {
+        background-color: var(--color-transparent);
+        color: var(--color-white-default);
+        border: none;
+        &-hover:hover {
+            background-color: var(--color-secondary-darken2);
+        }
+        &-active:active {
+            background: var(--color-secondary-darken2);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-clicker {
+        background-color: var(--color-white-default);
+        color: var(--color-secondary-default);
+        border-color: var(--color-secondary-default);
+        border-width: var(--bw-3);
+        &-hover:hover {
+            background-color: var(--color-secondary-lighten3);
+        }
+        &-active:active {
+            background: var(--color-secondary-lighten3);
+        }
+        &-focus:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-carousel {
+        background-color: var(--color-white-default);
+        border-radius: var(--br-circle);
+    }
+    &-xxl {
+        padding: var(--p-xxs) var(--p-xxxl);
+        line-height:var(--btn-lh-lg);
+        font-size: var(--fs-h4);
+        font-weight: var( --fw-medium);
+    }
+    &-xl {
+        padding: var(--p-none) var(--p-md);
+        line-height: var(--btn-lh-xl);
+        font-size: var(--fs-h4);
+        font-weight: var(--fw-semi-normal);
+    }
+    &-lg {
+        padding: var(--p-xs) var(--p-lg);
+        line-height: var(--lh-h6);
+        font-size: var(--fs-h4);
+        font-weight: var(--fw-semi-normal);
+    }
+    &-md {
+        padding: var(--p-xs);
+        line-height: var(--lh-h6);
+        font-size: var(--fs-body);
+        font-weight: var(--fw-medium);
+    }
+    &-sm {
+        padding: var(--p-xs) var(--p-lg);
+        line-height: var(--lh-h6);
+        font-size: var(--fs-body);
+        font-weight: var(--fw-medium);
+    }
+    &-xs {
+        padding: var(--p-none) var(--p-md);
+        line-height: var(--lh-h4);
+        font-size: var(--fs-caption1);
+        font-weight: var(--fw-normal);
+    }
+    &-xxs {
+        padding: var(--p-sm);
+        line-height: var(--lh-h4);
+        font-size: var(--fs-caption1);
+        font-weight: var(--fw-normal);
+    }
+    &-circle {
+        border-radius: var(--br-circle);
+        border: none;
+    }
+    &-square {
+        border-radius: var(--br-7); //0px
+    }
+    &-rounded-noborder-md {
+        border: none;
+        border-radius: var(--br-4); //2px
+    }
+    &-rounded-noborder-lg {
+        border: none;
+        border-radius: var(--br-3); //3px
+    }
+    &-rounded-bordered-md {
+        border-width: var(--bw-3); //1px
+        border-radius: var(--br-4); //2px
+    }
+    &-rounded-bordered-lg {
+        border-width: var(--bw-3); //1px
+        border-radius: var(--br-3); //3px
+    }
 }

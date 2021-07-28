@@ -26,5 +26,9 @@
 }
 
 .row {
-  @include make-row;
+  @include make-row();
+}
+
+.col {
+  flex: 1 0 0%;
 }
