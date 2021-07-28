@@ -1,4 +1,24 @@
 @import url(../../config.css);
 @import url(../root.scss);
+@import url(../../fonts/fontawesome/css/all.css);
 
-
+.align-flex{
+    display: flex;
+    align-items: center;
+    
+}
+button[name="info1"]{
+    font-weight: var(--fw-medium)!important;
+    font-size: var(--fs-h5);
+}
+.flag{
+    width: 24px;
+    height: 24px;  
+}
+.question{
+    line-height: 24px;
+}
+.alert-info {
+    border-color:var(--color-warning-lighten1);
+    background-color: var(--color-danger-lighten2);
+}
