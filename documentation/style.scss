@@ -1,4 +1,5 @@
 @import url(../config.css);
+@import url(../scss/root.scss);
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -27,6 +28,15 @@
     top: 40px;
     border: 1px solid #333;
     border-radius: 4px;
+    font-family: var(--ff-default);
+    font-size: var(--fs-body1);
+    text-align: left;
+    .text-decoration-list {
+        list-style-type: none;
+    }
+    li {
+        padding: var(--p-xxxxs);
+    }
 }
 
 body {
@@ -258,7 +268,9 @@ hr {
     background: var(--color-black-t1-default);
 }
 
-// Border
+
+/* Border */
+
 .border {
     height: 40px;
     line-height: 32px;
@@ -318,7 +330,9 @@ hr {
     border-style: solid;
 }
 
-// Font
+
+/* Font */
+
 .font {
     height: 40px;
     line-height: 32px;
@@ -389,7 +403,9 @@ hr {
     font-weight: var(--fw-bold);
 }
 
-// Line-height
+
+/* Line-height */
+
 .line-height {
     height: 40px;
     line-height: 32px;
@@ -432,8 +448,19 @@ hr {
     color: var(--color-white-default);
 }
 
-// Border for logo
-.logo-palete {
+
+/* Border for logo */
+
+.logo-palette {
+    min-width: 250px;
+    min-height: 32px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.image-palette {
     min-width: 250px;
     min-height: 32px;
     margin-bottom: 20px;
@@ -475,7 +502,9 @@ hr {
     }
 }
 
-// Badge
+
+/* Badge */
+
 .border-palete {
     min-width: 250px;
     min-height: 32px;
