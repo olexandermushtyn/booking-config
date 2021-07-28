@@ -819,5 +819,11 @@
 }
 
 .ta-justify {
-    text-align: var(--ta-justify);
+
+  text-align: var(--ta-justify);
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
