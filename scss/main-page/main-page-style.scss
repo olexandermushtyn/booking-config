@@ -7,6 +7,7 @@
     display: flex;
 }
 
+// Title which is upper carousel
 .title-type {
     display: block;
     font-size: var(--fs-h2);
@@ -14,9 +15,9 @@
     color: var(--color-gray-darken6);
 }
 
+// Card for 1st & 2nd carousel
 .card {
     border-radius: var(--br-4);
-    padding-right: var(--p-md);
     cursor: var(--cursor-pointer);
     box-sizing: border-box;
     display: flex;
@@ -49,6 +50,52 @@
         &-subtitle {
             font-weight: var(--fw-normal);
             color: var(--color-gray-lighten1);
+        }
+    }
+}
+
+// Postcard text inside image
+.postcard-header {
+    color: var(--color-white-default);
+    cursor: var(--cursor-pointer);
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h6);
+    text-shadow: var(--text-shadow-1);
+    font-family: var(--ff-default);
+    font-weight: var(--fw-bold);
+    a {
+        width: 350px;
+        font-size: var(--fs-h1);
+        line-height: var(--lh-3);
+        text-decoration-line: none;
+        color: var(--color-white-default);
+        img {
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+// Extra class for large image
+.img {
+    &-affect {
+        text-shadow: var(--text-shadow-1);
+        width: 350px;
+    }
+    &-height {
+        height: 272px;
+        border-radius: (--br-3);
+    }
+    &-flag {
+        width: 24px;
+        height: 24px;
+    }
+    &-display {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
