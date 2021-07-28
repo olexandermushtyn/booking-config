@@ -44,6 +44,8 @@
   --color-warning-lighten1: rgba(255, 128, 0, 1); /* #ff8000 */
 
   /* Color gray */
+  --color-gray-lighten3: rgba(231, 231, 231, 1); /* #e7e7e7 */
+  --color-gray-lighten2: rgba(38, 38, 38, 1); /* #262626 */
   --color-gray-lighten1: rgba(107, 107, 107, 1); /* #6b6b6b */
   --color-gray-default: rgba(217, 217, 217, 1); /* #d9d9d9 */
   --color-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
@@ -99,6 +101,7 @@
   --br-5: 1.8px;
   --br-6: 1px;
   --br-7: 0px;
+  --br-8: 8px;
 
   /* border-radius for avatar*/
 
