@@ -168,6 +168,12 @@ input{
   background-repeat: no-repeat;
 }
 
+.input-car-xxl{
+  background-image: url('../../src/img/ico/car-xxl.svg');
+  background-position: top 50% left 16px;
+  background-repeat: no-repeat;
+}
+
 .search-input:hover, .search-input:focus{
   outline: none;
   border-color: var(--color-brown-lighten1);
