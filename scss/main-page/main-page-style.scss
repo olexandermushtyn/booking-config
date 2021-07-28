@@ -9,10 +9,20 @@
 
 // Title which is upper carousel
 .title-type {
-    display: block;
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-bold);
-    color: var(--color-gray-darken6);
+    h2 {
+        display: block;
+        font-size: var(--fs-h2);
+        font-weight: var(--fw-bold);
+        color: var(--color-gray-darken6);
+        margin: 0;
+    }
+    p {
+        color: var(--color-gray-lighten1);
+        font-size: var(--fs-h4);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-h4);
+        margin: 0;
+    }
 }
 
 // Card for 1st & 2nd carousel
@@ -23,9 +33,13 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    &-image {
+    &-image-md {
         border-radius: var(--br-4);
         height: 180px;
+    }
+    &-image-lg {
+        border-radius: var(--br-4);
+        height: 207px;
     }
     &-content {
         line-height: var(--lh-body3);
