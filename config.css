@@ -45,7 +45,7 @@
 
   /* Color gray */
   --color-gray-default: rgba(217, 217, 217, 1); /* #d9d9d9 */
-  --color-gray---color-grdarken1: rgba(189, 189, 189, 1); /* #bdbdbd */
+  --color-gray-darken1: rgba(189, 189, 189, 1); /* #bdbdbd */
   --color-gray-darken2: rgba(179, 179, 179, 1); /* #b3b3b3 */
   --color-gray-darken3: rgba(165, 165, 165, 1); /* #a5a5a5 */
   --color-gray-darken4: rgba(131, 131, 131, 1); /* #838383 */
