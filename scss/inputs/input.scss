@@ -1,30 +1,88 @@
 @import "../../config.css";
 @import url(../offsets/offsets.scss);
+@import "../../fonts/fontawesome/css/all.css";
 
-.input-b {
-    border: solid 1px;
-}
-
-.input-bc-white {
-    border-color: var(--color-white-default);
-}
-
-.input-bch-brown:hover {
-    border-color: var(--color-brown-default);
-}
-
-.input-bc-gray {
-    border-color: var(--color-gray-darken1);
-}
-
-.outline {
+.input-none:focus, .input-none:active{
     outline: none;
 }
-
-.input-bcf-blue:focus {
-    border-color: var(--color-secondary-darken1);
+.input-placeholder::-webkit-input-placeholder {
+    color: var(--color-black-default);
+    font-family: var( --ff-default);
 }
-
-.input-shadow-f:focus {
-    box-shadow: 0 0 0 3px var(--color-secondary-darken1);
+.input-placeholder:focus::-webkit-input-placeholder {
+    color: var(--color-gray-darken4);
+}
+// border color
+.bc-white {
+    border-color: var(--color-white-default);
+}
+.bc-gray {
+    border-color: var(--color-gray-darken2);
+}
+.bc-brown-h:hover{
+    border: 1px solid var(--color-brown-default);
+}
+.bc-secondary-default-f-sm:focus {
+    border-color: var(--color-secondary-default);
+}
+.bc-secondary-default-f-md:focus {
+    border-color: var(--color-secondary-default);
+    border-width: var(--bw-2);
+}
+.box-shadow-blue-f:focus {
+    box-shadow: 0 0 0 3px var(--color-secondary-t2-default);
+}
+.box-shadow-white-f:focus {
+    box-shadow: 0 0 0 1px var(--color-white-default);
+}
+// img
+.input-img-bad {
+    background-image: url(../../src/img/ico/bad.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 13px;
+}
+.input-img-car {
+    background-image: url(../../src/img/ico/car.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 13px;
+}
+.input-img-search {
+    background-image: url(../../src/img/ico/search.svg);
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+}
+.select-img-doubleArrow {
+    background-image: url(../../src/img/ico/arrows.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-position: right;
+}
+// checkbox
+.chbx-lg {
+    height: 20px;
+    width: 20px;
+}
+.chbx-md {
+    height: 14px;
+    width: 14px;
+}
+.chbx-sm {
+    height: 13px;
+    width: 13px;
+}
+// select
+.select_sm {
+    width: 48px;
+    height: 22px;
+}
+.select_lg:focus {
+    border: 2px solid black;
+    border-radius: var(--br-3);
+}
+.select-appearance {
+    appearance: none;
 }
