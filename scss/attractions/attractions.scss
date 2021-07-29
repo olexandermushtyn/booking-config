@@ -1,31 +1,29 @@
 @import "../grid/style.scss";
 @import "../../config.css";
 @import "../../scss/inputs/input.scss";
+@import "../../scss/buttons/buttons.scss";
+@import "../../fonts/fontawesome/css/all.css";
 body {
     margin: 0;
 }
 //content
 .jc-center {
     justify-content: center;
+    display: flex;
 }
-
+.bc {
+    background-color: var(--color-warning-default);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 8px;
+    display: flex;
+    border-radius: var(--br-2);
+}
 .input {
     width:100%;
 }
-// text module 1
-.t1 {
-    font-family: var(--ff-default);
-    font-size: 32px;
-    font-weight: var(--fw-bold);
-    margin-bottom: 8px; 
-}
-.t2 {
-    font-family: var(--ff-default);
-    color: var(--color-gray-darken5);
-    margin-bottom: 32px; 
-}
-
-
+// div
 .container {
     padding: 64px 32px;
 }
@@ -33,4 +31,71 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(242, 242, 242, 1);
+}
+// text module 1
+.t1_1 {
+    font-family: var(--ff-default);
+    font-size: 32px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 8px; 
+}
+.t2_1 {
+    font-family: var(--ff-default);
+    color: var(--color-gray-darken5);
+    margin-bottom: 32px; 
+}
+// top destinations 
+.t1_2 {
+    font-family: var(--ff-default);
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+    margin: 32px 0 16px;
+}
+
+.t2_2 {
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-default);
+}
+.t3_2 {
+    font-family: var(--ff-default);
+    margin: 8px 0 8px;
+}
+.border {
+    border: 1px solid var(--color-gray-default);
+    border-radius: 2px;
+    padding: 16px;
+}
+
+.br {
+    border-top: solid 1px var(--color-gray-default);
+    margin-top: 30px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.t1_3 {
+    font-family: var(--ff-default);
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 16px;
+}
+// text module 2 
+.text-icon {
+    font-size: 14px;
+    font-family: var(--ff-default);
+    font-weight: var(--fw-bold);
+}
+.text {
+    font-size: 14px;
+    font-family: var(--ff-default);
+}
+
+.t3_1 {
+    font-family: var(--ff-default);
+    color: var(--color-gray-darken5);
+    margin-bottom: 16px;
+}
+.t3_3 {
+    font-family: var(--ff-default);
+    font-size: 20px;
+    font-weight: var(--fw-bold);
 }
