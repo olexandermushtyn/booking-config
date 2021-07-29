@@ -15,7 +15,17 @@ button[name="info1"]{
     width: 24px;
     height: 24px;  
 }
-.info-icon{
-    color: var(--color-black-default);
-    
+.image-1 {
+    box-sizing: border-box;
+    width: 80px;
+    height: 40px;
+}
+.heading-2{
+    margin: var(--m-xs) 0px;
+    padding-top: 1.5em;
+}
+.image-2{
+    box-sizing: border-box;
+    height: 240px;
+    weight: 346px;
 }

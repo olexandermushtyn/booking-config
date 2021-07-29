@@ -515,7 +515,9 @@
 .color-warning-lighten1 {
     color: var(--color-warning-lighten1);
 }
-
+.color-gray-lighten1{
+    color: var(--color-gray-lighten1);
+}
 .color-gray-default {
     color: var(--color-gray-default);
 }
