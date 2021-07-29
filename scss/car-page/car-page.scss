@@ -24,13 +24,19 @@ button[name="info1"]{
     margin: var(--m-xs) 0px;
     padding-top: 1.5em;
 }
-.image-2{
-    box-sizing: border-box;
-    height: 240px;
-    weight: 346px;
-}
 .car{
     color: rgb(88, 88, 88);
     display: flex;
     align-items: center;
+}
+.block{
+    border: 1px solid #e7e7e7;
+    margin-right: var(--m-xxl);
+}
+.border-virus{
+    border: var(--bw-3) solid var(--color-warning-lighten1);
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
 }
