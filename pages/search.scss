@@ -47,6 +47,14 @@ a {
   height: 434px;
 }
 
+.searchbox-title {
+  margin: 0;
+}
+
+.searchbox-title-text {
+  font-size: var(--fs-h4);
+}
+
 .search-item {
   box-sizing: border-box;
   margin: 16px 16px;
