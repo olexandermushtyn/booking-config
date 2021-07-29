@@ -1,30 +1,149 @@
 @import "../../config.css";
 @import url(../offsets/offsets.scss);
+@import "../../fonts/fontawesome/css/all.css";
 
-.input-b {
-    border: solid 1px;
-}
-
-.input-bc-white {
-    border-color: var(--color-white-default);
-}
-
-.input-bch-brown:hover {
-    border-color: var(--color-brown-default);
-}
-
-.input-bc-gray {
-    border-color: var(--color-gray-darken1);
-}
-
-.outline {
+.input-none:focus, .input-none:active{
     outline: none;
 }
-
-.input-bcf-blue:focus {
-    border-color: var(--color-secondary-darken1);
+.input-placeholder::-webkit-input-placeholder {
+    color: var(--color-black-default);
+    font-family: var( --ff-default);
 }
+.input-placeholder:focus::-webkit-input-placeholder {
+    color: var(--color-gray-darken4);
+}
+// border color
+.bc-white {
+    border-color: var(--color-white-default);
+}
+.bc-gray {
+    border-color: var(--color-gray-darken2);
+}
+.bc-brown-h:hover{
+    border: 1px solid var(--color-brown-default);
+}
+.bc-secondary-default-f-sm:focus {
+    border-color: var(--color-secondary-default);
+}
+.bc-secondary-default-f-md:focus {
+    border-color: var(--color-secondary-default);
+    border-width: var(--bw-2);
+}
+.box-shadow-blue-f:focus {
+    box-shadow: 0 0 0 3px var(--color-secondary-t2-default);
+}
+.box-shadow-white-f:focus {
+    box-shadow: 0 0 0 1px var(--color-white-default);
+}
+// img
+.input-img-bad {
+    background-image: url(../../src/img/ico/bad.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 13px;
+}
+.input-img-car {
+    background-image: url(../../src/img/ico/car.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 13px;
+}
+.input-img-search {
+    background-image: url(../../src/img/ico/search.svg);
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+}
+.select-img-arrow {
+    background-image: url(../../src/img/ico/arrowdouble.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-position: right;
+}
+// checkbox
+.chbx-lg {
+    height: 20px;
+    width: 20px;
+}
+.chbx-md {
+    height: 14px;
+    width: 14px;
+}
+.chbx-sm {
+    height: 13px;
+    width: 13px;
+}
+// stylization of checkboxes
+.custom-checkbox-lg, .custom-checkbox-md {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox-lg, .custom-checkbox-md+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox-lg+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid var(--color-gray-darken2);
+    border-radius: var(--br-4);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+  }
+  .custom-checkbox-md+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid var(--color-gray-darken2);
+    border-radius: var(--br-4);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+  }
+  .custom-checkbox-md:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }  
+  .custom-checkbox-lg:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  } 
+  .custom-checkbox-lg:focus+label::before {
+    border: 1px solid var(--color-secondary-default);
+    outline: 1px solid var(--color-secondary-default);
+    outline-offset: -2px;
+  }
+  .custom-checkbox-md:focus+label::before {
+    border: 1px solid var(--color-secondary-default);
+    outline: 1px solid var(--color-secondary-default);
+    outline-offset: -2px;
+  }
 
-.input-shadow-f:focus {
-    box-shadow: 0 0 0 3px var(--color-secondary-darken1);
+
+// select
+.select_sm {
+    width: 48px;
+    height: 22px;
+}
+.select_lg:focus {
+    border: 2px solid black;
+    border-radius: var(--br-3);
+}
+.select-appearance {
+    appearance: none;
 }
