@@ -235,15 +235,15 @@
     }
 
     &-title {
-        font-size: 16px;
-        font-weight: 700;
+        font-size: var(--fs-h5);
+        font-weight: var(--fw-bold);
         line-height: 24px;
     }
 
     &-subtitle {
-        font-size: 14;
-        font-weight: 400;
-        line-height: 20px;
+        font-size: var(--fs-body);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-h6);
     }
 }
 
@@ -288,9 +288,9 @@
 }
 
 .article-container {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 16px;
+    font-size: var(--fs-caption1);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-body3);
     padding: 10px 10px 15px 10px;
 }
 
@@ -304,9 +304,9 @@
 }
 
 .content-subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-normal);
+    line-height: var(--lh-h6);
     text-align: left;
 
     .popular-types{
