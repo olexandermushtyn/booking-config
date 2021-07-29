@@ -83,7 +83,7 @@
     border-radius: var(--br-4);
     cursor: var(--cursor-pointer);
     box-sizing: border-box;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
 
@@ -100,6 +100,11 @@
     &-image-xl {
         border-radius: var(--br-4);
         height: 240px;
+    }
+
+    &-image-xxl {
+        border-radius: var(--br-4);
+        height: 263px;
     }
 
     &-content {
@@ -119,13 +124,22 @@
             }
         }
 
-        
+
 
         &-price {
             font-weight: var(--fw-semi-Bold);
             font-size: var(--fs-body);
             line-height: var(--lh-h6);
             text-align: left;
+        }
+
+        &-title-xs {
+            font-weight: var(--fw-bold);
+            font-size: var(--fs-h5);
+            line-height: var(--lh-h4);
+            color: var(--color-black-default);
+            text-decoration: none;
+            outline: none;
         }
 
         &-title {
