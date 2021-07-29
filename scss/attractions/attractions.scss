@@ -99,3 +99,50 @@ body {
     font-size: 20px;
     font-weight: var(--fw-bold);
 }
+
+
+.btn-attraction {
+    padding: 8px;
+    border: none;
+    color: var(--color-secondary-default);
+    background-color: white;   
+    font-family: var(--ff-default);
+    font-weight: var(--fw-medium);
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-attraction:hover{
+    background-color: var(--color-secondary-t1-default);
+} 
+.btn-place{
+    border: none;
+    background-color: white;   
+    font-family: var(--ff-default);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid 2px var(--color-gray-default);
+}
+.btn-place-active {
+    border: none;
+    background-color: white;   
+    font-family: var(--ff-default);
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-secondary-default);
+    border-bottom: solid 2px var(--color-secondary-default);
+}
+.btn-place:hover {
+    background-color: var(--color-gray-default);
+}
