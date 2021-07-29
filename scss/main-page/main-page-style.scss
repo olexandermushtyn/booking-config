@@ -233,6 +233,18 @@
         height: 272px;
         border-radius: (--br-3);
     }
+
+    &-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &-subtitle {
+        font-size: 14;
+        font-weight: 400;
+        line-height: 20px;
+    }
 }
 
 .article-title {
@@ -280,4 +292,41 @@
     font-weight: 700;
     line-height: 16px;
     padding: 10px 10px 15px 10px;
+}
+
+.destination-title{
+    height: 305px;
+    padding-right: 16px;
+
+    img{
+        height: 250px;
+    }
+}
+
+.content-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    .popular-types{
+        color: var(--color-secondary-lighten1);
+        text-overflow: ellipsis;
+        margin-block-start: 14px;
+        margin-block-end: 14px;
+        display: block;
+
+        a{
+            color: var(--color-secondary-default);
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            white-space: nowrap;
+
+            &:hover{
+                color: var(--color-warning-default);
+                text-decoration-line: none;
+            }
+        }
+    }
 }
