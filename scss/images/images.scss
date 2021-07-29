@@ -1,97 +1,100 @@
 @import '../../config.css';
 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.img {
-  vertical-align: bottom;
-  display: inline-block;
-  &-fluid {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-  }
-  &-xxl {
-    height: 320px;
-    border-radius: var(--br-2);
-  }
-  &-xl {
-    height: 270px;
-    border-radius: var(--br-2);
-  }
-  &-lg {
-    height: 240px;
-    border-radius: var(--br-3);
-  }
-  &-md {
-    height: 200px;
-    border-radius: var(--br-3);
-  }
-  &-sm {
-    height: 170px;
-    border-radius: var(--br-3);
-  }
-  &-xs {
-    height: 135px;
-    border-radius: var(--br-6);
-  }
-  &-xxs {
-    height: 110px;
-    border-radius: var(--br-6);
-  }
-  &-hover {
-    &-border:hover {
-      border: 1px solid var(--color-warning-lighten1);
+    display: block;
+}
+
+.img {
+    vertical-align: bottom;
+    display: inline-block;
+    object-fit: fill;
+    &-fluid {
+        max-width: 100%;
+        height: auto;
     }
-    &-shadow {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      &:hover {
-        box-shadow: var(--shadow-show-inside);
-      }
+    &-xxl {
+        height: 320px;
+        border-radius: var(--br-2);
     }
-    &-text-change {
-      & p {
-        margin: 0;
-        padding: var(--p-xs);
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: rgba(0, 0, 0, 0.3);
+    &-xl {
+        height: 270px;
+        border-radius: var(--br-2);
+    }
+    &-lg {
+        height: 240px;
+        border-radius: var(--br-3);
+    }
+    &-md {
+        height: 200px;
+        border-radius: var(--br-3);
+    }
+    &-sm {
+        height: 170px;
+        border-radius: var(--br-3);
+    }
+    &-xs {
+        height: 135px;
+        border-radius: var(--br-6);
+    }
+    &-xxs {
+        height: 110px;
+        border-radius: var(--br-6);
+    }
+    &-hover {
+        &-border:hover {
+            border: 1px solid var(--color-warning-lighten1);
+        }
+        &-shadow {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            &:hover {
+                box-shadow: var(--shadow-show-inside);
+            }
+        }
+        &-text-change {
+            & p {
+                margin: 0;
+                padding: var(--p-xs);
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                line-height: 2;
+                height: 24px;
+            }
+            &:hover>p {
+                height: 100%;
+            }
+        }
+        &-zoom {
+            transition: transform 0.4s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-container {
+        position: relative;
+        color: var(--color-white-default);
+        box-sizing: border-box;
         overflow: hidden;
-        line-height: 2;
-        height: 24px;
-      }
-      &:hover > p{
-        height: 100%;
-      }
+        height: auto;
     }
-    &-zoom {
-      transition: transform 0.4s;
-      &:hover {
-        transform: scale(1.1);
-      }
+    &-text {
+        &-top {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        &-bottom {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+        }
     }
-  }
-  &-container {
-    position: relative;
-    color: var(--color-white-default);
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  &-text {
-    &-top {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-    }
-    &-bottom {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-    }
-  }
 }
