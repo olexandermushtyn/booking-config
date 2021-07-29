@@ -1,0 +1,23 @@
+header {
+  padding-top: 16px;
+}
+.breadcrumb-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  li {
+    display: flex;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.breadcrumb-icon {
+  padding-top: 3px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: bottom;
+  text-align: end;
+}
