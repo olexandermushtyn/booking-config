@@ -1,0 +1,36 @@
+@import "../grid/style.scss";
+@import "../../config.css";
+@import "../../scss/inputs/input.scss";
+body {
+    margin: 0;
+}
+//content
+.jc-center {
+    justify-content: center;
+}
+
+.input {
+    width:100%;
+}
+// text module 1
+.t1 {
+    font-family: var(--ff-default);
+    font-size: 32px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 8px; 
+}
+.t2 {
+    font-family: var(--ff-default);
+    color: var(--color-gray-darken5);
+    margin-bottom: 32px; 
+}
+
+
+.container {
+    padding: 64px 32px;
+}
+.bg-color {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(242, 242, 242, 1);
+}
