@@ -2,7 +2,6 @@
 @import "../../config.css";
 @import "../../scss/inputs/input.scss";
 @import "../../scss/buttons/buttons.scss";
-@import "../../fonts/fontawesome/css/all.css";
 body {
     margin: 0;
 }
@@ -51,7 +50,6 @@ body {
     font-weight: var(--fw-bold);
     margin: 32px 0 16px;
 }
-
 .t2_2 {
     font-weight: var(--fw-bold);
     font-family: var(--ff-default);
@@ -65,7 +63,6 @@ body {
     border-radius: 2px;
     padding: 16px;
 }
-
 .br {
     border-top: solid 1px var(--color-gray-default);
     margin-top: 30px;
@@ -88,7 +85,6 @@ body {
     font-size: 14px;
     font-family: var(--ff-default);
 }
-
 .t3_1 {
     font-family: var(--ff-default);
     color: var(--color-gray-darken5);
@@ -99,8 +95,6 @@ body {
     font-size: 20px;
     font-weight: var(--fw-bold);
 }
-
-
 .btn-attraction {
     padding: 8px;
     border: none;
@@ -145,4 +139,59 @@ body {
 }
 .btn-place:hover {
     background-color: var(--color-gray-default);
+}
+
+// images
+.img{
+    width: 255px;
+    height: 133px;
+    overflow: hidden;
+    padding: 16px 16px 16px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.gradient {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+    background-image: linear-gradient(transparent 60%, black);
+    opacity: 0.6;
+    z-index: 1;
+}
+.country_img {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60%;
+	left: 0;
+	width: 100%;
+    padding: 16px;
+    color: white;
+    font-family: var(--ff-default);
+    font-weight: 500;
+    z-index: 2;
+}
+.text_img {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 75%;
+	left: 0;
+	width: 100%;
+    padding: 16px;
+    color: white;
+    font-size: 14px;
+    z-index: 2;
 }
