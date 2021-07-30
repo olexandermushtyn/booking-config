@@ -91,6 +91,11 @@ body {
     flex-direction: column;
     overflow: hidden;
 
+    &-image-sm {
+        border-radius: var(--br-7);
+        height: 135px;
+    }
+
     &-image-md {
         border-radius: var(--br-4);
         height: 180px;
@@ -126,6 +131,24 @@ body {
             p {
                 margin: 0;
             }
+        }
+
+        &-discover {
+            margin: 0;
+            text-align: center;
+
+            // color: var(--color-brown-default);
+            :hover{
+                color: var(--color-brown-default);
+            }
+
+        }
+
+        a {
+            color: var(--color-secondary-default);
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: none;
+            text-decoration-style: solid;
         }
 
 
@@ -442,4 +465,10 @@ body {
 
 .margin-top-tab{
     margin-top: 10px;
+}
+
+.text-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
