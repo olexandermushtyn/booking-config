@@ -67,7 +67,7 @@ body {
     margin-left: 16px;
 }
 .br {
-    border-top: solid 1px var(--color-gray-default);
+    border-top: solid 1px var(--color-gray-darken1);
     margin-top: 30px;
     margin-bottom: 32px;
     width: 100%;
@@ -255,4 +255,10 @@ body {
     to {
         background-size: 115% 115%;
     }
+}
+
+
+.clas {
+    display: flex;
+    width: 330px;
 }
