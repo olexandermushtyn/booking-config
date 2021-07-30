@@ -42,7 +42,16 @@ a {
   text-align: end;
 }
 
+.searchbox-row {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 80%;
+  }
+}
+
 .searchbox {
+  box-sizing: border-box;
   background: var(--color-warning-default);
   height: 434px;
 }
@@ -127,8 +136,48 @@ a {
   font-size: var(--fs-body4);
 }
 
+.date-field {
+  width: 80%;
+}
+
 .show-prices-button {
   margin-top: 4px;
   display: flex;
   justify-content: flex-end;
+}
+
+.date-checker-text {
+  font-size: var(--fs-body4);
+}
+
+.title {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-on-map-image {
+  max-width: 160px;
+  max-height: 72px;
+  cursor: pointer;
+}
+
+.sort-bar {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 6px;
+  max-width: 100%;
+}
+
+.sort-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--bw-3) var(--bs-solid) var(--color-secondary-default);
+  padding: 7px 12px;
+  flex-grow: 1;
+}
+
+.not-active-item:hover {
+  background: var(--color-secondary-lighten2);
 }
