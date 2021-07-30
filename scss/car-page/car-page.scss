@@ -1,13 +1,9 @@
-@import url(../../pages/item/css/style.scss);
+
 @import url(../../config.css);
 @import url(../root.scss);
 @import url(../../fonts/fontawesome/css/all.css);
-.align-flex{
-    display: flex;
-    align-items: center;
-    
-}
-button[name="info1"]{
+@import url(../../pages/item/css/style.scss); 
+.align{
     font-weight: var(--fw-medium)!important;
     font-size: var(--fs-h5);
 }
