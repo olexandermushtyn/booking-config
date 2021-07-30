@@ -1,94 +1,103 @@
-$spacers: (
-  none: 0px,
-  xxxs: 2px,
-  xxs: 4px,
-  xs: 8px,
-  sm: 12px,
-  md: 16px,
-  lg: 24px,
-  xl: 28px,
-  xxl: 32px,
-  xxxl: 42px, 
-);
-
+$spacers: ( 
+    none: 0px, 
+    xxxs: 2px, 
+    xxs: 4px, 
+    xs: 8px, 
+    sm: 12px, 
+    md: 16px, 
+    lg: 24px, 
+    xl: 28px, 
+    xxl: 32px, 
+    xxxl: 42px, 
+    );
 //padding
-.p{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           padding: $value; 
+.p {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding: $value;
         }
     }
 }
 
-.pt{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           padding-top: $value; 
+.pt {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-top: $value;
         }
     }
 }
 
-.pr{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           padding-right: $value; 
+.pr {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-right: $value;
         }
     }
 }
 
-.pl{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           padding-left: $value; 
+.pl {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-left: $value;
         }
     }
 }
 
-.pb{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           padding-bottom: $value; 
+.pb {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-bottom: $value;
         }
     }
 }
 
 //margin
-.m{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           margin: $value; 
+.m {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin: $value;
         }
     }
 }
 
-.mt{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           margin-top: $value; 
+.mt {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-top: $value;
         }
     }
 }
 
-.mr{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           margin-right: $value; 
+.mr {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-right: $value;
         }
     }
 }
 
-.ml{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           margin-left: $value; 
+.ml {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-left: $value;
         }
     }
 }
 
-.mb{
-    @each $size, $value in $spacers{
-        &-#{$size}{
-           margin-bottom: $value; 
+.mb {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-bottom: $value;
         }
     }
 }

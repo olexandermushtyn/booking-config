@@ -66,28 +66,31 @@
   text-decoration: underline;
 }
 
-.input-underline:hover {
+.input-underline-hover:hover {
   text-decoration: underline;
 }
 
-.input-no-underline:hover {
+.input-no-underline-hover:hover {
   text-decoration: none;
 }
 
-.input-color-primary:hover {
+.input-color-primary-hover:hover {
   color: var(--color-brown-default);
 }
 
-.input-color-secondary:hover {
+.input-color-secondary-hover:hover {
   color: var(--color-brown-default);
 }
 
 ////hover on second page
-.input-block-color:hover {
-  background-color: var(--color-secondary-lighten3);
+.input-block-color-hover:hover {
+  color: var(--color-secondary-lighten3);
 }
 
 ///hover on main page
-.input-block:hover {
+.input-block-hover:hover {
   background-color: rgba(255, 255, 255, 0.61);
+}
+.input-primary-sm-visited:visited{
+   color: var(--color-gray-lighten1);
 }

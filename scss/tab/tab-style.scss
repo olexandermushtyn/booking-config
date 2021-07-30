@@ -1,55 +1,58 @@
 @import '../../config.css';
-
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+// Which button we use, this content we will have
 #tab-btn-1:checked~#content-1,
 #tab-btn-2:checked~#content-2,
 #tab-btn-3:checked~#content-3 {
-  display: block;
+    display: block;
 }
 
-.tabs{
-  font-size: 0;
-
-  input[type="radio"]{
-    display: none;
-  }
-
-  .border-line{
-    border-top: 1px solid var(--color-secondary-default);
-  }
-
-  div {
-    /* скрыть контент по умолчанию */
-    display: none;
-    padding: 10px 15px;
-    font-size: 16px;
-  }
-
-  .tabs-item {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2px 8px;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-    cursor: var(--cursor-pointer);
-    position: relative;
-  }
-
-  .tabs-item:not(:first-of-type){
-    border-left: none;
-  }
-
-  input[type="radio"]:hover+.tabs-item{
-    color: var(--color-secondary-default);
-  }
-
-  input[type="radio"]:checked+.tabs-item {
-    background-color: var(--color-secondary-default);
-    border-bottom: 1px solid var(--color-secondary-default);
-    color: var(--color-white-default);
-  }
-  
+// Class tab for main page
+.tabs {
+    display: block;
+    font-size: 0;
+    input[type="radio"] {
+        display: none;
+        left: -999em;
+        position: absolute;
+    }
+    .border-line {
+        border-top: 1px solid var(--color-secondary-default);
+        padding-bottom: 17px;
+        padding-top: 3px;
+    }
+    div {
+        /* Hide element default */
+        display: none;
+        // padding: 10px 15px;
+        font-size: 16px;
+        
+    }
+    .tabs-item {
+        // Buttons in tab
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 2px 8px;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        cursor: var(--cursor-pointer);
+        position: relative;
+    }
+    .tabs-item:not(:first-of-type) {
+        border-left: none;
+    }
+    input[type="radio"]:hover+.tabs-item {
+        // Hover affect for other buttons in tab
+        color: var(--color-secondary-default);
+    }
+    input[type="radio"]:checked+.tabs-item {
+        // Active button in tab
+        background-color: var(--color-secondary-default);
+        border-bottom: 1px solid var(--color-secondary-default);
+        color: var(--color-white-default);
+    }
+    input[type="radio"]div:active+.tabs-item {
+        display: block;
+    }
 }
-
