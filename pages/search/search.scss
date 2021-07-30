@@ -6,8 +6,10 @@
   font-size: var(--fs-h5);
 }
 
-header {
-  padding-top: 16px;
+.help {
+  svg {
+    display: block;
+  }
 }
 
 a {
@@ -69,6 +71,12 @@ a {
   box-sizing: border-box;
   margin: 16px 16px;
   border: 0.5px solid var(--color-gray-darken1);
+}
+
+.first-search-item {
+  border-color: var(--color-secondary-lighten1);
+  box-shadow: 0 0 10px var(--color-secondary-lighten1);
+  background: var(--color-secondary-lighten3);
 }
 
 .item-text {

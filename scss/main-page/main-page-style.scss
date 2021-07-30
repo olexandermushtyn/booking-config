@@ -91,6 +91,11 @@ body {
     flex-direction: column;
     overflow: hidden;
 
+    &-image-sm {
+        border-radius: var(--br-7);
+        height: 135px;
+    }
+
     &-image-md {
         border-radius: var(--br-4);
         height: 180px;
@@ -126,6 +131,24 @@ body {
             p {
                 margin: 0;
             }
+        }
+
+        &-discover {
+            margin: 0;
+            text-align: center;
+
+            // color: var(--color-brown-default);
+            :hover {
+                color: var(--color-brown-default);
+            }
+
+        }
+
+        a {
+            color: var(--color-secondary-default);
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: none;
+            text-decoration-style: solid;
         }
 
 
@@ -382,7 +405,7 @@ body {
     list-style: none;
     padding: 0;
     border-bottom: 1px solid var(--color-secondary-default);
-    
+
 }
 
 .tab {
@@ -396,7 +419,7 @@ body {
         letter-spacing: 1px;
         cursor: pointer;
         transition: all 0.3s;
-        
+
     }
 
     :hover {
@@ -435,11 +458,28 @@ body {
 .tabbed [type="radio"]:nth-of-type(4):checked~.tab-content:nth-of-type(4) {
     display: block;
 
-    a:hover{
+    a:hover {
         color: var(--color-brown-default);
     }
 }
 
-.margin-top-tab{
+.margin-top-tab {
     margin-top: 10px;
+}
+
+.text-center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.ima-a {
+        color: white;
+        text-decoration-color: white;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+}
+
+.cont-height{
+    max-height: 272px;
 }
