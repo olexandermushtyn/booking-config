@@ -260,3 +260,49 @@ a {
   }
   margin-left: 81px;
 }
+
+.filter-box {
+  border-radius: var(--br-3);
+  border: var(--bw-4) var(--bs-solid) var(--color-gray-default);
+}
+
+.filter-part {
+  padding: 8px;
+  border: var(--bw-4) var(--bs-solid) var(--color-gray-default);
+}
+
+.filter-title {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-bold);
+}
+
+.filter-part-title {
+  display: block;
+
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+}
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    input {
+      min-width: 20px;
+      min-height: 20px;
+    }
+    label {
+      font-weight: var(--fw-normal);
+    }
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-value {
+  display: flex;
+  justify-content: flex-end;
+}
