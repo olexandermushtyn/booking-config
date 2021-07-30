@@ -58,6 +58,7 @@ body {
 .t3_2 {
     font-family: var(--ff-default);
     margin: 8px 0 8px;
+    font-size: 14px;
 }
 .border {
     border: 1px solid var(--color-gray-default);
@@ -87,6 +88,7 @@ body {
 .text {
     font-size: 14px;
     font-family: var(--ff-default);
+    padding-bottom: 16px;
 }
 .t3_1 {
     font-family: var(--ff-default);
@@ -170,7 +172,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 60%;
+    top: 65%;
 	left: 0;
 	width: 100%;
     padding: 16px;
@@ -195,6 +197,7 @@ body {
 .content {
     padding: 0px;
 }
+
 .pic {
     background: url(../../src/img/attractions_img/London.jpg) no-repeat center center;
     width: 272px;
@@ -227,13 +230,24 @@ body {
     }
 }
 
-.pic_ {
+.london {
     background: url(../../src/img/attractions_img/London.jpg) no-repeat center center;
+}
+.dubai {
+    background: url(../../src/img/attractions_img/dubai.jpg) no-repeat center center;
+}
+.stambul {
+    background: url(../../src/img/attractions_img/stambul.jpg) no-repeat center center;
+}
+
+.pic_ {
     width: 360px;
     height: 205px;
     background-size: 100% 100%;
     position: relative;
     margin-left: 16px;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 .pic_ {
     animation-delay: .25s;
@@ -261,4 +275,8 @@ body {
 .clas {
     display: flex;
     width: 330px;
+}
+
+.fas {
+    color: rgba(0, 128, 9, 1);
 }
