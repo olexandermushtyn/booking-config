@@ -71,6 +71,12 @@ a {
   border: 0.5px solid var(--color-gray-darken1);
 }
 
+.first-search-item {
+  border-color: var(--color-secondary-lighten1);
+  box-shadow: 0 0 10px var(--color-secondary-lighten1);
+  background: var(--color-secondary-lighten3);
+}
+
 .item-text {
   margin: 0 16px;
 }
