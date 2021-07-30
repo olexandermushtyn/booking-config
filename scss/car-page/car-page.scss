@@ -1,7 +1,7 @@
 @import url(../../config.css);
 @import url(../root.scss);
 @import url(../../fonts/fontawesome/css/all.css);
-
+$font-color: #7A7572;
 .align-flex{
     display: flex;
     align-items: center;
@@ -29,22 +29,43 @@ button[name="info1"]{
     display: flex;
     align-items: center;
 }
-.block{
+.frame-2{
     border: 1px solid #e7e7e7;
     margin-right: var(--m-xxl);
 }
-.border-virus{
+.frame-1{
     border: var(--bw-3) solid var(--color-warning-lighten1);
 }
 .icon{
     display: flex;
     justify-content: flex-start;
 }
-.title{
+.title-main{
     color: var(--color-black-default);
 }
 .list-icon{
     color: var(--color-warning-lighten1);
     display: flex;
     align-items: center;
+}
+.title-3{
+    display: inline-block;
+}
+ul li{
+    margin-left: var(--m-md);
+}
+summary {display: block;};
+::-webkit-details-marker {display: none;};
+
+summary{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    align-self :center;
+    
+}
+.summary-hover:hover{
+    background-color: rgb(236, 236, 236);
 }
