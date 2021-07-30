@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../scss/root.scss" />
+    <link rel="stylesheet" href="../../scss/root.scss" />
     <link rel="stylesheet" href="search.scss" />
     <title>Search</title>
   </head>
@@ -131,36 +131,305 @@
                   />
                 </div>
                 <div class="searchbox-row">
+                  <label for="date-in-checker" class="caption fw-normal"
+                    >Check-in Date:</label
+                  >
                   <div class="date-checker">
-                    <!--        Check-in date-->
-                    <div class="date-checker fc-secondary-default align-items">
-                      <svg
-                        class="fill-color-secondary-default-hov"
-                        height="16"
-                        width="16"
-                        viewBox="0 0 128 128"
-                      >
-                        <path
-                          d="m112 16h-16v-8h-8v8h-48v-8h-8v8h-16c-4.4 0-8 3.9-8 8.7v86.6c0 4.8 3.6 8.7 8 8.7h96c4.4 0 8-3.9 8-8.7v-86.6c0-4.8-3.6-8.7-8-8.7zm0 95.3a1.1 1.1 0 0 1 -.2.7h-95.6a1.1 1.1 0 0 1 -.2-.7v-71.3h96zm-80-27.3h12v12h-12zm38-16h-12v-12h12zm0 28h-12v-12h12zm26 0h-12v-12h12zm0-28h-12v-12h12zm-48-16h-20v20h20zm-6 14h-8v-8h8z"
-                        ></path>
-                      </svg>
-                      <div
+                    <input
+                      type="text"
+                      class="date-field input-calendar1-xxl"
+                      placeholder="Saturday, July 31, 2021"
+                      id="date-in-checker"
+                    />
+                  </div>
+                </div>
+                <div class="searchbox-row">
+                  <label for="date-out-checker" class="caption fw-normal"
+                    >Check-out Date:</label
+                  >
+                  <div class="date-checker">
+                    <input
+                      type="text"
+                      class="date-field input-calendar1-xxl"
+                      placeholder="Saturday, July 31, 2021"
+                      id="date-out-checker"
+                    />
+                  </div>
+                </div>
+                <div class="searchbox-row">
+                  <select
+                    class="
+                      select_lg
+                      cursor-pointer
+                      lh-body1
+                      bs-solid
+                      bw-2
+                      bc-white
+                      box-shadow-white-f
+                      select-appearance select-img-arrow
+                      pt-xs
+                      pb-xs
+                      pl-xs
+                      pr-lg
+                      mt-md
+                    "
+                  >
+                    <option value="1 adult">1 adults</option>
+                    <option selected value="2 adults">2 adults</option>
+                    <option value="3 adults">3 adults</option>
+                    <option value="4 adults">4 adults</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col-6 mr-xxs">
+                    <div class="searchbox-row">
+                      <select
                         class="
-                          flex-grow1
-                          color-secondary-default-hov
-                          pl-xxs
-                          date-checker-text
+                          select_lg
+                          cursor-pointer
+                          lh-body1
+                          bs-solid
+                          bw-2
+                          bc-white
+                          box-shadow-white-f
+                          select-appearance select-img-arrow
+                          pt-xs
+                          pb-xs
+                          pl-xs
+                          pr-lg
+                          mt-md
                         "
                       >
-                        Check-in date
-                      </div>
-                      <i
-                        class="fas fa-chevron-down color-secondary-default-hov"
-                      ></i>
+                        <option selected value="1 adult">No childrens</option>
+                        <option value="2 adults">1 children</option>
+                        <option value="3 adults">2 childrens</option>
+                        <option value="4 adults">3 childrens</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="searchbox-row">
+                      <select
+                        class="
+                          select_lg
+                          cursor-pointer
+                          lh-body1
+                          bs-solid
+                          bw-2
+                          bc-white
+                          box-shadow-white-f
+                          select-appearance select-img-arrow
+                          pt-xs
+                          pb-xs
+                          pl-xs
+                          pr-lg
+                          mt-md
+                        "
+                      >
+                        <option selected value="1 adult">1 room</option>
+                        <option value="2 adults">2 room</option>
+                        <option value="3 adults">3 room</option>
+                        <option value="4 adults">4 room</option>
+                      </select>
                     </div>
                   </div>
                 </div>
+                <div class="row mt-sm">
+                  <input type="checkbox" name="work-checkbox" id="" />
+                  <label for="work-checkbox">I`m travelling for work</label>
+                  <div class="help-svg-block">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="searchbox-row">
+                  <button
+                    name="primary-search"
+                    type="button"
+                    class="
+                      btn
+                      btn-primary
+                      btn-xxl
+                      btn-rounded-noborder-md
+                      btn-primary-hover
+                    "
+                  >
+                    Search
+                  </button>
+                </div>
               </form>
+            </section>
+            <section class="filter-box mt-sm">
+              <div class="filter-part">
+                <span class="filter-title">Filter by:</span>
+              </div>
+              <div class="filter-part">
+                <span class="filter-part-title"> Health & safety</span>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"
+                      >Properties with additional health & safety
+                      measures</label
+                    >
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>192</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-part">
+                <span class="filter-part-title"> Popular filters</span>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">5 stars</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>23</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">Indoor pool</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>20</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">
+                      Wonderful: 9+</label
+                    >
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>43</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">
+                      The White House</label
+                    >
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>34</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> Playgrond</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>2</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">Hotels</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>139</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">
+                      The White House</label
+                    >
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>34</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item">
+                      Swimming pool</label
+                    >
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>55</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> Spa</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>12</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-part">
+                <span class="filter-part-title"> Star rating </span>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> 1 star</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> 2 star</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>8</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> 3 star</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>109</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> 4 star</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>86</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> 5 star</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>23</span>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="col-10 checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="ml-xs" for="filter-item"> Unrated</label>
+                  </div>
+                  <div class="col-2 filter-value">
+                    <span>57</span>
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
           <div class="col-9">
@@ -170,7 +439,7 @@
               </h1>
               <img
                 class="show-on-map-image"
-                src="search/img/show-on-map.png"
+                src="img/show-on-map.png"
                 alt="Show on Google map"
               />
             </div>
@@ -202,7 +471,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -319,7 +588,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -436,7 +705,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -553,7 +822,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -670,7 +939,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -787,7 +1056,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -904,7 +1173,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -1021,7 +1290,7 @@
                 <div class="col-3">
                   <img
                     class="item-image"
-                    src="search/img/247968572.jpg"
+                    src="img/247968572.jpg"
                     alt="Hotel Picture"
                   />
                 </div>
@@ -1133,6 +1402,54 @@
                 </div>
               </div>
             </div>
+            <p class="properties-found pl-md">
+              Washington, D.C.: 284 properties found
+            </p>
+            <nav class="pagination ml-md mr-md mt-sm">
+              <ul class="pagination-list p-xs">
+                <li class="pagination-item-inactive">
+                  <a href="" class="pagination-item-text">
+                    <svg viewbox="0 0 128 128" class="pagination-arrow">
+                      <path
+                        d="M73.7 96a4 4 0 0 1-2.9-1.2L40 64l30.8-30.8a4 4 0 0 1 5.7 5.6L51.3 64l25.2 25.2a4 4 0 0 1-2.8 6.8z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li class="pagination-item-selected ml-xs">
+                  <a href="" class="pagination-item-text p-xs">1</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">2</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">3</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">4</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">5</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">...</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">12</a>
+                </li>
+                <li class="pagination-item ml-xs">
+                  <a href="" class="pagination-item-text">
+                    <svg viewbox="0 0 128 128" class="pagination-arrow">
+                      <path
+                        d="M54.3 96a4 4 0 0 1-2.8-6.8L76.7 64 51.5 38.8a4 4 0 0 1 5.7-5.6L88 64 57.2 94.8a4 4 0 0 1-2.9 1.2z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="showing mr-xs">
+                <span>Showing 1 - 25</span>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
