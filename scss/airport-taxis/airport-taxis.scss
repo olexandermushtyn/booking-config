@@ -1,0 +1,87 @@
+@import "../offsets/offsets.scss";
+@import "../../config.css";
+@import "../grid/style.scss";
+@import "../inputs/input.scss";
+@import "../buttons/buttons.scss";
+body{
+  margin: 0;
+  font-family: var(--ff-default);
+  box-sizing: border-box;
+}
+
+input{
+  width: 100%;
+}
+
+
+:root{
+  --color-primary-darken2: rgba(5,55,126, 1);
+  --color-primary-t1-darken2: rgba(5,55,126, 0.7);
+}
+
+.container-xl{
+  height: 100%;
+}
+
+.book-taxis-bg{
+  color: var(--color-white-default);
+  background-image: linear-gradient(rgba(5,55,126, 0.7), rgba(5,55,126, 0.7)) ,url("../../src/img/background/book-taxis.webp");
+  background-size: cover;
+  height: 450px;
+}
+
+.align-items{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.width-full{
+  width: 100%;
+}
+
+.book-taxis-title{
+  font-size: 32px;
+  font-weight: var(--fw-semi-Bold);
+}
+
+.book-taxis-subtitle{
+  font-weight: var(--fw-medium);
+}
+
+.radio-row > .chbx-lg {
+  margin-right: var(--p-xs);
+}
+
+
+.form-search-panel{
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--color-warning-default);
+  border-radius: var(--br-3);
+  background-color: var(--color-warning-default);
+}
+
+.bg-circle-icon{
+  height: 56px;
+  width: 56px;
+  border-radius: var(--br-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taxis-inform-title{
+  line-height: var(--lh-h6);
+  font-weight: var(--fw-bold);
+}
+
+.taxis-inform-subtitle{
+  line-height: var(--lh-h6);
+  color: var(--color-gray-lighten1);
+}
+
+.jc-center{
+  display: flex;
+  justify-content: center;
+}
