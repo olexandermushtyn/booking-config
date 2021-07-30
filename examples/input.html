@@ -8,30 +8,240 @@
     <title>Document</title>
   </head>
   <body>
-        <div>
-            <label>
-                <input class="input-bch-brown outline input-bc-white input-b br-4 cursor-pointer p-none pt-xxl" type="search" placeholder="Where are you going?"> 
-            </label>
-        </div>
-        <div>
-            <label>
-                <input type="search" placeholder="Where are you going?"> 
-            </label>
-        </div>
-        <div>
-            <label>
-                <input class="input-bc-gray input-b outline br-4 input-bcf-blue input-shadow-f" type="email" placeholder="Enter email"> 
-            </label>
-        </div>
-        <div>
-            <label>
-                <input type="email" placeholder="Where are you going?"> 
-            </label>
-        </div>
-        <div>
-            <label>
-                <input type="checkbox"> 
-            </label>
-        </div>
+    <!-- search -->
+    <label>
+      <input
+        class="
+          input-placeholder input-img-bad input-none
+          bs-solid
+          cursor-pointer
+          bw-3
+          br-4
+          lh-h4
+          input-p
+          bc-brown-h bc-white
+          pb-sm
+          pt-sm
+          pr-xxl
+          pl-xxxl
+        "
+        type="search"
+        placeholder="Where are you going?"
+        style="display: inline-block"
+      />
+    </label>
+    <div><br /></div>
+    <label>
+      <input
+        class="
+          input-img-search input-none
+          bs-solid
+          cursor-pointer
+          bw-3
+          br-4
+          input-p
+          bc-brown-h bc-white
+          pr-xxxl
+          pl-xxxl
+          lh-h2
+          pb-sm
+          pt-sm
+        "
+        type="search"
+        placeholder="Desctinations, museums, tours..."
+        style="display: inline-block"
+      />
+    </label>
+    <div><br /></div>
+    <!-- text -->
+    <label>
+      <input
+        class="
+          br-4
+          bc-white
+          bs-solid
+          lh-h5
+          ff-default
+          pt-xs
+          pr-xs
+          pb-xs
+          pl-xxl
+          input-img-search input-none
+        "
+        type="text"
+        value="City"
+        placeholder="City"
+      />
+    </label>
+    <div><br /></div>
+    <label>
+      <input
+        type="text"
+        class="
+          bc-secondary-default-f-md
+          input-none
+          bs-solid
+          bc-gray
+          bw-3
+          br-3
+          p-xxxs
+          lh-h2
+        "
+        value="Age"
+      />
+    </label>
+    <div><br /></div>
+    <label>
+      <input
+        class="
+          input-placeholder input-img-car input-none
+          bs-solid
+          bw-3
+          br-4
+          input-p
+          bc-white
+          pr-md
+          pl-xxxl
+          bc-brown-h
+          pt-xs
+          pb-xs
+          lh-h1
+        "
+        type="text"
+        placeholder="Pickup location"
+      />
+    </label>
+    <label>
+      <input
+        class="
+          input-placeholder input-img-car input-none
+          bs-solid
+          bw-3
+          br-4
+          input-p
+          bc-white
+          pr-xxl
+          pl-xxxl
+          bc-brown-h
+          pt-xs
+          pb-xs
+          lh-h1
+        "
+        type="text"
+        placeholder="Drop of location"
+      />
+    </label>
+    <div><br /></div>
+    <!-- email -->
+    <label>
+      <input
+        class="
+          input-none
+          bs-solid
+          cursor-pointer
+          bw-3
+          br-4
+          bc-gray
+          lh-body1
+          ff-default
+          p-xs
+          bc-secondary-default-f-sm
+          box-shadow-blue-f
+        "
+        type="email"
+        placeholder="Enter your email"
+      />
+    </label>
+    <div><br /></div>
+    <label>
+      <input
+        class="bs-solid cursor-pointer br-3 bc-white lh-h3 ff-default p-xs"
+        type="email"
+        placeholder="Enter email"
+      />
+    </label>
+    <div><br /></div>
+    <label>
+      <input
+        type="email"
+        class="
+          input-none
+          bs-solid
+          cursor-pointer
+          bw-3
+          br-4
+          bc-gray
+          lh-body1
+          ff-default
+          p-xs
+          bc-secondary-default-f-sm
+          box-shadow-blue-f
+        "
+      />
+    </label>
+    <div><br /></div>
+    <!-- checkbox -->
+    <label>
+      <input class="chbx-sm cursor-pointer" type="checkbox" />
+    </label>
+    <div class="checkbox">
+      <input class="custom-checkbox-md" type="checkbox" id="checkbox-xl" />
+      <label for="checkbox-xl"></label>
+    </div>
+    <div class="checkbox">
+      <input class="custom-checkbox-lg" type="checkbox" id="checkbox-md" />
+      <label for="checkbox-md"></label>
+    </div>
+    <!-- radio -->
+    <label>
+      <input
+        type="radio"
+        class="chbx-lg"
+        name="value"
+        value="Return to same location"
+      />
+      Return to same location</label
+    >
+    <label>
+      <input
+        type="radio"
+        class="chbx-lg"
+        name="value"
+        value="Return to different location"
+      />
+      Return to different location</label
+    >
+    <div><br /></div>
+    <!-- select -->
+    <select class="select_sm cursor-pointer">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <select
+      class="
+        select_lg
+        cursor-pointer
+        lh-body1
+        bs-solid
+        bw-2
+        bc-white
+        box-shadow-white-f
+        select-appearance select-img-arrow
+        pt-xs
+        pb-xs
+        pl-xs
+        pr-lg
+      "
+    >
+      <option value="1 adult">1 adult</option>
+      <option value="2 adults">2 adults</option>
+      <option value="3 adults">3 adults</option>
+      <option value="4 adults">4 adults</option>
+    </select>
+    <div><br /></div>
   </body>
 </html>
