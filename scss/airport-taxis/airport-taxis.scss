@@ -3,6 +3,19 @@
 @import "../grid/style.scss";
 @import "../inputs/input.scss";
 @import "../buttons/buttons.scss";
+
+:root{
+  --color-gray-lighten4: rgba(245, 245, 245, 1);
+}
+
+.color-gray-lighten4{
+  background-color: var(--color-gray-lighten4);
+}
+
+.bc-secondary-default{
+  border-color: var(--color-secondary-default);
+}
+
 body{
   margin: 0;
   font-family: var(--ff-default);
@@ -11,6 +24,11 @@ body{
 
 input{
   width: 100%;
+}
+
+.jc-center{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -30,6 +48,8 @@ input{
   height: 450px;
 }
 
+
+
 .align-items{
   display: flex;
   align-items: center;
@@ -39,6 +59,11 @@ input{
 .width-full{
   width: 100%;
 }
+
+.b-collapse{
+  border-collapse: collapse;
+}
+
 
 .book-taxis-title{
   font-size: 32px;
@@ -77,11 +102,119 @@ input{
 }
 
 .taxis-inform-subtitle{
+  font-size: var(--fs-body);
   line-height: var(--lh-h6);
   color: var(--color-gray-lighten1);
 }
 
-.jc-center{
+.made-easy{
+  margin: 64px 0;
+}
+
+.made-easy-header{
   display: flex;
   justify-content: center;
+  font-weight: var(--fw-semi-Bold);
+  font-size: var(--lh-h1);
+}
+
+.fs-body{
+  font-size: var(--fs-body);
+}
+
+.how-it-work{
+  position: relative;
+  margin: var(--m-md);
+}
+
+.work, .book, .confirmation, .arrive, .driver, .enjoy{
+  text-align: var(--ta-center);
+  position: absolute;
+  font-size: var(--fs-body);
+}
+
+.work{
+  background-color: var(--color-gray-lighten3);
+  border-radius: var(--br-2);
+  padding: var(--p-xs);
+  top: -5px;
+  left: -5px;
+}
+
+.book{
+  top: 140px;
+  left: 102px;
+}
+
+.confirmation{
+  top: 140px;
+  left: 232px;
+}
+
+.arrive{
+  top: 300px;
+  left: 102px;
+}
+
+.driver{
+  top: 300px;
+  left: 247px;
+}
+
+.enjoy{
+  top: 400px;
+  left: -25px;
+}
+
+
+.number-passenger{
+  padding: 0px;
+  list-style: none;
+  display: flex;
+}
+
+
+.сhoose-number-passenger{
+  font-size: var(--fs-body);
+  font-weight: var(--fw-normal);
+  border-width: var(--bw-3) 0px var(--bw-3) var(--bw-3);
+  border-color: var(--color-secondary-default);
+  border-style: var(--bs-solid);
+  background-color: var(--color-white-default);
+  color: var(--color-secondary-default);
+  padding: var(--p-xs) var(--p-md);
+}
+
+.сhoose-number-passenger:hover{
+  background-color: var(--color-secondary-t1-default);
+}
+
+.number-passenger li:first-child{
+  border-radius: var(--br-4) 0px 0px var(--br-4);
+}
+
+.number-passenger li:last-child{
+  border-radius:  0px var(--br-4) var(--br-4) 0px;
+  border-width: var(--bw-3) var(--bw-3) var(--bw-3) var(--bw-3);
+}
+
+.active{
+  background-color: var(--color-secondary-default);
+  color: var(--color-white-default);
+}
+
+.active:hover{
+  background-color: var(--color-secondary-default);
+}
+
+
+.card-airport {
+  height: 230px;
+  background-color: var(--color-white-default);
+  padding: var(--p-md);
+  border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+}
+
+.card-airport i{
+  padding-right: var(--p-xs);
 }
