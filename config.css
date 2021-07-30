@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
     /* colors */
     /* Primary */
     --color-primary-default: rgba(0, 53, 128, 1);
@@ -184,6 +185,195 @@
     --cursor-not-allowed: not-allowed;
     /* logos */
     /* --logo-booking: url("/img/booking.com.png");
+=======
+  /* colors */
+  /* Primary */
+  --color-primary-default: rgba(0, 53, 128, 1);
+  /* #003580 */
+  --color-primary-darken1: rgba(0, 34, 79, 1);
+  /* #00224f */
+  /* secondary */
+  --color-secondary-lighten3: rgba(235, 243, 255, 1);
+  /* #ebf3ff */
+  --color-secondary-lighten2: rgba(163, 215, 252, 1);
+  /* #a3d7fc */
+  /* border propert */
+  --color-secondary-lighten1: rgba(91, 186, 255, 1);
+  /* #5bbaff */
+  --color-secondary-default: rgba(0, 113, 194, 1);
+  /* #0071c2 */
+  --color-secondary-darken1: rgba(0, 89, 153, 1);
+  /* background header */
+  --color-secondary-darken2: rgba(31, 78, 143, 1);
+  /* secondary-transition */
+  --color-secondary-t1-default: rgba(0, 113, 194, 0.06);
+  /* success */
+  --color-success-lighten1: rgba(231, 253, 233, 1);
+  /* e7fde9 */
+  --color-success-default: rgba(0, 128, 9, 1);
+  /* #008009 */
+  --color-success-darken: rgba(0, 102, 7, 1);
+  /* danger */
+  --color-danger-lighten2: rgba(255, 240, 224, 1);
+  /* #fff0e0 */
+  --color-danger-lighten1: rgba(255, 235, 234, 1);
+  /* #ffebea */
+  --color-danger-default: rgba(204, 2, 2, 1);
+  /* #cc0202 */
+  --color-danger-darken1: rgba(163, 0, 0, 1);
+  /* #a30000 */
+  /* brown */
+  --color-brown-lighten2: rgba(225, 224, 138, 1);
+  /* #ffe08a */
+  --color-brown-lighten1: rgba(205, 137, 0, 1);
+  /* #ffe08a */
+  --color-brown-default: rgba(188, 91, 1, 1);
+  /* #bc5b01 */
+  --color-brown-darken1: rgba(146, 62, 1, 1);
+  /* warning */
+  --color-warning-default: rgba(254, 187, 2, 1);
+  /* #febb02 */
+  --color-warning-lighten1: rgba(255, 128, 0, 1);
+  /* #ff8000 */
+  /* Color gray */
+  --color-gray-lighten1: rgba(107, 107, 107, 1);
+  /* #6b6b6b */
+  --color-gray-default: rgba(217, 217, 217, 1);
+  /* #d9d9d9 */
+  --color-gray-darken1: rgba(189, 189, 189, 1);
+  /* #bdbdbd */
+  --color-gray-darken2: rgba(179, 179, 179, 1);
+  /* #b3b3b3 */
+  --color-gray-darken3: rgba(165, 165, 165, 1);
+  /* #a5a5a5 */
+  --color-gray-darken4: rgba(131, 131, 131, 1);
+  /* #838383 */
+  --color-gray-darken5: rgba(115, 115, 115, 1);
+  /* #737373 */
+  --color-gray-darken6: rgba(51, 51, 51, 1);
+  /* #333333 */
+  /* white */
+  --color-white-default: rgba(255, 255, 255, 1);
+  --color-white-t1-default: rgba(255, 255, 255, 0.06);
+  /* car rentals flights... */
+  --color-white-t2-default: rgba(255, 255, 255, 0.12);
+  /* uah language ? list your property */
+  --color-white-t3-default: rgba(255, 255, 255, 0.2);
+  /* list your property footer */
+  /* Color black */
+  --color-black-default: rgba(0, 0, 0, 1);
+  --color-black-t1-default: rgba(0, 0, 0, 0.06);
+  /* Color for shadows*/
+  --color-black-shadow-0: rgb(0, 0, 0);
+  --color-black-shadow-1: rgba(0, 0, 0, 0.1);
+  --color-black-shadow-2: rgba(0, 0, 0, 0.12);
+  --color-black-shadow-3: rgba(0, 0, 0, 0.15);
+  --color-black-shadow-4: rgba(0, 0, 0, 0.2);
+  --color-secondary-shadow: rgb(0, 113, 194, 0.24);
+  --color-transparent: transparent;
+  /* borders-radius */
+  --br-1: 5.8px;
+  --br-2: 5px;
+  --br-3: 3px;
+  --br-4: 2px;
+  --br-5: 1.8px;
+  --br-6: 1px;
+  --br-7: 0px;
+  /* border-radius for avatar*/
+  --br-circle: 50%;
+  /* border-width */
+  --bw-1: 3px;
+  --bw-2: 2px;
+  --bw-3: 1px;
+  --bw-4: 0.5px;
+  /* border-style */
+  --bs-solid: solid;
+  /* font-family */
+  --ff-default: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  /*--ff-BMSF: BlinkMacSystemFont;*/
+  /*--ff-AS: -apple-system;*/
+  /*--ff-SUI: Segeo UI;*/
+  /*--ff-R: Roboto;*/
+  /*--ff-H: Helvetica;*/
+  /*--ff-A: Arial;*/
+  /*--ff-SS: sans-serif;*/
+  /* font-size */
+  /*--fs-px-1: 28.5px;*/
+  /*--fs-px-2: 28px;*/
+  /*--fs-px-3: 24px;*/
+  /*--fs-px-4: 23px;*/
+  /*--fs-px-5: 20px;*/
+  /*--fs-px-6: 16px;*/
+  /*--fs-px-7: 14px;*/
+  /*--fs-px-8: 13px;*/
+  /*--fs-px-9: 12px;*/
+  --fs-h1: 1.75rem;
+  /*28px*/
+  --fs-h2: 1.5rem;
+  /*24px*/
+  --fs-h3: 1.438rem;
+  /*23.003px*/
+  --fs-h4: 1.25rem;
+  /*20px */
+  --fs-h5: 1rem;
+  /*16px*/
+  --fs-body: 0.875rem;
+  /*14px*/
+  --fs-caption1: 0.813rem;
+  /*13px*/
+  --fs-caption-default: 0.75rem;
+  /*12px*/
+  /* font-weight */
+  --fw-thin: 100;
+  --fw-semi-normal: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  /* line-height */
+  --lh-h1: 2rem;
+  /*32px*/
+  --lh-h2: 1.875rem;
+  /*30px*/
+  --lh-h3: 1.75rem;
+  /*28px*/
+  --lh-h4: 1.5rem;
+  /*24px*/
+  --lh-h5: 1.3rem;
+  /*20.8px*/
+  --lh-h6: 1.25rem;
+  /*20px*/
+  --lh-body1: 1.125rem;
+  /*18px*/
+  --lh-body2: 1.2rem;
+  /*28px*/
+  --lh-body3: 1rem;
+  /*16px*/
+  --lh-body4: 0.875rem;
+  /*line-height for body*/
+  /*line-height for btn*/
+  --btn-lh-xl: 3rem;
+  /*48px*/
+  --btn-lh-lg: 2.625rem;
+  /*42px*/
+  /*--line-height-body: 18px;*/
+  /*--line-height-small: 1.2;*/
+  /*--line-height-big-1: 20px;*/
+  /*--line-height-big-2: 24px;*/
+  /*--line-height-big-3: 28px;*/
+  /*--line-height-big-4: 32px;*/
+  /* Text align */
+  --ta-left: left;
+  --ta-right: right;
+  --ta-center: center;
+  --ta-justify: justify;
+  /* cursor */
+  --cursor-pointer: pointer;
+  --cursor-not-allowed: not-allowed;
+  /* logos */
+  /* --logo-booking: url("/img/booking.com.png");
+>>>>>>> main
   /* colors */
   /* Primary */
 
@@ -258,12 +448,7 @@
     255,
     0.12
   ); /* uah language ? list your property */
-  --color-white-t3-default: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); 
+  --color-white-t3-default: rgba(255, 255, 255, 0.2);
   /* list your property footer */
 
   /* Color black */
@@ -331,8 +516,8 @@
   --fs-h1: 1.75rem; /*28px*/
   --fs-h2: 1.5rem; /*24px*/
   --fs-h3: 1.438rem; /*23.003px*/
-  /* --fs-h4: 1.25rem; 20px */
-  --fs-h4: 1rem; /*16px*/
+  --fs-h4: 1.25rem; /* 20px; */
+  --fs-h5: 1rem; /*16px*/
   --fs-body: 0.875rem; /*14px*/
   --fs-caption1: 0.813rem; /*13px*/
   --fs-caption-default: 0.75rem; /*12px*/
@@ -355,6 +540,7 @@
   --lh-body2: 1.2rem; /*28px*/
   --lh-body3: 1rem; /*16px*/
   --lh-body4: 0.875rem; /*14px*/
+  --lh-caption1: 0.75rem; /*12px*/
 
   /*--line-height-body: 18px;*/
   /*--line-height-small: 1.2;*/
@@ -375,17 +561,13 @@
 
   /* logos */
   /* --logo-booking: url("/img/booking.com.png");
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> main
   --logo-priceline: url("/img/priceline.com.png");
   --logo-kayak: url("/img/kayak.png");
   --logo-agoda: url("/img/agoda.png");
   --logo-rentalcars: url("/img/rentalcars.png");
   --logo-opentable: url("/img/opentable.png"); */
-    /* icons */
-    /* --apartment: url("../img/apartments.png");
+  /* icons */
+  /* --apartment: url("../img/apartments.png");
   --air-tickets: url("../img/air-tickets.png");
   --car-rental: url("../img/car-rental.png");
   --leisure-options: url("../img/leisure-options.png");
@@ -405,7 +587,6 @@
   --criss-cross: "M13.31,12l8-8A.93.93,0,0,0,20,2.66l-8,8-8-8A.93.93,0,0,0,2.66,4l8,8-8,8a.94.94,0,0,0,0,1.32.94.94,0,0,0,1.32,0l8-8,8,8a.94.94,0,0,0,1.32,0,.94.94,0,0,0,0-1.32Z";
   --map: "M15 8.25a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zM12 1.5a6.75 6.75 0 0 1 6.75 6.75c0 2.537-3.537 9.406-6.75 14.25-3.214-4.844-6.75-11.713-6.75-14.25A6.75 6.75 0 0 1 12 1.5zM12 0a8.25 8.25 0 0 0-8.25 8.25c0 2.965 3.594 9.945 7 15.08a1.5 1.5 0 0 0 2.5 0c3.406-5.135 7-12.115 7-15.08A8.25 8.25 0 0 0 12 0z";
   --close-btn: url("../img/xrestuk.png"); */
-
 
   /* flags */
   --great-britain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gb/daba79fdd4066d133e8bf59070fd6819b951c403.png";
@@ -482,7 +663,6 @@
   --p-xxxl: 42px;
   --p-xxxxl: 50px;
 
-
   --p-input-xs: 13px;
 
   /* margin */
@@ -499,523 +679,518 @@
   --ai-center: center;
 }
 
-
 /* helper classes */
-
 
 /* colors */
 
 .bg-color-primary-default {
-    background: var(--color-primary-default);
+  background: var(--color-primary-default);
 }
 
 .bg-color-primary-darken1 {
-    background: var(--color-primary-darken1);
+  background: var(--color-primary-darken1);
 }
 
 .bg-color-secondary-lighten3 {
-    background: var(--color-secondary-lighten3);
+  background: var(--color-secondary-lighten3);
 }
 
 .bg-color-secondary-lighten2 {
-    background: var(--color-secondary-lighten2);
+  background: var(--color-secondary-lighten2);
 }
 
 .bg-color-secondary-lighten1 {
-    background: var(--color-secondary-lighten1);
+  background: var(--color-secondary-lighten1);
 }
 
 .bg-color-secondary-default {
-    background: var(--color-secondary-default);
+  background: var(--color-secondary-default);
 }
 
 .bg-color-secondary-darken1 {
-    background: var(--color-secondary-darken1);
+  background: var(--color-secondary-darken1);
 }
 
 .bg-color-secondary-darken2 {
-    background: var(--color-secondary-darken2);
+  background: var(--color-secondary-darken2);
 }
 
 .bg-color-secondary-t1-default {
-    background: var(--color-secondary-t1-default);
+  background: var(--color-secondary-t1-default);
 }
 
 .bg-color-success-lighten1 {
-    background: var(--color-success-lighten1);
+  background: var(--color-success-lighten1);
 }
 
 .bg-color-success-default {
-    background: var(--color-success-default);
+  background: var(--color-success-default);
 }
 
 .bg-color-danger-lighten2 {
-    background: var(--color-danger-lighten2);
+  background: var(--color-danger-lighten2);
 }
 
 .bg-color-danger-lighten1 {
-    background: var(--color-danger-lighten1);
+  background: var(--color-danger-lighten1);
 }
 
 .bg-color-danger-default {
-    background: var(--color-danger-default);
+  background: var(--color-danger-default);
 }
 
 .bg-color-danger-darken1 {
-    background: var(--color-danger-darken1);
+  background: var(--color-danger-darken1);
 }
 
 .bg-color-brown-lighten2 {
-    background: var(--color-brown-lighten2);
+  background: var(--color-brown-lighten2);
 }
 
 .bg-color-brown-lighten1 {
-    background: var(--color-brown-lighten1);
+  background: var(--color-brown-lighten1);
 }
 
 .bg-color-brown-default {
-    background: var(--color-brown-default);
+  background: var(--color-brown-default);
 }
 
 .bg-color-brown-darken1 {
-    background: var(--color-brown-darken1);
+  background: var(--color-brown-darken1);
 }
 
 .bg-color-warning-default {
-    background: var(--color-warning-default);
+  background: var(--color-warning-default);
 }
 
 .bg-color-warning-lighten1 {
-    background: var(--color-warning-lighten1);
+  background: var(--color-warning-lighten1);
 }
 
 .bg-color-gray-default {
-    background: var(--color-gray-default);
+  background: var(--color-gray-default);
 }
 
 .bg-coloe-gray-darken1 {
-    background: var(--coloe-gray-darken1);
+  background: var(--coloe-gray-darken1);
 }
 
 .bg-color-gray-darken2 {
-    background: var(--color-gray-darken2);
+  background: var(--color-gray-darken2);
 }
 
 .bg-color-gray-darken3 {
-    background: var(--color-gray-darken3);
+  background: var(--color-gray-darken3);
 }
 
 .bg-color-gray-darken4 {
-    background: var(--color-gray-darken4);
+  background: var(--color-gray-darken4);
 }
 
 .bg-color-gray-darken5 {
-    background: var(--color-gray-darken5);
+  background: var(--color-gray-darken5);
 }
 
 .bg-color-gray-darken6 {
-    background: var(--color-gray-darken6);
+  background: var(--color-gray-darken6);
 }
 
 .bg-color-white-default {
-    background: var(--color-white-default);
+  background: var(--color-white-default);
 }
 
 .bg-color-white-t1-default {
-    background: var(--color-white-t1-default);
+  background: var(--color-white-t1-default);
 }
 
 .bg-color-white-t2-default {
-    background: var(--color-white-t2-default);
+  background: var(--color-white-t2-default);
 }
 
 .bg-color-white-t3-default {
-    background: var(--color-white-t3-default);
+  background: var(--color-white-t3-default);
 }
 
 .bg-color-black-default {
-    background: var(--color-black-default);
+  background: var(--color-black-default);
 }
 
 .bg-color-black-t1-default {
-    background: var(--color-black-t1-default);
+  background: var(--color-black-t1-default);
 }
 
 .color-primary-default {
-    color: var(--color-primary-default);
+  color: var(--color-primary-default);
 }
 
 .color-primary-darken1 {
-    color: var(--color-primary-darken1);
+  color: var(--color-primary-darken1);
 }
 
 .color-secondary-lighten3 {
-    color: var(--color-secondary-lighten3);
+  color: var(--color-secondary-lighten3);
 }
 
 .color-secondary-lighten2 {
-    color: var(--color-secondary-lighten2);
+  color: var(--color-secondary-lighten2);
 }
 
 .color-secondary-lighten1 {
-    color: var(--color-secondary-lighten1);
+  color: var(--color-secondary-lighten1);
 }
 
 .color-secondary-default {
-    color: var(--color-secondary-default);
+  color: var(--color-secondary-default);
 }
 
 .color-secondary-darken1 {
-    color: var(--color-secondary-darken1);
+  color: var(--color-secondary-darken1);
 }
 
 .color-secondary-darken2 {
-    color: var(--color-secondary-darken2);
+  color: var(--color-secondary-darken2);
 }
 
 .color-secondary-t1-default {
-    color: var(--color-secondary-t1-default);
+  color: var(--color-secondary-t1-default);
 }
 
 .color-success-lighten1 {
-    color: var(--color-success-lighten1);
+  color: var(--color-success-lighten1);
 }
 
 .color-success-default {
-    color: var(--color-success-default);
+  color: var(--color-success-default);
 }
 
 .color-danger-lighten2 {
-    color: var(--color-danger-lighten2);
+  color: var(--color-danger-lighten2);
 }
 
 .color-danger-lighten1 {
-    color: var(--color-danger-lighten1);
+  color: var(--color-danger-lighten1);
 }
 
 .color-danger-default {
-    color: var(--color-danger-default);
+  color: var(--color-danger-default);
 }
 
 .color-danger-darken1 {
-    color: var(--color-danger-darken1);
+  color: var(--color-danger-darken1);
 }
 
 .color-brown-lighten2 {
-    color: var(--color-brown-lighten2);
+  color: var(--color-brown-lighten2);
 }
 
 .color-brown-lighten1 {
-    color: var(--color-brown-lighten1);
+  color: var(--color-brown-lighten1);
 }
 
 .color-brown-default {
-    color: var(--color-brown-default);
+  color: var(--color-brown-default);
 }
 
 .color-brown-darken1 {
-    color: var(--color-brown-darken1);
+  color: var(--color-brown-darken1);
 }
 
 .color-warning-default {
-    color: var(--color-warning-default);
+  color: var(--color-warning-default);
 }
 
 .color-warning-lighten1 {
-    color: var(--color-warning-lighten1);
+  color: var(--color-warning-lighten1);
 }
-.color-gray-lighten1{
-    color: var(--color-gray-lighten1);
+.color-gray-lighten1 {
+  color: var(--color-gray-lighten1);
 }
 .color-gray-default {
-    color: var(--color-gray-default);
+  color: var(--color-gray-default);
 }
 
+.coloe-gray-darken1 {
+  color: var(--coloe-gray-darken1);
+}
 .color-gray-darken2 {
-    color: var(--color-gray-darken2);
+  color: var(--color-gray-darken2);
 }
 
 .color-gray-darken3 {
-    color: var(--color-gray-darken3);
+  color: var(--color-gray-darken3);
 }
 
 .color-gray-darken4 {
-    color: var(--color-gray-darken4);
+  color: var(--color-gray-darken4);
 }
 
 .color-gray-darken5 {
-    color: var(--color-gray-darken5);
+  color: var(--color-gray-darken5);
 }
 
 .color-gray-darken6 {
-    color: var(--color-gray-darken6);
+  color: var(--color-gray-darken6);
 }
 
 .color-white-default {
-    color: var(--color-white-default);
+  color: var(--color-white-default);
 }
 
 .color-white-t1-default {
-    color: var(--color-white-t1-default);
+  color: var(--color-white-t1-default);
 }
 
 .color-white-t2-default {
-    color: var(--color-white-t2-default);
+  color: var(--color-white-t2-default);
 }
 
 .color-white-t3-default {
-    color: var(--color-white-t3-default);
+  color: var(--color-white-t3-default);
 }
 
 .color-black-default {
-    color: var(--color-black-default);
+  color: var(--color-black-default);
 }
 
 .color-black-t1-default {
-    color: var(--color-black-t1-default);
+  color: var(--color-black-t1-default);
 }
-
 
 /* borders */
 
 .br-1 {
-    border-radius: var(--br-1);
+  border-radius: var(--br-1);
 }
 
 .br-2 {
-    border-radius: var(--br-2);
+  border-radius: var(--br-2);
 }
 
 .br-3 {
-    border-radius: var(--br-3);
+  border-radius: var(--br-3);
 }
 
 .br-4 {
-    border-radius: var(--br-4);
+  border-radius: var(--br-4);
 }
 
 .br-5 {
-    border-radius: var(--br-5);
+  border-radius: var(--br-5);
 }
 
 .br-6 {
-    border-radius: var(--br-6);
+  border-radius: var(--br-6);
 }
 
 .bw-1 {
-    border-width: var(--bw-1);
+  border-width: var(--bw-1);
 }
 
 .bw-2 {
-    border-width: var(--bw-2);
+  border-width: var(--bw-2);
 }
 
 .bw-3 {
-    border-width: var(--bw-3);
+  border-width: var(--bw-3);
 }
 
 .bs-solid {
-    border-style: solid;
+  border-style: solid;
 }
-
 
 /* fonts */
 
 .ff-default {
-    font-family: var(--ff-default);
+  font-family: var(--ff-default);
 }
 
 .fs-h1 {
-    font-size: var(--fs-h1);
+  font-size: var(--fs-h1);
 }
 
 .fs-h2 {
-    font-size: var(--fs-h2);
+  font-size: var(--fs-h2);
 }
 
 .fs-h3 {
-    font-size: var(--fs-h3);
+  font-size: var(--fs-h3);
 }
 
 .fs-h4 {
-    font-size: var(--fs-h4);
+  font-size: var(--fs-h4);
 }
 
 .fs-body1 {
-    font-size: var(--fs-body1);
+  font-size: var(--fs-body1);
 }
 
 .fs-body2 {
-    font-size: var(--fs-body2);
+  font-size: var(--fs-body2);
 }
 
 .fs-caption1 {
-    font-size: var(--fs-caption1);
+  font-size: var(--fs-caption1);
 }
 
 .fs-caption2 {
-    font-size: var(--fs-caption2);
+  font-size: var(--fs-caption2);
 }
 
 .fw-thin {
-    font-weight: var(--fw-thin);
+  font-weight: var(--fw-thin);
 }
 
 .fw-normal {
-    font-weight: var(--fw-normal);
+  font-weight: var(--fw-normal);
 }
 
 .fw-medium {
-    font-weight: var(--fw-medium);
+  font-weight: var(--fw-medium);
 }
 
 .fw-semi-Bold {
-    font-weight: var(--fw-semi-Bold);
+  font-weight: var(--fw-semi-Bold);
 }
 
 .fw-bold {
-    font-weight: var(--fw-bold);
+  font-weight: var(--fw-bold);
 }
 
 .lh-h1 {
-    line-height: var(--lh-h1);
+  line-height: var(--lh-h1);
 }
 
 .lh-h2 {
-    line-height: var(--lh-h2);
+  line-height: var(--lh-h2);
 }
 
 .lh-h3 {
-    line-height: var(--lh-h3);
+  line-height: var(--lh-h3);
 }
 
 .lh-h4 {
-    line-height: var(--lh-h4);
+  line-height: var(--lh-h4);
 }
 
 .lh-body1 {
-    line-height: var(--lh-body1);
+  line-height: var(--lh-body1);
 }
 
 .lh-body2 {
-    line-height: var(--lh-body2);
+  line-height: var(--lh-body2);
 }
 
 .lh-body3 {
-    line-height: var(--lh-body3);
+  line-height: var(--lh-body3);
 }
-
 
 /* cursors */
 
 .cursor-pointer {
-    cursor: var(--cursor-pointer);
+  cursor: var(--cursor-pointer);
 }
 
 .cursor-not-allowed {
-    cursor: var(--cursor-not-allowed);
+  cursor: var(--cursor-not-allowed);
 }
-
 
 /* icons */
 
 .apartment {
-    background: var(--apartment);
+  background: var(--apartment);
 }
 
 .air-tickets {
-    background: var(--air-tickets);
+  background: var(--air-tickets);
 }
 
 .car-rental {
-    background: var(--car-rental);
+  background: var(--car-rental);
 }
 
 .leisure-options {
-    background: var(--leisure-options);
+  background: var(--leisure-options);
 }
 
 .taxi-to-from-airport {
-    background: var(--taxi-to-from-airport);
+  background: var(--taxi-to-from-airport);
 }
 
 .question-mark {
-    background: var(--question-mark);
+  background: var(--question-mark);
 }
 
 .bell {
-    background: var(--bell);
+  background: var(--bell);
 }
 
 .small-search {
-    background: var(--small-search);
+  background: var(--small-search);
 }
 
 .calendar {
-    background: var(--calendar);
+  background: var(--calendar);
 }
 
 .calendar-small {
-    background: var(--calendar-small);
+  background: var(--calendar-small);
 }
 
 .bed {
-    background: var(--bed);
+  background: var(--bed);
 }
 
 .man {
-    background: var(--man);
+  background: var(--man);
 }
 
 .pointer-up-down {
-    background: var(--pointer-up-down);
+  background: var(--pointer-up-down);
 }
 
 .pointer-down {
-    background: var(--pointer-down);
+  background: var(--pointer-down);
 }
 
 .info {
-    background: var(--info);
+  background: var(--info);
 }
 
 .pointer-left {
-    background: var(--pointer-left);
+  background: var(--pointer-left);
 }
 
 .pointer-right {
-    background: var(--pointer-right);
+  background: var(--pointer-right);
 }
 
 .criss-cross {
-    background: var(--criss-cross);
+  background: var(--criss-cross);
 }
 
 .map {
-    background: var(--map);
+  background: var(--map);
 }
 
 .close-btn {
-    background: var(--close-btn);
+  background: var(--close-btn);
 }
-
 
 /* text-aligns */
 
 .ta-left {
-    text-align: var(--ta-left);
+  text-align: var(--ta-left);
 }
 
 .ta-right {
-    text-align: var(--ta-right);
+  text-align: var(--ta-right);
 }
 
 .ta-center {
-    text-align: var(--ta-center);
+  text-align: var(--ta-center);
 }
 
 .ta-justify {
-
   text-align: var(--ta-justify);
 }
 

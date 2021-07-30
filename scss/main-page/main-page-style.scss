@@ -1,5 +1,9 @@
 @import url(../root.scss);
 
+body {
+    font-family: var(--ff-default);
+}
+
 // coronavirus-banner
 .coronavirus-banner {
     display: flex;
@@ -15,20 +19,19 @@
     border-radius: var(--br-8);
 
     .information-icon {
-        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: var(--color-danger-lighten2);
         color: var(--color-brown-darken1);
         height: 35px;
         width: 35px;
         border-radius: var(--br-8);
-        vertical-align: middle;
         margin-top: 7px;
 
         svg {
-            display: table-cell;
             width: 20px;
             height: 20px;
-            vertical-align: middle;
         }
     }
 
@@ -54,6 +57,10 @@
     line-height: var(--lh-body3);
     margin-bottom: 32px;
     display: flex;
+
+    &-homes {
+        height: 356;
+    }
 }
 
 // Title which is upper carousel
@@ -84,6 +91,11 @@
     flex-direction: column;
     overflow: hidden;
 
+    &-image-sm {
+        border-radius: var(--br-7);
+        height: 135px;
+    }
+
     &-image-md {
         border-radius: var(--br-4);
         height: 180px;
@@ -94,6 +106,16 @@
         height: 207px;
     }
 
+    &-image-xl {
+        border-radius: var(--br-4);
+        height: 240px;
+    }
+
+    &-image-xxl {
+        border-radius: var(--br-4);
+        height: 263px;
+    }
+
     &-content {
         line-height: var(--lh-body3);
         text-align: left;
@@ -101,12 +123,50 @@
         flex-grow: 1;
         padding-top: var(--p-md);
 
-        h3 {
-            margin: 0;
+        &-m-none {
+            h3 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
         }
 
-        p {
+        &-discover {
             margin: 0;
+            text-align: center;
+
+            // color: var(--color-brown-default);
+            :hover{
+                color: var(--color-brown-default);
+            }
+
+        }
+
+        a {
+            color: var(--color-secondary-default);
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: none;
+            text-decoration-style: solid;
+        }
+
+
+
+        &-price {
+            font-weight: var(--fw-semi-Bold);
+            font-size: var(--fs-body);
+            line-height: var(--lh-h6);
+            text-align: left;
+        }
+
+        &-title-xs {
+            font-weight: var(--fw-bold);
+            font-size: var(--fs-h5);
+            line-height: var(--lh-h4);
+            color: var(--color-black-default);
+            text-decoration: none;
+            outline: none;
         }
 
         &-title {
@@ -121,6 +181,45 @@
         &-subtitle {
             font-weight: var(--fw-normal);
             color: var(--color-gray-lighten1);
+
+        }
+
+        &-title-home {
+            color: var(--color-black-default);
+            font-weight: var(--fw-normal);
+            font-size: var(--fs-body);
+            line-height: var(--lh-h6);
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
+
+.review-score {
+    align-items: center;
+    text-align: left;
+    line-height: var(--lh-body3);
+    display: flex;
+    flex-wrap: nowrap;
+
+    &-title {
+        font-size: var(--fs-body);
+        font-weight: var(--fw-medium);
+        line-height: var(--lh-body4);
+        display: flex;
+        margin-left: var(--m-xs);
+    }
+
+    &-text {
+        color: var(--color-gray-lighten1);
+        font-size: var(--fs-caption-default);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-caption1);
+        margin-top: var(--m-xxxs);
+
+        &-dot {
+            margin-left: var(--m-xxs);
+            margin-right: var(--m-xxs);
         }
     }
 }
@@ -161,10 +260,23 @@
         height: 272px;
         border-radius: (--br-3);
     }
+
+    &-title {
+        font-size: var(--fs-h5);
+        font-weight: var(--fw-bold);
+        line-height: 24px;
+    }
+
+    &-subtitle {
+        font-size: var(--fs-body);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-h6);
+    }
 }
 
 .article-title {
     height: 320px;
+
     &-1 {
         margin-bottom: 15px;
         margin-right: 15px;
@@ -187,10 +299,11 @@
     &-5 {
         margin-bottom: 15px;
     }
-    &-p{
+
+    &-p {
         padding: 10px, 10px, 15px, 10px;
     }
-    
+
 }
 
 .overlay {
@@ -201,9 +314,161 @@
     bottom: 0;
 }
 
-.article-container{
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 16px;
+.article-container {
+    font-size: var(--fs-caption1);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-body3);
     padding: 10px 10px 15px 10px;
+}
+
+.destination-title {
+    height: 305px;
+    padding-right: 16px;
+
+    img {
+        height: 250px;
+    }
+}
+
+.content-subtitle {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-normal);
+    line-height: var(--lh-h6);
+    text-align: left;
+
+    .popular-types {
+        color: var(--color-secondary-lighten1);
+        text-overflow: ellipsis;
+        margin-block-start: 14px;
+        margin-block-end: 14px;
+        display: block;
+
+        a {
+            color: var(--color-secondary-default);
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            white-space: nowrap;
+
+            &:hover {
+                color: var(--color-warning-default);
+                text-decoration-line: none;
+            }
+        }
+    }
+}
+
+// Tab container 
+.tab-container-text {
+    line-height: var(--lh-body3);
+    font-size: fs(--fs-caption1);
+    text-align: left;
+
+
+    .tab-items-text {
+        margin-top: 10px;
+        padding-right: 24, 6719px;
+        float: left;
+
+        a {
+            color: var(--color-secondary-default);
+            font-size: var(--fs-body);
+            font-weight: var(--fw-normal);
+            list-style-type: none;
+            text-decoration-color: var(--color-secondary-default);
+            text-decoration-line: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .homenum {
+            color: var(--color-gray-darken3);
+        }
+    }
+}
+
+// Main tab
+.page-content {
+    padding-top: 3px;
+    padding-bottom: 17px;
+    margin-bottom: 32px;
+}
+
+.tabbed [type="radio"] {
+    /* hiding the inputs */
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid var(--color-secondary-default);
+    
+}
+
+.tab {
+    label {
+        display: block;
+        margin-bottom: -1px;
+        padding: 10px 10px;
+        color: var(--color-gray-darken5);
+        font-size: var(--fs-caption1);
+        font-weight: var(--fw-semi-Bold);
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+    }
+
+    :hover {
+        color: var(--color-secondary-default);
+    }
+
+    :active {
+        color: var(--color-white-default);
+        background: var(--color-secondary-default);
+    }
+
+}
+
+.tab-content {
+    display: none;
+    margin-bottom: 32px;
+}
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked~.tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked~.tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked~.tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked~.tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked~.tabs .tab:nth-of-type(5) label {
+    color: var(--color-white-default);
+    background: var(--color-secondary-default);
+
+    :hover {
+        color: var(--color-secondary-default);
+    }
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked~.tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked~.tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked~.tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked~.tab-content:nth-of-type(4) {
+    display: block;
+
+    a:hover{
+        color: var(--color-brown-default);
+    }
+}
+
+.margin-top-tab{
+    margin-top: 10px;
+}
+
+.text-center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
