@@ -56,7 +56,29 @@ $spacers: (
     }
 }
 
-//margin
+
+.px {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-left: $value;
+            padding-right: $value;
+        }
+    }
+}
+
+.py {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            padding-top: $value;
+            padding-bottom: $value;
+        }
+    }
+}
+
+
+        //margin
 .m {
     @each $size,
     $value in $spacers {
@@ -97,6 +119,26 @@ $spacers: (
     @each $size,
     $value in $spacers {
         &-#{$size} {
+            margin-bottom: $value;
+        }
+    }
+}
+
+.mx {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-left: $value;
+            margin-right: $value;
+        }
+    }
+}
+
+.my {
+    @each $size,
+    $value in $spacers {
+        &-#{$size} {
+            margin-top: $value;
             margin-bottom: $value;
         }
     }
