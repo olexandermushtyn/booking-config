@@ -46,7 +46,8 @@ a {
   display: flex;
   flex-direction: column;
   input {
-    width: 80%;
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 
@@ -137,7 +138,7 @@ a {
 }
 
 .date-field {
-  width: 80%;
+  width: 100%;
 }
 
 .show-prices-button {
@@ -180,4 +181,66 @@ a {
 
 .not-active-item:hover {
   background: var(--color-secondary-lighten2);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: var(--bw-4) var(--bs-solid) var(--color-gray-darken1);
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 35%;
+  margin: 0;
+}
+
+.pagination-arrow {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  a {
+    display: block;
+    color: var(--color-secondary-default);
+    line-height: var(--lh-h6);
+    svg {
+      fill: var(--color-secondary-default);
+    }
+  }
+  &-selected {
+    border: var(--bw-3) var(--bs-solid) var(--color-black-default);
+  }
+  &:hover {
+    a {
+      color: var(--color-white-default);
+      svg {
+        fill: ar(--color-white-default);
+      }
+    }
+    background: var(--color-secondary-default);
+  }
+}
+
+.pagination-item-inactive {
+  a {
+    color: var(--color-gray-darken1);
+    cursor: not-allowed;
+    svg {
+      fill: var(--color-gray-darken2);
+    }
+  }
 }
