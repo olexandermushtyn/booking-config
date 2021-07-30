@@ -6,8 +6,10 @@
   font-size: var(--fs-h5);
 }
 
-header {
-  padding-top: 16px;
+.help {
+  svg {
+    display: block;
+  }
 }
 
 a {
