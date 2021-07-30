@@ -1,0 +1,48 @@
+@import url(../root.scss);
+@import url(../../config.css);
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.border-warning{
+    border: var(--bw-3) var(--bs-solid) var(--color-warning-lighten1);
+    border-radius: var(--br-4);
+}
+
+
+.kk{
+    width:20px;
+    height: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fs-xxl{
+    font-size: 32px;
+}
+
+.fs-h6{
+    font-size: 16px;
+}
+.color-darken-t2{
+    color: #262626
+}
+.vertical{
+    line-height: 20px;
+}
+
+.check-xl{
+    width: 20px;
+    height: 20px;
+}
+.color-gray-lighten1{
+    color: var(--color-gray-lighten1);
+}
