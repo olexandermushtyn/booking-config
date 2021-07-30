@@ -47,14 +47,19 @@ $badge-review-sizes: (
   line-height: var(--lh-body1);
   font-weight: var(--fw-normal);
   padding: 1px 4px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   vertical-align: baseline;
   align-items: center;
 }
 
-.hotel-type-badge-primary {
+.hotel-type-badge-success {
   background: var(--color-success-darken);
+  color: var(--color-white-default);
+  border: var(--bw-3) var(--bs-solid) transparent;
+}
+.hotel-type-badge-primary {
+  background: var(--color-primary-default);
   color: var(--color-white-default);
   border: var(--bw-3) var(--bs-solid) transparent;
 }

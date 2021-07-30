@@ -1,24 +1,26 @@
 @import url(../../config.css);
-
+// Class for logo size
 .logo {
-  width: 144px;
-  height: 24px;
-  font-size: var(--fs-caption1);
-  line-height: var(--lh-body1);
+    width: 144px;
+    height: 24px;
+    font-size: var(--fs-caption1);
+    line-height: var(--lh-body1);
 }
 
+// Media for logo
 @media only screen and (max-width: 990px) {
-  .logo {
-    height: 20px;
-  }
+    .logo {
+        height: 20px;
+    }
 }
 
+// This palette for example because of 1/2 logo is white
 .logo-palette {
-  background-color: var(--color-primary-default);
-  margin-bottom: 20px;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid var(--color-black-default); // reference to variable
-  width: 250px;
-  height: 32px;
+    background-color: var(--color-primary-default);
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--color-black-default); // reference to variable
+    width: 250px;
+    height: 32px;
 }
