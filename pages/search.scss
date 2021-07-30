@@ -43,6 +43,7 @@ a {
 }
 
 .searchbox-row {
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
   input {
@@ -54,7 +55,6 @@ a {
 .searchbox {
   box-sizing: border-box;
   background: var(--color-warning-default);
-  height: 434px;
 }
 
 .searchbox-title {
@@ -235,6 +235,11 @@ a {
   }
 }
 
+.label {
+  color: var(--color-warning-default);
+  background: var(--color-warning-default);
+}
+
 .pagination-item-inactive {
   a {
     color: var(--color-gray-darken1);
@@ -243,4 +248,15 @@ a {
       fill: var(--color-gray-darken2);
     }
   }
+}
+
+.help-svg-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+  margin-left: 81px;
 }
