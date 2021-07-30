@@ -82,11 +82,17 @@
   z-index: -1;
   opacity: 0;
 }
-.custom-checkbox-lg,
+.custom-checkbox-lg + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  background-color: #fff;
+}
 .custom-checkbox-md + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  background-color: #fff;
 }
 .custom-checkbox-lg + label::before {
   content: "";
@@ -236,9 +242,9 @@
   outline: none;
 }
 
-.date-field::-webkit-input-placeholder{
+.date-field::-webkit-input-placeholder {
   opacity: 1;
-  font-weight: var(--fw-thin);
+  font-weight: var(--fw-normal);
 }
 
 /* Availability */
@@ -250,7 +256,6 @@
   font-size: var(--fs-h4);
   border: var(--bw-3) var(--bs-solid) var(--color-gray-default);
   border-radius: var(--br-3);
-  padding: var(--p-xs);
   line-height: var(--lh-h6);
   box-sizing: border-box;
 }
@@ -296,7 +301,7 @@
 
 .input-calendar1-xxl {
   background-image: url("../../src/img/ico/calendar-xxl.svg");
-  background-position: top 50% left 16px;
+  background-position: top 50% left 9px;
   background-repeat: no-repeat;
 }
 
