@@ -582,6 +582,10 @@
   background: var(--color-warning-lighten1);
 }
 
+.bg-color-gray-lighten3{
+    background-color: var(--color-gray-lighten3);
+}
+
 .bg-color-gray-default {
   background: var(--color-gray-default);
 }
@@ -835,6 +839,10 @@
   font-size: var(--fs-h4);
 }
 
+.fs-body{
+    font-size: var(--fs-body);
+}
+
 .fs-body1 {
   font-size: var(--fs-body1);
 }
@@ -1012,4 +1020,9 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+
+.card-airport * i{
+    padding-right: var(--p-lg);
 }
