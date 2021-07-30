@@ -1,0 +1,50 @@
+@import url(../../pages/item/css/style.scss);
+@import url(../../config.css);
+@import url(../root.scss);
+@import url(../../fonts/fontawesome/css/all.css);
+.align-flex{
+    display: flex;
+    align-items: center;
+    
+}
+button[name="info1"]{
+    font-weight: var(--fw-medium)!important;
+    font-size: var(--fs-h5);
+}
+.flag{
+    width: 24px;
+    height: 24px;  
+}
+.image-1 {
+    box-sizing: border-box;
+    width: 80px;
+    height: 40px;
+}
+.heading-2{
+    margin: var(--m-xs) 0px;
+    padding-top: 1.5em;
+}
+.car{
+    color: rgb(88, 88, 88);
+    display: flex;
+    align-items: center;
+}
+.block{
+    border: 1px solid #e7e7e7;
+    margin-right: var(--m-xxl);
+}
+.border-virus{
+    border: var(--bw-3) solid var(--color-warning-lighten1);
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+}
+.title{
+    color: var(--color-black-default);
+}
+.list-icon{
+    color: var(--color-warning-lighten1);
+    display: flex;
+    align-items: center;
+}

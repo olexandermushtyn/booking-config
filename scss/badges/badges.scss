@@ -53,8 +53,13 @@ $badge-review-sizes: (
   align-items: center;
 }
 
-.hotel-type-badge-primary {
+.hotel-type-badge-success {
   background: var(--color-success-darken);
+  color: var(--color-white-default);
+  border: var(--bw-3) var(--bs-solid) transparent;
+}
+.hotel-type-badge-primary {
+  background: var(--color-primary-default);
   color: var(--color-white-default);
   border: var(--bw-3) var(--bs-solid) transparent;
 }
