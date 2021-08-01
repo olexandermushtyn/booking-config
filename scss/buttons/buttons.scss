@@ -1,19 +1,42 @@
+
+:root {
+    /*paddings for buttons*/
+    --btn-p-xl: 8px 16px;
+    /*line-height for buttons*/
+    --btn-lh-xxl: 30px;
+    --btn-lh-xl: 28px;
+    --btn-lh-md: 24px;
+    --btn-lh-sm: 20px;
+    /*font-size for buttons*/
+    --btn-fs-lg: 20px;
+    --btn-fs-md: 16px;
+    --btn-fs-sm: 14px;
+    /*font-weight for buttons*/
+    --btn-fw-lg: 500px;
+    --btn-fw-md: 400px;
+    --btn-fw-sm: 300px;
+
+}
 @import url(../../config.css);
 .btn {
     border-style: var(--bs-solid);
     font-family: var(--ff-default);
     cursor: var(--cursor-pointer);
     box-sizing: border-box;
+    display: block;
     &-primary {
         background-color: var(--color-secondary-default);
         color: var(--color-white-default);
-        &-hover:hover {
+        border: none;
+        border-radius: var(--br-4);
+
+        &:hover {
             background-color: var(--color-secondary-darken2);
         }
-        &-active:active {
+        &:active {
             background: var(--color-secondary-darken2);
         }
-        &-focus:focus {
+        &:focus {
             box-shadow: var(--shadow-border);
         }
     }
@@ -21,28 +44,30 @@
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
         border: none;
-        &-hover:hover {
+        border-radius: var(--br-4);
+        &:hover {
             background-color: var(--color-secondary-lighten3);
         }
-        &-active:active {
+        &:active {
             background: var(--color-secondary-lighten3);
         }
-        &-focus:focus {
+        &:focus {
             box-shadow: var(--shadow-border);
         }
     }
     &-outlined {
         background-color: var(--color-transparent);
         color: var(--color-white-default);
-        border-width: var(--bw-3);
         border-color: var(--color-white-default);
-        &-hover:hover {
+        border-width: var(--bw-3); //1px
+        border-radius: var(--br-4); //2px
+        &:hover {
             background-color: var(--color-secondary-darken2);
         }
-        &-active:active {
+        &:active {
             background: var(--color-secondary-darken2);
         }
-        &-focus:focus {
+        &:focus {
             box-shadow: var(--shadow-border);
         }
     }
@@ -50,76 +75,95 @@
         background-color: var(--color-transparent);
         color: var(--color-white-default);
         border: none;
-        &-hover:hover {
+        &:hover {
             background-color: var(--color-secondary-darken2);
         }
-        &-active:active {
+        &:active {
             background: var(--color-secondary-darken2);
         }
-        &-focus:focus {
+        &:focus {
+            box-shadow: var(--shadow-border);
+        }
+    }
+    &-image {
+        background-color: var(--color-transparent);
+        color: var(--color-white-default);
+        border: none;
+        padding: 12px;
+        line-height: 0px;
+        &:hover {
+            background-color: var(--color-secondary-darken2);
+        }
+        &:active {
+            background: var(--color-secondary-darken2);
+        }
+        &:focus {
             box-shadow: var(--shadow-border);
         }
     }
     &-clicker {
         background-color: var(--color-white-default);
         color: var(--color-secondary-default);
+        border-width: var(--bw-3); //1px
         border-color: var(--color-secondary-default);
-        border-width: var(--bw-3);
-        &-hover:hover {
+        border-radius: var(--br-4); //2px
+        &:hover {
             background-color: var(--color-secondary-lighten3);
         }
-        &-active:active {
+        &:active {
             background: var(--color-secondary-lighten3);
         }
-        &-focus:focus {
+        &:focus {
             box-shadow: var(--shadow-border);
         }
     }
     &-carousel {
         background-color: var(--color-white-default);
         border-radius: var(--br-circle);
+        padding: 4px;
+        line-height:11px;
     }
     &-xxl {
-        padding: var(--p-xxs) var(--p-xxxl);
-        line-height:var(--btn-lh-lg);
-        font-size: var(--fs-h4);
-        font-weight: var( --fw-medium);
+        padding: 8px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 500px;
     }
     &-xl {
-        padding: var(--p-none) var(--p-md);
-        line-height: var(--btn-lh-xl);
-        font-size: var(--fs-h4);
-        font-weight: var(--fw-semi-normal);
+        padding: 8px;
+        line-height: 36px;
+        font-size: 20px;
+        font-weight: 400px;
     }
     &-lg {
-        padding: var(--p-xs) var(--p-lg);
-        line-height: var(--lh-h6);
-        font-size: var(--fs-h4);
-        font-weight: var(--fw-semi-normal);
+        padding: 8px;
+        line-height: 32px;
+        font-size: 20px;
+        font-weight: 300px;
     }
     &-md {
-        padding: var(--p-xs);
-        line-height: var(--lh-h6);
-        font-size: var(--fs-body);
-        font-weight: var(--fw-medium);
+        padding: 5px;
+        line-height: 28px;
+        font-size: 20px;
+        font-weight: 400px;
     }
     &-sm {
-        padding: var(--p-xs) var(--p-lg);
-        line-height: var(--lh-h6);
-        font-size: var(--fs-body);
-        font-weight: var(--fw-medium);
+        padding: 8px;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 500px;
     }
     &-xs {
-        padding: var(--p-none) var(--p-md);
-        line-height: var(--lh-h4);
-        font-size: var(--fs-caption1);
-        font-weight: var(--fw-normal);
+        padding: 8px ;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 500px;
     }
     &-xxs {
-        padding: var(--p-sm);
-        line-height: var(--lh-h4);
-        font-size: var(--fs-caption1);
-        font-weight: var(--fw-normal);
+        padding:8px;
+        line-height: 32px;
+        font-size: 16px;
+        font-weight: 300px;
     }
     &-circle {
         border-radius: var(--br-circle);
