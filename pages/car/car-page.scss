@@ -1,13 +1,6 @@
-<<<<<<< HEAD:pages/car/car-page.scss
-
-@import url(../../config.css);
-=======
-@import url(../../pages/item/style.scss);
-@import url(../config.css);
->>>>>>> main:scss/car-page/car-page.scss
-@import url(../root.scss);
+@import url(../../scss/root.scss);
 @import url(../../fonts/fontawesome/css/all.css);
-@import url(../../pages/item/css/style.scss); 
+
 .align{
     font-weight: var(--fw-medium)!important;
     font-size: var(--fs-h5);
