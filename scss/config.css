@@ -1,20 +1,19 @@
 :root {
 
-
-    /* Colors*/
-    /*  Primary */
+    /* Colors */
+    /* Primary */
     --color-primary-default: rgba(0, 53, 128, 1);
     /* #003580 */
     --color-primary-darken1: rgba(0, 34, 79, 1);
     /* #00224f */
 
-    /*Secondary */
+    /* Secondary */
     --color-secondary-lighten3: rgba(235, 243, 255, 1);
     /* #ebf3ff */
     --color-secondary-lighten2: rgba(163, 215, 252, 1);
     /* #a3d7fc */
 
-    /*Secondary */
+    /* Secondary */
     --color-secondary-lighten1: rgba(91, 186, 255, 1);
     /* #5bbaff */
     --color-secondary-default: rgba(0, 113, 194, 1);
@@ -27,7 +26,6 @@
     --color-secondary-t1-default: rgba(0, 113, 194, 0.06);
     --color-secondary-t2-default: rgba(0, 113, 194, 0.2);
 
-
     /* Success */
     /*Write one extra success*/
     --color-success-lighten1: rgba(231, 253, 233, 1);
@@ -38,7 +36,7 @@
     /* #008009 */
     --color-success-darken2: rgba(0, 102, 7, 1);
 
-    /*Danger */
+    /* Danger */
     --color-danger-lighten2: rgba(255, 240, 224, 1);
     /* #fff0e0 */
     --color-danger-lighten1: rgba(255, 235, 234, 1);
@@ -48,7 +46,7 @@
     --color-danger-darken1: rgba(163, 0, 0, 1);
     /* #a30000 */
 
-    /*Brown */
+    /* Brown */
     --color-brown-lighten2: rgba(225, 224, 138, 1);
     /* #ffe08a */
     --color-brown-lighten1: rgba(205, 137, 0, 1);
@@ -57,12 +55,14 @@
     /* #bc5b01 */
     --color-brown-darken1: rgba(146, 62, 1, 1);
 
-/ / * Warning --color-warning-default: rgba(254, 187, 2, 1);
+    /* Warning */
+    --color-warning-default: rgba(254, 187, 2, 1);
     /* #febb02 */
     --color-warning-lighten1: rgba(255, 128, 0, 1);
     /* #ff8000 */
 
-/ / * Gray / / ! Write two extra gray --color-gray-lighten1: rgba(231, 231, 231, 1);
+    /* Gray */
+    --color-gray-lighten1: rgba(231, 231, 231, 1);
     /* #e7e7e7 */
     --color-gray-default: rgba(217, 217, 217, 1);
     /* #d9d9d9 */
@@ -83,7 +83,8 @@
     --color-gray-lighten8: rgba(38, 38, 38, 1);
     /* #262626 */
 
-/ / * White --color-white-default: rgba(255, 255, 255, 1);
+    /* White */
+    --color-white-default: rgba(255, 255, 255, 1);
     --color-white-t1-default: rgba(255, 255, 255, 0.06);
     /* car rentals flights... */
     --color-white-t2-default: rgba(255, 255, 255, 0.12);
@@ -91,7 +92,8 @@
     --color-white-t3-default: rgba(255, 255, 255, 0.2);
     /* list your property footer */
 
-/ / * Black --color-black-default: rgba(0, 0, 0, 1);
+    /*Black */
+    --color-black-default: rgba(0, 0, 0, 1);
     --color-black-t1-default: rgba(0, 0, 0, 0.06);
 
     /* Color for shadows*/
@@ -103,16 +105,18 @@
     --color-secondary-shadow: rgba(0, 113, 194, 0.24);
 
 
-/ / * Font-family --ff-default: BlinkMacSystemFont,
--apple-system,
-Segoe UI,
-Roboto,
-Helvetica,
-Arial,
-sans-serif;
+    /*Font-family */
+    --ff-default: BlinkMacSystemFont,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
 
 
-/ / * Font-size --fs-h1: 32 px;
+    /*Font-size */
+    --fs-h1: 32px;
     --fs-h2: 28px;
     --fs-h3: 26px;
     --fs-h4: 24px;
@@ -190,7 +194,7 @@ sans-serif;
     --m-xl: 64px;
     --m-xxl: 128px;
 
-    /*Pading Paired */
+    /*Padding Paired */
     --p-paired-xs: 6px;
     --p-paired-sm: 12px;
     --p-paired-md: 24px;
@@ -619,4 +623,172 @@ rgb(0, 0, 0);
 
 .bg-color-secondary-shadow {
     background-color: rgba(0, 113, 194, 0.24);
+}
+
+.fs-h1 {
+    font-size: var(--fs-h1)
+}
+
+.fs-h2 {
+    font-size: var(--fs-h2)
+}
+
+.fs-h3 {
+    font-size: var(--fs-h3)
+}
+
+.fs-h4 {
+    font-size: var(--fs-h4)
+}
+
+.fs-h5 {
+    font-size: var(--fs-h5)
+}
+
+.fs-h6 {
+    font-size: var(--fs-h6)
+}
+
+.fs-subtitle1 {
+    font-size: var(--fs-subtitle1)
+}
+
+.fs-subtitle2 {
+    font-size: var(--fs-subtitle2)
+}
+
+.fs-body1 {
+    font-size: var(--fs-body1)
+}
+
+.fs-body2 {
+    font-size: var(--fs-body2)
+}
+
+.fs-caption {
+    font-size: var(--fs-caption)
+}
+
+.lh-normal {
+    line-height: var(--lh-normal);
+}
+
+.lh-h1 {
+    line-height: var(--lh-h1);
+}
+
+.lh-h2 {
+    line-height: var(--lh-h2);
+}
+
+.lh-h3 {
+    line-height: var(--lh-h3);
+}
+
+.lh-h4 {
+    line-height: var(--lh-h4);
+}
+
+.lh-h5 {
+    line-height: var(--lh-h5);
+}
+
+.lh-h6 {
+    line-height: var(--lh-h6);
+}
+
+.lh-subtitle1 {
+    line-height: var(--lh-subtitle1);
+}
+
+.lh-subtitle2 {
+    line-height: var(--lh-subtitle2);
+}
+
+.lh-body1 {
+    line-height: var(--lh-body1);
+}
+
+.lh-body2 {
+    line-height: var(--lh-body2);
+}
+
+.lh-caption {
+    line-height: var(--lh-caption);
+}
+
+.fw-light {
+    font-weight: var(--fw-light);
+}
+
+.fw-normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.br-8 {
+    border-radius: var(--br-8);
+}
+
+.br-7 {
+    border-radius: var(--br-7);
+}
+
+.br-6 {
+    border-radius: var(--br-6);
+}
+
+.br-5 {
+    border-radius: var(--br-5);
+}
+
+.br-4 {
+    border-radius: var(--br-4);
+}
+
+.br-3 {
+    border-radius: var(--br-3);
+}
+
+.br-2 {
+    border-radius: var(--br-2);
+}
+
+.br-1 {
+    border-radius: var(--br-1);
+}
+
+.br-none {
+    border-radius: var(--br-none);
+}
+
+.br-circle {
+    border-radius: var(--br-circle);
+}
+
+.bw-3 {
+    border-width: var(--bw-3);
+}
+
+.bw-2 {
+    border-width: var(--bw-2);
+}
+
+.bw-1 {
+    border-width: var(--bw-1);
+}
+
+.bs-solid {
+    border-style: var(--bs-solid);
 }
