@@ -83,7 +83,6 @@ summary{
     /*CORONOVIRUS_INFO START*/
 .row{
     display: flex;
-    width:100%;
 }
 .coronovirus-unit{
     background-color: var(--color-danger-lighten1);
@@ -104,10 +103,10 @@ summary{
     margin: 0px 0px var(--m-md) 0px;
     box-sizing: border-box;
 }
-.link{
+/*.link{
     font-weight: var(--fw-bold);
     font-size: var(--fs-body1);
-}
+}*/
 .align-1{
     justify-content: flex-start;
 }
@@ -155,17 +154,34 @@ summary{
     color: var(--color-gray-darken6);
     font-size: var(--fs-body2);
 }
-.link{
+/*.link-2{
     color: var(--color-gray-darken6);
-    font-weight: var(--fw-normal)
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-body1);
+}*/
 
-}
+/*Worlds biggest STSART*/
+
 .frame-1{
     border: var(--bw-1) solid var(--color-gray-lighten1);
-    margin-right: var(--m-xxl);
+    margin-right: var(--m-lg);
     box-sizing: border-box;
 }
 .image{
     width: 100%;
-
+}
+.list-icon{
+    color: var(--color-warning-lighten1);
+    display: flex;
+    align-items: center;
+}
+.heading-2{
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h2);
+    font-weight: var(--fw-semi-bold);
+}
+.heading-3{
+    font-size: var(--fs-body1);
+    line-height: var(--lh-subtitle1);
+    font-weight: var(--fw-normal);
 }
