@@ -1,14 +1,18 @@
+@import "../buttons/buttons.scss";
 @import "../offsets/offsets.scss";
 @import "../../config.css";
 @import "../grid/style.scss";
 @import "../inputs/input.scss";
-@import "../buttons/buttons.scss";
-
+@import "../../pages/item/css/style.scss";
 :root{
   --color-gray-lighten4: rgba(245, 245, 245, 1);
 }
 
 .color-gray-lighten4{
+  background-color: var(--color-gray-lighten4);
+}
+
+.bg-color-gray-lighten4{
   background-color: var(--color-gray-lighten4);
 }
 
@@ -59,6 +63,7 @@ input{
 .width-full{
   width: 100%;
 }
+
 
 .b-collapse{
   border-collapse: collapse;
@@ -174,6 +179,10 @@ input{
 }
 
 
+.active:active, .сhoose-number-passenger:active{
+  outline: var(--bw-1) var(--bs-solid) var(--color-secondary-t2-default);
+}
+
 .сhoose-number-passenger{
   font-size: var(--fs-body);
   font-weight: var(--fw-normal);
@@ -188,6 +197,7 @@ input{
 .сhoose-number-passenger:hover{
   background-color: var(--color-secondary-t1-default);
 }
+
 
 .number-passenger li:first-child{
   border-radius: var(--br-4) 0px 0px var(--br-4);
@@ -217,4 +227,29 @@ input{
 
 .card-airport i{
   padding-right: var(--p-xs);
+}
+
+.height-full{
+  height: inherit;
+}
+
+.faq-title{
+  height: 90%;
+  padding-left: var(--p-lg);
+  padding-top: var(--p-lg);
+}
+
+
+.faq-list{
+  padding: 0;
+  font-weight: var(--fw-medium);
+  list-style: none;
+  border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+
+}
+
+.faq-list li{
+  padding: var(--p-md);
+  line-height: var(--lh-h4);
+  border-top: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
 }
