@@ -2,6 +2,10 @@
   flex-wrap: nowrap;
 }
 
+body {
+  font-size: var(--fs-body1);
+}
+
 .badge-review-lg {
   font-size: var(--fs-h5);
 }
