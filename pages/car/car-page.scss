@@ -185,3 +185,39 @@ summary{
     line-height: var(--lh-subtitle1);
     font-weight: var(--fw-normal);
 }
+/*Questions START*/
+.heading-4{
+    display: block;
+    margin: 0 0 var(--m-md) 0;
+    padding-top: var(--p-xs);
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h6);
+    font-weight: var(--fw-semi-bold);
+    align-self:flex-start;
+}
+ul li{
+    margin-left: var(--m-md);
+}
+summary {display: block;};
+::-webkit-details-marker {display: none;};
+summary{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    align-self :center;
+    
+}
+.summary-hover:hover{
+    background-color: rgb(236, 236, 236);
+}
+.accordion{
+    padding: var(--p-md);
+}
+.right-border{
+    border-right: 1px solid var(--color-gray-lighten1);
+}
+.bottom-border{
+    border-bottom: 1px solid var(--color-gray-lighten1);
+}
