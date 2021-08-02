@@ -1,6 +1,4 @@
-@import "../../scss/grid/style.scss";
-@import "../../scss/inputs/input.scss";
-@import "../../scss/buttons/buttons.scss";
+@import "../../fonts/fontawesome/css/all.css";
 *{
     margin: 0;
 }
@@ -13,37 +11,43 @@
     text-align: left;
 }
 .fb {
-    flex-basis: 85%;
+    flex-basis: 80%;
     padding-right: var(--p-xs);
-}
-.h2subtitle_style {
-    font-family: var(--ff-default);
-    font-size: var(--fs-h1);
-    margin: 0 0 var(--m-sm);
-    color: var(--color-gray-lighten8);
-}
-.subtitle_style {
-    font-family: var(--ff-default);
-    font-size: var(--fs-subtitle2);
-    margin: 0 0 var(--m-lg);
-    color: var(--color-gray-darken6);
 }
 .border_form {
     background-color:var(--color-warning-default);
     padding: var(--p-xs);
     border-radius: var(--br-4);
 }
-.h2_style{
-    font-family: var(--ff-default);
-    font-size: var(--fs-h6);
-    color: var(--color-gray-lighten8);
-    margin: var(--m-lg) 0 var(--m-md);
-}   
 .border_card {
     border: 1px solid var(--color-gray-default);
     margin: var(--m-lg) var(--m-md) 0 0;
     padding: var(--p-md);
 }
+.h1_subtitle {
+    font-family: var(--ff-default);
+    font-size: var(--fs-h1);
+    margin: 0 0 var(--m-sm);
+    color: var(--color-gray-lighten8);
+}
+.subtitle1_style {
+    font-family: var(--ff-default);
+    font-size: var(--fs-subtitle2);
+    margin: 0 0 var(--m-lg);
+    color: var(--color-gray-darken6);
+}
+.subtitle2_style {
+    font-family: var(--ff-default);
+    font-size: var(--fs-subtitle2);
+    color: var(--color-gray-darken6);
+    margin-bottom: var(--m-md);
+}
+.h2{
+    font-family: var(--ff-default);
+    font-size: var(--fs-h6);
+    color: var(--color-gray-lighten8);
+    margin: var(--m-lg) 0 var(--m-md);
+}   
 .title_style {
     font-family: var(--ff-default);
     font-size: var(--fs-subtitle2);
@@ -57,13 +61,35 @@
     font-size: var(--fs-body1);
     color: var(--color-gray-lighten8);
 }
+.h3_text {
+    font-family: var(--ff-default);
+    font-size: var(--fs-h6);
+    color: var(--color-gray-lighten8);
+    margin-bottom: var(--m-md);
+}
+.h3_img {
+    font-family: var(--ff-default);
+    font-size: var(--fs-h6);
+    color: var(--color-gray-lighten8);
+}
+.h4 {
+    font-family: var(--ff-default);
+    font-size: var(--fs-body1);
+    color: var(--color-gray-lighten8);
+}
 
 
 
 
 // images
 .img_dubai {
-    background: url(../../src/img/attractions_img/dubai.jpg) no-repeat center center;
+    background: url(./images/dubai.jpg) no-repeat center center;
+}
+.img_istambul {
+    background: url(./images/istambul.jpg) no-repeat center center;
+}
+.img_london {
+    background: url(./images/london.jpg) no-repeat center center;
 }
 // zoom images
 .zoom-lg {
@@ -104,8 +130,7 @@
         background-size: 100% 100%;
     }
 }
-
-.f-block:hover {
+.zoom:hover {
     animation: anm2 0.2s ease forwards;
 }
 @keyframes anm2 {
@@ -140,7 +165,7 @@
     opacity: 0.8;
   }
 // image text 
-.header_img {
+.h_img {
     position: absolute;
     top: 76%;
     left: 0;
@@ -162,3 +187,12 @@
     font-size: var(--fs-body2);
     padding: 0 16px 0;
  }
+
+hr {
+    border: solid #e7e7e7;
+    border-width: 1px 0 0 0;
+    margin: 32px 0;
+}
+i {
+    color: var(--color-success-default);
+}
