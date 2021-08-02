@@ -1,13 +1,11 @@
-<<<<<<< HEAD:pages/car/car-page.scss
-
-@import url(../../config.css);
-=======
 @import url(../../pages/item/style.scss);
-@import url(../config.css);
->>>>>>> main:scss/car-page/car-page.scss
-@import url(../root.scss);
+@import url(../../scss/config.css);
+@import url(../../scss/root.scss);
 @import url(../../fonts/fontawesome/css/all.css);
-@import url(../../pages/item/css/style.scss); 
+@import url(../../scss/buttons/buttons.scss);
+@import url(../../scss/links/links.scss);
+@import url(../../scss/grid/style.scss);
+/*
 .align{
     font-weight: var(--fw-medium)!important;
     font-size: var(--fs-h5);
@@ -82,8 +80,98 @@ summary{
 }
 .overlay {
     background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 12%, #000 97%);
-    /* Black see-through */
+    Black see-through 
     width: 100%;
     left: 0;
-    bottom: 0;
+    bottom: 0;}*/
+
+
+    /*CORONOVIRUS_INFO START*/
+.row{
+    display: flex;
+    width:100%;
+}
+.coronovirus-unit{
+    background-color: var(--color-danger-lighten1);
+    border: var(--bw-1) solid var(--color-warning-lighten1);
+}
+.textarea-1{
+    font-size: var(--fs-subtitle2);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-h6);
+    margin-bottom: var(--m-sm);
+    box-sizing: border-box;
+    color: var(--color-gray-darken7);
+}
+.textarea-2{
+    font-size: var(--fs-body1);
+    font-weight: var(--fw-normal);
+    line-height: var(--lh-subtitle1);
+    margin: 0px 0px var(--m-md) 0px;
+    box-sizing: border-box;
+}
+.link{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body1);
+}
+.align-1{
+    justify-content: flex-start;
+}
+    /*CORONOVIRUS_INFO END*/
+.heading-1{
+    padding-top: var(--p-lg);
+    margin-bottom: var(--m-paired-sm);
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h2);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-gray-darken7);
+}
+.sb-align{
+    justify-content: space-between;
+    & img{
+        width:auto;
+    }
+}
+.heading-small{
+    font-size: var(--fs-subtitle2);
+    line-height: var(--lh-h6);
+    font-weight: var(--fw-bold);
+    color: var(--color-gray-darken7);
+}
+.heading-gray{
+    font-size: var(--fs-body1);
+    line-height: var(--lh-subtitle1);
+    font-weight: var(--fw-normal);
+    color: var(--color-gray-darken6);
+}
+.car-icon{
+    display: flex;
+    color: var(--color-gray-darken6);
+    font-size: var(--fs-h1);    
+}
+.align-2{
+    display: flex;
+    justify-content: space-between;
+}
+.text-sm{
+    color: var(--color-gray-lighten8);
+    font-size: var(--fs-body1);
+}
+.text-xs{
+    color: var(--color-gray-darken6);
+    font-size: var(--fs-body2);
+}
+.link{
+    color: var(--color-gray-darken6);
+    font-weight: var(--fw-normal)
+
+}
+.frame-1{
+    border: var(--bw-1) solid var(--color-gray-lighten1);
+    margin-right: var(--m-xxl);
+    box-sizing: border-box;
+}
+.image{
+    width: 100%;
+
 }
