@@ -1,0 +1,203 @@
+@import url(../../scss/config.css);
+@import url(../../fonts/fontawesome/css/all.css);
+
+.auto-center{
+    margin: 0 auto;
+}
+
+.width-center{
+    width: 766px;
+}
+
+.border-color-gray-solid{
+    border : var(--bw-3) var(--bs-solid) var(--color-gray-default)
+}
+
+.border-color-danger-solid{
+    border : var(--bw-3) var(--bs-solid) var(--color-danger-default);
+}
+
+.bg-color-brown-lighten5{
+    background-color: rgb(255, 240, 224);
+}
+
+.border-orange{
+    border : var(--bw-3) var(--bs-solid) var(--color-brown-lighten1);
+}
+
+.btn-currency-padding-margin{
+    padding: var(--p-sm);
+}
+
+.btn-currency-icon-position{
+    position: relative;
+    top: -6px
+}
+
+.btn-center{
+    width: 96%;
+    height: 48px;
+}
+
+.margin-bottom{
+    margin-bottom: 16px;
+}
+
+.btn-continue-center{
+    position: relative;
+    left: 16px;
+    margin: 15px 0;
+}
+
+.padding-top{
+    padding-top: 25px;
+}
+
+.logo-position-center{
+    position: relative;
+    top: 6px;
+}
+
+.btn-position-center{
+    position: relative;
+    top: -7px;
+    margin-left: 3px;
+}
+
+.margin-l-r-15{
+    margin: 0 15px;
+}
+
+.padding-t-b-25{
+    padding: 25px 0;
+}
+
+.margin-left{
+    margin-left: 15px;
+}
+
+.welcome-help-center-icon-position{
+    position: relative;
+    top: 12px;
+    left: 25px;
+}
+
+.help-center-icon-position{
+    position: relative;
+    top: 16px;
+    left: 20px;
+}
+
+.welcome-Help-Center-margin{
+    margin-top: 15px;
+}
+
+.footer-margint-top{
+    margin-top: -15px;
+}
+
+.svg-size-24x24{
+    width: 24px;
+    height: 24px;
+}
+.svg-size-28x28{
+    width: 28px;
+    height: 28px;
+}
+.svg-size-48x48{
+    width: 48px;
+    height: 48px;
+}
+
+.svg-white-color{
+    fill: white;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.list-style-none{
+    list-style: none;
+}
+.display-inline-block{
+    display: inline-block;
+}
+.display-block{
+    display: block;
+}
+.padding-header{
+    padding: var(--p-xs) var(--p-md);
+}
+
+.padding-logo{
+    padding: var(--p-xs) var(--p-none) var(--p-xs) var(--p-none);
+}
+
+.logo-size{
+    width: 144px;
+    height: 24px;
+}
+
+.main-backgraund{
+    background-color: rgb(245, 245, 245);
+}
+
+.border-bottom{
+    border-bottom: var(--bw-3) var(--bs-solid) var(--color-gray-default)
+}
+
+.accommodations-show{
+    display: block;
+}
+
+.accommodations-none{
+    display: none;
+}
+
+.flights-show{
+    display: block;
+}
+
+.flights-none{
+    display: none;
+}
+
+.accommodations-position{
+    position: relative;
+    left: 62px;
+    margin-bottom: 6px;
+}
+
+.flights{
+    position: relative;
+    left: 25px;
+    margin-bottom: 6px;
+}
+
+.btn-accommodations-active{
+    color: var(--color-secondary-default);
+    border-bottom: var(--bw-2) var(--bs-solid) var(--color-secondary-default);
+}
+
+.svg-active{
+    fill: var(--color-secondary-default);
+}
+
+.accommodations-Flights-icon-padding{
+    display: block;
+    padding-bottom: 12px;
+}
+
+.footer-link{
+    color: var(--color-secondary-default);
+    text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer-widht{
+    width: 1172px;
+}

@@ -1,0 +1,256 @@
+
+@import "../../scss/buttons/buttons.scss";
+@import "../../scss/offsets/offsets.scss";
+@import "../../scss/config.css";
+@import "../../scss/grid/style.scss";
+@import "../../scss/inputs/input.scss";
+@import "../item/style.scss";
+:root{
+  --color-gray-lighten4: rgba(245, 245, 245, 1);
+}
+
+.color-gray-lighten4{
+  background-color: var(--color-gray-lighten4);
+}
+
+.bg-color-gray-lighten4{
+  background-color: var(--color-gray-lighten4);
+}
+
+.bc-secondary-default{
+  border-color: var(--color-secondary-default);
+}
+
+body{
+  margin: 0;
+  font-family: var(--ff-default);
+  box-sizing: border-box;
+}
+
+input{
+  width: 100%;
+}
+
+.jc-center{
+  display: flex;
+  justify-content: center;
+}
+
+
+:root{
+  --color-primary-darken2: rgba(5,55,126, 1);
+  --color-primary-t1-darken2: rgba(5,55,126, 0.7);
+}
+
+.container-xl{
+  height: 100%;
+}
+
+.book-taxis-bg{
+  color: var(--color-white-default);
+  background-image: linear-gradient(rgba(5,55,126, 0.7), rgba(5,55,126, 0.7)) ,url("../../src/img/background/book-taxis.webp");
+  background-size: cover;
+  height: 450px;
+}
+
+
+
+.align-items{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.width-full{
+  width: 100%;
+}
+
+
+.b-collapse{
+  border-collapse: collapse;
+}
+
+
+.book-taxis-title{
+  font-size: 32px;
+  font-weight: var(--fw-semi-Bold);
+}
+
+.book-taxis-subtitle{
+  font-weight: var(--fw-medium);
+}
+
+.radio-row > .chbx-lg {
+  margin-right: var(--p-xs);
+}
+
+
+.form-search-panel{
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--color-warning-default);
+  border-radius: var(--br-3);
+  background-color: var(--color-warning-default);
+}
+
+.bg-circle-icon{
+  height: 56px;
+  width: 56px;
+  border-radius: var(--br-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taxis-inform-title{
+  line-height: var(--lh-h6);
+  font-weight: var(--fw-bold);
+}
+
+.taxis-inform-subtitle{
+  font-size: var(--fs-body);
+  line-height: var(--lh-h6);
+  color: var(--color-gray-lighten1);
+}
+
+.made-easy{
+  margin: 64px 0;
+}
+
+.made-easy-header{
+  display: flex;
+  justify-content: center;
+  font-weight: var(--fw-semi-Bold);
+  font-size: var(--lh-h1);
+}
+
+.fs-body{
+  font-size: var(--fs-body);
+}
+
+.how-it-work{
+  position: relative;
+  margin: var(--m-md);
+}
+
+.work, .book, .confirmation, .arrive, .driver, .enjoy{
+  text-align: var(--ta-center);
+  position: absolute;
+  font-size: var(--fs-body);
+}
+
+.work{
+  background-color: var(--color-gray-lighten3);
+  border-radius: var(--br-2);
+  padding: var(--p-xs);
+  top: -5px;
+  left: -5px;
+}
+
+.book{
+  top: 140px;
+  left: 102px;
+}
+
+.confirmation{
+  top: 140px;
+  left: 232px;
+}
+
+.arrive{
+  top: 300px;
+  left: 102px;
+}
+
+.driver{
+  top: 300px;
+  left: 247px;
+}
+
+.enjoy{
+  top: 400px;
+  left: -25px;
+}
+
+
+.number-passenger{
+  padding: 0px;
+  list-style: none;
+  display: flex;
+}
+
+
+.active:active, .сhoose-number-passenger:active{
+  outline: var(--bw-1) var(--bs-solid) var(--color-secondary-t2-default);
+}
+
+.сhoose-number-passenger{
+  font-size: var(--fs-body);
+  font-weight: var(--fw-normal);
+  border-width: var(--bw-3) 0px var(--bw-3) var(--bw-3);
+  border-color: var(--color-secondary-default);
+  border-style: var(--bs-solid);
+  background-color: var(--color-white-default);
+  color: var(--color-secondary-default);
+  padding: var(--p-xs) var(--p-md);
+}
+
+.сhoose-number-passenger:hover{
+  background-color: var(--color-secondary-t1-default);
+}
+
+
+.number-passenger li:first-child{
+  border-radius: var(--br-4) 0px 0px var(--br-4);
+}
+
+.number-passenger li:last-child{
+  border-radius:  0px var(--br-4) var(--br-4) 0px;
+  border-width: var(--bw-3) var(--bw-3) var(--bw-3) var(--bw-3);
+}
+
+.active{
+  background-color: var(--color-secondary-default);
+  color: var(--color-white-default);
+}
+
+.active:hover{
+  background-color: var(--color-secondary-default);
+}
+
+
+.card-airport {
+  height: 230px;
+  background-color: var(--color-white-default);
+  padding: var(--p-md);
+  border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+}
+
+.card-airport i{
+  padding-right: var(--p-xs);
+}
+
+.height-full{
+  height: inherit;
+}
+
+.faq-title{
+  height: 90%;
+  padding-left: var(--p-lg);
+  padding-top: var(--p-lg);
+}
+
+
+.faq-list{
+  padding: 0;
+  font-weight: var(--fw-medium);
+  list-style: none;
+  border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+
+}
+
+.faq-list li{
+  padding: var(--p-md);
+  line-height: var(--lh-h4);
+  border-top: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+}
