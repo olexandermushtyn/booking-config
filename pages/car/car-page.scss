@@ -232,3 +232,42 @@ summary{
     height: 100%;
     background-color: var(--color-danger-lighten2);
 }
+/*Image-2 START*/
+.heading-5{
+    padding-top: var(--p-lg);
+    margin-bottom: var(--m-paired-sm);
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h2);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-gray-darken7);
+}
+.image-3{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+}
+.overlay {
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 12%, #000 97%);
+    /* Black see-through */
+    width: 100%;
+    left: 0;
+    bottom: 0;
+} 
+.text-orange-hover:hover{
+    color: var(--color-warning-default);
+}
+.input-grey-link{
+    color: var(--color-gray-darken6);
+    font-size: var(--fs-body1);
+    font-weight: var(--fw-normal);
+    line-height: var(--lh-body4);
+    text-decoration: none;
+    &:hover {
+      color: var(--color-brown-default);
+    }
+  }
+  .img-3{
+      width: 100%;
+      height: 100%;
+  }
