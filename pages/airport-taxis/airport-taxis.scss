@@ -1,10 +1,9 @@
-
-@import "../../scss/buttons/buttons.scss";
-@import "../../scss/offsets/offsets.scss";
-@import "../../scss/config.css";
-@import "../../scss/grid/style.scss";
-@import "../../scss/inputs/input.scss";
-@import "../item/style.scss";
+@import url('../../scss/config.css');
+@import url('../../scss/buttons/buttons.scss');
+@import url('../../scss/offsets/offsets.scss');
+@import url('../../scss/grid/style.scss');
+@import url('../../scss/inputs/input.scss');
+@import url('../item/style.scss');
 :root{
   --color-gray-lighten4: rgba(245, 245, 245, 1);
 }
