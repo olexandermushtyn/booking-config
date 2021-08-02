@@ -16,14 +16,14 @@ $badge-review-sizes: (
   .badge-review-#{$point} {
     width: $badge-size;
     height: $badge-size;
-    border-radius: var(--br-2) var(--br-2) var(--br-2) var(--br-7);
+    border-radius: var(--br-5) var(--br-5) var(--br-5) var(--br-none);
     display: flex;
     justify-content: center;
     vertical-align: baseline;
     align-items: center;
     font-family: var(--ff-default);
-    font-size: var(--fs-body2);
-    line-height: var(--lh-h4);
+    font-size: var(--fs-subtitle2);
+    line-height: var(--lh-h6);
     font-weight: var(--fw-medium);
   }
 }
@@ -43,7 +43,7 @@ $badge-review-sizes: (
   box-sizing: border-box;
   margin-top: -3px;
   border-radius: var(--br-4);
-  font-size: var(--fs-caption2);
+  font-size: var(--fs-subtitle2);
   line-height: var(--lh-body1);
   font-weight: var(--fw-normal);
   padding: 1px 4px;

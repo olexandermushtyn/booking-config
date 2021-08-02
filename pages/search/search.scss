@@ -6,10 +6,6 @@ body {
   font-size: var(--fs-body1);
 }
 
-.badge-review-lg {
-  font-size: var(--fs-h5);
-}
-
 .help {
   svg {
     display: block;
@@ -25,11 +21,11 @@ a {
   list-style: none;
   display: flex;
   li {
+    align-items: center;
     &:last-child {
       a {
         text-decoration: none;
         cursor: default;
-        color: var(--color-gray-darken6);
       }
     }
     display: flex;
@@ -42,9 +38,9 @@ a {
 .breadcrumb-icon {
   padding-top: 3px;
   display: inline-block;
-  height: 16px;
+  height: 14px;
   width: 16px;
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: end;
 }
 
@@ -73,7 +69,6 @@ a {
 
 .search-item {
   box-sizing: border-box;
-  margin: 16px 16px;
   border: 0.5px solid var(--color-gray-darken1);
 }
 
@@ -121,10 +116,6 @@ a {
   max-height: 200px;
 }
 
-.review-score-text {
-  font-size: var(--fs-h5);
-}
-
 .review-score-block {
   display: flex;
   flex-direction: column;
@@ -166,7 +157,6 @@ a {
 .title {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
 }
 
 .show-on-map-image {
@@ -177,8 +167,6 @@ a {
 
 .sort-bar {
   display: flex;
-  margin-left: 16px;
-  margin-top: 6px;
   max-width: 100%;
 }
 
@@ -186,8 +174,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: var(--bw-3) var(--bs-solid) var(--color-secondary-default);
-  padding: 7px 12px;
+  border: var(--bw-1) var(--bs-solid) var(--color-secondary-default);
   flex-grow: 1;
 }
 
