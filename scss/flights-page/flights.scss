@@ -116,30 +116,20 @@ body {
 }
 /*footer*/
 
-  .partners {
-    display: flex;
-    justify-content: space-between;
-  }
   
-  .partners img {
+  
+  .img-footer {
     height: auto;
-    width: auto;
-    
+    width: auto;  
   }
   
   
   
- 
-  
-  .copyright {
-    font-size: 12px;
-  
-    & p {
-      padding: 12px;
-    }
+  .select select {
+      font-size: 14px;
   }
   
-;
+  
   
    
   
@@ -151,8 +141,8 @@ body {
     
 }
 .border-warning{
-    border: var(--bw-3) var(--bs-solid) var(--color-warning-lighten1);
-    border-radius: var(--br-4);
+    border: var(--bw-1) var(--bs-solid) var(--color-warning-lighten1);
+    border-radius: var(--br-2);
 }
 
 
@@ -163,9 +153,6 @@ body {
     justify-content: space-between;
 }
 
-.fs-xxl{
-    font-size: 32px;
-}
 
 .fs-h6{
     font-size: 16px;
@@ -175,6 +162,7 @@ body {
 }
 .vertical{
     line-height: 20px;
+    
 }
 
 
