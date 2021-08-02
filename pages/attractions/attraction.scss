@@ -36,10 +36,30 @@
 .h2_style{
     font-family: var(--ff-default);
     font-size: var(--fs-h6);
-    margin: 0 0 var(--m-sm);
     color: var(--color-gray-lighten8);
     margin: var(--m-lg) 0 var(--m-md);
 }   
+.border_card {
+    border: 1px solid var(--color-gray-default);
+    margin: var(--m-lg) var(--m-md) 0 0;
+    padding: var(--p-md);
+}
+.title_style {
+    font-family: var(--ff-default);
+    font-size: var(--fs-subtitle2);
+    color: var(--color-gray-lighten8);
+    font-weight: var(--fw-bold);
+    margin: 0 0 var(--m-sm);
+
+}
+.desc_style {
+    font-family: var(--ff-default);
+    font-size: var(--fs-body1);
+    color: var(--color-gray-lighten8);
+}
+
+
+
 
 // images
 .img_dubai {
