@@ -4,7 +4,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.help{
+  height: 24px;
+}
 .col-auto {
   flex-grow: 1;
 }
@@ -29,6 +31,7 @@ header > .container-xl {
 
 .language img {
   height: 24px;
+  width: 24px;
   border-radius: 50%;
 }
 
@@ -84,6 +87,9 @@ body {
 .partners {
   display: flex;
   justify-content: center;
+}
+.align{
+   align-self: center;
 }
 
 .partners img {
@@ -146,7 +152,9 @@ footer .login {
     display: inline-flex;
     flex-wrap: wrap;
   }
-
+  .block{
+    display: block;
+  }
   input {
     font-size: 20px;
     font-family: var(--ff-default);

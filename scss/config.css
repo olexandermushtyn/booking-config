@@ -199,6 +199,32 @@
   --m-paired-lg: 48px;
   --m-paired-xl: 96px;
 
+
+
+ /*-----------------------------------------------*/
+    /*paddings for buttons*/
+    --btn-padding-xl: var(--p-md);        /*16px*/
+    --btn-padding-lg: var(--p-paired-sm); /*12px*/
+    --btn-padding-md: var(--p-sm);        /*8px*/
+    --btn-padding-sm: var(--p-paired-xs); /*6px*/
+    --btn-padding-xs: var(--p-xs);        /*4px*/
+    /*line-height for buttons*/
+    --btn-lh-xl: var(--lh-h1);            /*40px*/
+    --btn-lh-md: var(--lh-h2);            /*32px*/
+    --btn-lh-sm: var(--lh-h4);            /*28px*/
+    --btn-lh-xs: var(--lh-subtitle1);     /*20px*/
+    --btn-lh-xxs: var(--lh-caption);      /*12px*/
+    --btn-lh-none: none;
+    /*font-size for buttons*/
+    --btn-fs-lg: var(--fs-h6);            /*20px*/
+    --btn-fs-md: var(--fs-subtitle2);     /*16px*/
+    --btn-fs-sm: var(--fs-body1);         /*14px*/
+    /*font-weight for buttons*/
+    --btn-fw-lg: var(--fw-medium);        /*500*/
+    --btn-fw-md: var(--fw-normal);        /*400*/
+    --btn-fw-sm: var(--fw-light);         /*300*/
+
+
   /*Flags */
   --great-britain-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/gb/daba79fdd4066d133e8bf59070fd6819b951c403.png";
   --usa-flag: "https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png";
