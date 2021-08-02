@@ -1,145 +1,148 @@
-$spacers: ( 
-    none: 0px, 
-    xxxs: 2px, 
-    xxs: 4px, 
-    xs: 8px, 
-    sm: 12px, 
-    md: 16px, 
-    lg: 24px, 
-    xl: 28px, 
-    xxl: 32px, 
-    xxxl: 42px, 
-    );
+$spacers: (
+        none: 0px,
+        xxs: 2px,
+        xs: 4px,
+        sm: 8px,
+        md: 16px,
+        lg: 32px,
+        xl: 64px,
+        xxl: 128px,
+        paired-xs: 6px,
+        paired-sm: 12px,
+        paired-md: 24px,
+        paired-lg: 48px,
+        paired-xl: 96px
+);
 //padding
 .p {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding: $value;
     }
+  }
 }
 
 .pt {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-top: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-top: $value;
     }
+  }
 }
 
 .pr {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-right: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-right: $value;
     }
+  }
 }
 
 .pl {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-left: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-left: $value;
     }
+  }
 }
 
 .pb {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-bottom: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-bottom: $value;
     }
+  }
 }
 
 
 .px {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-left: $value;
-            padding-right: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-left: $value;
+      padding-right: $value;
     }
+  }
 }
 
 .py {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            padding-top: $value;
-            padding-bottom: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      padding-top: $value;
+      padding-bottom: $value;
     }
+  }
 }
 
 
-        //margin
+//margin
 .m {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin: $value;
     }
+  }
 }
 
 .mt {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-top: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-top: $value;
     }
+  }
 }
 
 .mr {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-right: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-right: $value;
     }
+  }
 }
 
 .ml {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-left: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-left: $value;
     }
+  }
 }
 
 .mb {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-bottom: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-bottom: $value;
     }
+  }
 }
 
 .mx {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-left: $value;
-            margin-right: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-left: $value;
+      margin-right: $value;
     }
+  }
 }
 
 .my {
-    @each $size,
-    $value in $spacers {
-        &-#{$size} {
-            margin-top: $value;
-            margin-bottom: $value;
-        }
+  @each $size,
+  $value in $spacers {
+    &-#{$size} {
+      margin-top: $value;
+      margin-bottom: $value;
     }
+  }
 }
