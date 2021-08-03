@@ -1,8 +1,8 @@
-@import url('../config.css');
-@import url('../offsets/offsets.scss');
-@import url('../../fonts/fontawesome/css/all.css');
+@import url("../config.css");
+@import url("../offsets/offsets.scss");
+@import url("../../fonts/fontawesome/css/all.css");
 
-input{
+input {
   width: 100%;
 }
 
@@ -160,14 +160,13 @@ input{
   appearance: none;
 }
 
-
-.input-xxxl{
+.input-xxxl {
   font-family: inherit;
   font-size: var(--fs-body1);
   border: var(--bw-3) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-4);
   line-height: var(--lh-h6);
-  padding: var(--p-md) var(--p-md) var(--p-md) var(--p-semi-xl);
+  padding: var(--p-md) var(--p-md) var(--p-md) var(--p-paired-lg);
   box-sizing: border-box;
 }
 
@@ -200,7 +199,7 @@ input{
   align-items: center;
   border: var(--bw-3) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-3);
-  padding: var(--p-md) var(--p-lg) var(--p-md) var(--p-semi-xl);
+  padding: var(--p-md) var(--p-lg) var(--p-md) var(--p-paired-lg);
   box-sizing: border-box;
 }
 
@@ -260,7 +259,6 @@ input{
   font-size: var(--fs-body1);
   border: var(--bw-1) var(--bs-solid) var(--color-gray-default);
   border-radius: var(--br-3);
-  padding: var(--p-sm) var(--p-sm);
   line-height: var(--lh-subtitle1);
   box-sizing: border-box;
   align-items: center;
@@ -345,7 +343,6 @@ input{
 .bc-secondary-default-hov:hover {
   border-color: var(--color-secondary-default);
 }
-
 
 .bc-secondary-default-hov:hover .color-secondary-default-hov {
   color: var(--color-secondary-default);
