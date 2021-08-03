@@ -1,12 +1,13 @@
 @import url("../../../scss/config.css");
 
-body {
-    font-family: var(--ff-default);
-}
 
-.carousel-property {
+.carousel-explore {
     margin-bottom: var(--m-lg);
     color: var(--color-black-default);
+
+    .title-container{
+        margin-block-end: var(--m-md);
+    }
 
     .title {
         font-size: var(--fs-h4);
@@ -14,7 +15,17 @@ body {
         line-height: var(--lh-h2);
         padding: var(--p-none);
         margin: var(--m-none);
-        margin-block-end: var(--m-md);
+        
+    }
+
+    .subtitle {
+        font-size: var(--fs-subtitle2);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-h6);
+        color: var(--color-gray-darken6);
+        padding: var(--p-none);
+        margin: var(--m-none);
+        margin-top: var(--m-xxs);
     }
 
     a {
@@ -32,13 +43,12 @@ body {
     }
 }
 
-.card-property {
+.card-explore {
     box-sizing: border-box;
     overflow: hidden;
-    
 
-    .image-property {
-        height: 180px;
+    .image-explore {
+        height: 207px;
         display: flex;
         position: relative;
 
@@ -47,7 +57,7 @@ body {
         }
     }
 
-    .content-property {
+    .content-explore {
         padding-top: var(--p-md);
         max-width: 100%;
         text-align: left;
