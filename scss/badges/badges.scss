@@ -33,6 +33,11 @@ $badge-review-sizes: (
   color: var(--color-white-default);
 }
 
+.badge-review-filled-primary {
+  background-color: var(--color-primary-default);
+  color: var(--color-white-default);
+}
+
 .badge-review-outline {
   box-sizing: border-box;
   border: var(--bw-3) var(--bs-solid) var(--color-black-default);
