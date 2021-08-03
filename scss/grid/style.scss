@@ -8,7 +8,7 @@
 }
 
 @each $point, $scree-size in $grid-breakpoints {
-  @media screen and (min-width: $scree-size) {
+  @media screen and (max-width: $scree-size) {
     @for $i from $grid-columns through 1 {
       .col-#{$i}-#{$point} {
         width: $col-width * $i;
