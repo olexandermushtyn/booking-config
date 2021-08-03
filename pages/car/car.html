@@ -4,400 +4,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="car-page.scss">
+    <link rel="stylesheet" href="../car/car-page.scss">
+    <link rel="stylesheet" href="../../scss/config.css">
+    <link rel="stylesheet" href="../../scss/root.scss">
+    <link rel="stylesheet" href="../../fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../../scss/grid/style.scss">
+
     <title>car-page</title>
     
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-color-primary-default">
-        <div class="container-xl">
-            <div class="row py-sm px-md">
-                <div class="col row align-items-center">
-                    <a href="../main/main.html">
-                        <svg
-                                aria-hidden="true"
-                                class="bk-icon -logos-booking-logo-inv"
-                                focusable="false"
-                                height="24"
-                                role="presentation"
-                                viewBox="0 0 252 42"
-                                width="144"
-                        >
-                            <path
-                                    d="M15.592 22.92C15.591 20.283 13.924 18.652 11.348 18.652H7.738C6.58 18.815 6.055 19.518 6.055 20.877V26.783L11.348 26.79C13.966 26.79 15.591 25.629 15.592 22.92ZM6.055 13.391H10.819C13.496 13.391 14.449 11.689 14.449 9.911C14.449 7.576 13.057 6.181 10.735 6.181H8.025C6.671 6.268 6.055 6.966 6.055 8.428V13.391ZM21.815 23.351C21.815 28.956 17.536 32.87 10.912 32.87H0V4.87C0.02 3.085 1.872 1.285 3.64 1.218H10.777C16.737 1.218 20.587 4.222 20.587 9.202C20.587 12.462 18.959 14.346 17.988 15.183L17.152 15.9L18.109 16.441C20.432 17.751 21.815 20.333 21.815 23.351V23.351ZM148.135 20.675C148.135 15.58 145.385 14.986 143.325 14.986C139.165 14.986 138.845 19.175 138.845 20.459C138.845 23.376 140.105 26.49 143.665 26.49C145.705 26.49 148.135 25.48 148.135 20.675V20.675ZM154.045 9.738L154.025 30.732C154.025 38.739 148.045 41.584 142.505 41.584C139.815 41.584 136.845 40.858 134.555 39.639L134.105 39.4L134.835 37.53L135.345 36.243C135.905 34.855 136.715 34.509 138.095 34.928C139.155 35.312 140.735 35.739 142.475 35.739C146.045 35.739 148.015 34.05 148.015 30.994V30.356L147.505 30.732C146.215 31.72 144.575 32.205 142.505 32.205C136.445 32.205 132.215 27.445 132.215 20.63C132.215 13.811 136.305 9.228 142.385 9.228C145.445 9.228 147.325 10.309 148.375 11.221L148.675 11.482L148.855 11.132C149.325 10.23 150.275 9.738 151.515 9.738H154.045V9.738ZM67.707 21.184C67.707 17.473 65.411 14.877 62.137 14.877C58.877 14.877 56.608 17.473 56.608 21.184C56.608 24.898 58.878 27.496 62.138 27.496C65.464 27.496 67.708 24.958 67.708 21.184H67.707ZM74.088 21.184C74.088 28.054 69.052 33.04 62.138 33.04C55.234 33.04 50.228 28.054 50.228 21.184C50.228 14.318 55.234 9.331 62.138 9.331C69.052 9.331 74.088 14.318 74.088 21.184ZM105.445 32.677V13.281C105.445 10.941 104.335 9.806 102.025 9.806L99.465 9.796L99.485 27.5H99.465L99.485 32.87H105.445V32.677ZM122.505 9.278C119.175 9.278 117.055 10.765 115.865 12.018L115.465 12.423L115.325 11.873C114.975 10.529 113.795 9.788 112.025 9.788H109.165L109.185 32.683H115.225V22.131C115.225 21.099 115.365 20.205 115.635 19.387C116.355 16.914 117.995 15.378 120.525 15.378C122.555 15.378 123.725 16.453 123.725 19.232V29.203C123.725 31.573 125.195 32.683 127.555 32.683H129.785V18.261C129.785 12.475 127.825 9.278 122.505 9.278V9.278ZM91.436 21.777C91.1964 21.3119 90.8928 20.8827 90.534 20.502L90.326 20.281L90.546 20.069C90.862 19.734 91.186 19.338 91.497 18.878L97.584 9.795H90.195L85.622 16.899C85.363 17.28 84.84 17.472 84.058 17.472H82.48V4.045C82.48 1.36 80.642 0 78.84 0H76.414L76.42 32.691H82.48V23.183H83.63C84.375 23.183 84.883 23.269 85.118 23.675L88.729 30.518C89.736 32.375 90.743 32.691 92.635 32.691H97.651L93.915 26.488L91.436 21.777ZM41.648 21.184C41.648 17.473 39.358 14.877 36.079 14.877C32.819 14.877 30.553 17.473 30.553 21.184C30.553 24.898 32.819 27.496 36.079 27.496C39.405 27.496 41.649 24.958 41.649 21.184H41.648ZM48.028 21.184C48.028 28.054 43.002 33.04 36.079 33.04C29.182 33.04 24.177 28.054 24.177 21.184C24.177 14.318 29.182 9.331 36.079 9.331C43.002 9.331 48.027 14.318 48.027 21.184H48.028ZM98.764 3.81C98.764 1.704 100.464 0 102.544 0C104.634 0 106.334 1.704 106.334 3.81C106.334 5.911 104.634 7.617 102.544 7.617C100.464 7.617 98.764 5.911 98.764 3.81Z"
-                                    fill="white"
-                            ></path>
-                            <path
-                                    d="M187.08 25.067C187.06 25.088 184.38 27.915 180.87 27.915C177.66 27.915 174.42 25.941 174.42 21.538C174.42 17.73 176.93 15.071 180.53 15.071C181.7 15.071 183.02 15.492 183.23 16.198L183.26 16.318C183.74 17.919 185.19 18.001 185.47 18.001L188.88 18.005V15.021C188.88 11.085 183.89 9.65698 180.53 9.65698C173.35 9.65698 168.14 14.674 168.14 21.584C168.14 28.489 173.29 33.502 180.4 33.502C186.56 33.502 189.91 29.434 189.94 29.391L190.12 29.172L187.43 24.685L187.08 25.067ZM244.43 9.65698C241.73 9.65698 239.25 10.927 237.58 13.05L237.11 13.651L236.74 12.979C235.53 10.776 233.46 9.65698 230.57 9.65698C227.55 9.65698 225.53 11.35 224.58 12.358L223.97 13.024L223.73 12.144C223.39 10.877 222.26 10.178 220.56 10.178H218.06L218.04 32.984H224.01V22.917C224.01 22.036 224.12 21.163 224.34 20.248C224.93 17.816 226.56 15.202 229.3 15.462C230.99 15.626 231.81 16.936 231.81 19.466V32.984H237.44V22.917C237.44 21.813 237.55 20.99 237.79 20.162C238.3 17.842 240.37 15.459 243.02 15.459C244.93 15.459 245.93 16.545 245.93 19.466V29.649C245.93 31.954 247.28 32.984 249.57 32.984H251.99L252 18.424C252 12.607 249.45 9.65698 244.43 9.65698V9.65698ZM203.66 10.043C196.76 10.043 191.35 15.031 191.35 21.898C191.35 28.765 196.76 33.754 203.66 33.754C210.58 33.754 215.61 28.765 215.61 21.898C215.61 15.031 210.58 10.043 203.66 10.043V10.043ZM158.31 29.446C158.31 27.34 160 25.636 162.09 25.636C164.18 25.636 165.88 27.34 165.88 29.446C165.88 31.548 164.18 33.254 162.09 33.254C160 33.254 158.31 31.548 158.31 29.446ZM203.66 28.209C200.4 28.209 198.13 25.611 198.13 21.898C198.13 18.186 200.4 15.59 203.66 15.59C206.93 15.59 209.23 18.186 209.23 21.898C209.23 25.671 206.99 28.209 203.66 28.209Z"
-                                    fill="#0896FF"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="row align-items-center">
-                    <button class="btn btn-info btn-xxs bold br-2 mr-xs" name="info" type=" button ">UAH</button>
-                    <button class="btn btn-image br-2 mr-xs" name="info" type=" button "><img alt=""
-                                                                                              src="https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png"
-                                                                                              style="height: 24px; width:24px; border-radius: 50%;">
-                    </button>
-                    <a class="btn btn-image br-2 mr-xs" href="../customer-service/customer-service.html">
-                        <svg aria-hidden="true" focusable="false" height="24" role="presentation" viewBox="0 0 24 24"
-                             width="24">
-                            <path d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"
-                                  fill="white"></path>
-                        </svg>
-                    </a>
-                    <button class="btn btn-outlined btn-sm mr-xs" name="outlined-big" type="button">List your property
-                    </button>
-                    <button class="btn btn-white btn-sm mr-xs" name="white" type="button">Register</button>
-                    <button class="btn btn-white btn-sm" name="white" type="button">Sign In</button>
-                    <a class="burger " href="">
-                        <i class="far color-white-default fa-user-circle fs-h5 mr-sm"></i>
-                    </a>
-                    <a class="burger color-white-default fs-h5 display-block" href="#menu-fade">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-            <nav class="menu">
-                <a class="btn-outlined-hover bb-2-w-s" href="../main/main.html">
-                    <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            height="20"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                            width="20"
-                    >
-                        <path
-                                d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z"
-                                fill="white"
-                        ></path>
-                    </svg>
-                    <span>Stays</span></a
-                >
-                <a class="btn-outlined-hover " href="../flights/flights.html">
-                    <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            height="20"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                            width="20"
-                    >
-                        <path
-                                d="M20.505 7.5l-15.266.022.672.415-1.1-2.2a.75.75 0 0 0-.638-.414l-2.293-.1C.82 5.228-.003 6.06.003 7.083c.002.243.051.484.146.709l2.072 4.68a2.947 2.947 0 0 0 2.701 1.778h4.043l-.676-1.075-2.484 5.168A1.831 1.831 0 0 0 7.449 21h2.099a1.85 1.85 0 0 0 1.419-.664l5.165-6.363-.582.277h4.956c1.82.09 3.399-1.341 3.49-3.198l.004-.134a3.426 3.426 0 0 0-3.44-3.419l-.074.001zm.02 1.5h.042a1.924 1.924 0 0 1 1.933 1.914l-.002.065a1.866 1.866 0 0 1-1.955 1.772l-4.993-.001a.75.75 0 0 0-.582.277l-5.16 6.355a.346.346 0 0 1-.26.118h-2.1a.336.336 0 0 1-.3-.49l2.493-5.185a.75.75 0 0 0-.676-1.075H4.924a1.45 1.45 0 0 1-1.328-.878l-2.07-4.676a.35.35 0 0 1 .326-.474l2.255.1-.638-.415 1.1 2.2a.75.75 0 0 0 .672.415L20.507 9zM16.323 7.76l-2.992-4.02A1.851 1.851 0 0 0 11.85 3H9.783a1.85 1.85 0 0 0-1.654 2.672l1.439 2.91a.75.75 0 0 0 1.344-.664L9.472 5.007a.351.351 0 0 1 .312-.507h2.066a.35.35 0 0 1 .279.14l2.99 4.017a.75.75 0 1 0 1.203-.896z"
-                                fill="white"
-                        ></path>
-                    </svg>
-                    <span>Flights</span></a
-                >
-                <a class="btn-outlined-hover " href="../car/car.html">
-                    <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            height="20"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                            width="20"
-                    >
-                        <path
-                                d="M21.684 9.443l-1.7-3.79c-.42-1.128-1.542-1.905-2.794-1.903H6.809a2.999 2.999 0 0 0-2.811 1.947L2.316 9.443a.75.75 0 1 0 1.368.614l1.7-3.79c.238-.63.798-1.018 1.424-1.017h10.383a1.5 1.5 0 0 1 1.407.973l1.718 3.834a.75.75 0 1 0 1.368-.614zM.75 16.468V18a2.25 2.25 0 0 0 4.5 0v-1.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 1-1.5 0v-1.532a.75.75 0 0 0-1.5 0zm21 0V18a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 0-1.5 0V18a2.25 2.25 0 0 0 4.5 0v-1.532a.75.75 0 0 0-1.5 0zM19.875 13.5a.375.375 0 0 1-.375-.375.75.75 0 0 0 1.5 0c0-.621-.504-1.125-1.125-1.125a.75.75 0 0 0 0 1.5zm.375-.375a.375.375 0 0 1-.375.375.75.75 0 0 0 0-1.5c-.621 0-1.125.504-1.125 1.125a.75.75 0 0 0 1.5 0zm-.375-.375c.207 0 .375.168.375.375a.75.75 0 0 0-1.5 0c0 .621.504 1.125 1.125 1.125a.75.75 0 0 0 0-1.5zm-.375.375c0-.207.168-.375.375-.375a.75.75 0 0 0 0 1.5c.621 0 1.125-.504 1.125-1.125a.75.75 0 0 0-1.5 0zM4.125 12C3.504 12 3 12.504 3 13.125a.75.75 0 0 0 1.5 0 .375.375 0 0 1-.375.375.75.75 0 0 0 0-1.5zm1.125 1.125c0-.621-.504-1.125-1.125-1.125a.75.75 0 0 0 0 1.5.375.375 0 0 1-.375-.375.75.75 0 0 0 1.5 0zM4.125 14.25c.621 0 1.125-.504 1.125-1.125a.75.75 0 0 0-1.5 0c0-.207.168-.375.375-.375a.75.75 0 0 0 0 1.5zM3 13.125c0 .621.504 1.125 1.125 1.125a.75.75 0 0 0 0-1.5c.207 0 .375.168.375.375a.75.75 0 0 0-1.5 0zM2.75 10.5h18.5c.69 0 1.25.56 1.25 1.25v3.75a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25v-3.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 11.75v3.75c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0 0 24 15.5v-3.75A2.75 2.75 0 0 0 21.25 9H2.75z"
-                                fill="white"
-                        ></path>
-                    </svg>
-                    <span>Car rentals</span></a
-                >
-                <a class="btn-outlined-hover " href="../attractions/attractions.html">
-                    <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            height="20"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                            width="20"
-                    >
-                        <path
-                                d="M13.5 3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM15 3a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM21 15a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-9-3.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM6 15a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm10.066 1.277a7.5 7.5 0 0 1-3.077 2.05.75.75 0 0 0 .498 1.415 9 9 0 0 0 3.693-2.46.75.75 0 1 0-1.114-1.005zm1.798-6.466c.177.922.183 1.869.015 2.792a.75.75 0 1 0 1.476.268c.2-1.106.194-2.24-.019-3.344a.75.75 0 1 0-1.472.284zm-5.337-5.784a7.5 7.5 0 0 1 3.54 2.196.75.75 0 0 0 1.113-1.004 9.002 9.002 0 0 0-4.247-2.636.75.75 0 1 0-.406 1.444zM6.434 6.223a7.5 7.5 0 0 1 3.539-2.196.75.75 0 1 0-.406-1.444A9.001 9.001 0 0 0 5.32 5.219a.75.75 0 0 0 1.114 1.004zM4.636 12.69a7.602 7.602 0 0 1 0-2.878.75.75 0 1 0-1.472-.284 9.102 9.102 0 0 0 0 3.446.75.75 0 0 0 1.472-.284zm4.876 5.639a7.517 7.517 0 0 1-3.035-2.005.75.75 0 0 0-1.106 1.014 9.017 9.017 0 0 0 3.641 2.405.75.75 0 1 0 .5-1.414zM7.31 21.872A1.5 1.5 0 0 0 8.672 24h6.656a1.5 1.5 0 0 0 1.362-2.128l-3.314-8.217c-.361-.785-1.252-1.114-2.005-.767a1.5 1.5 0 0 0-.733.734l-3.343 8.283zm1.377.595l3.328-8.25-.015.033 3.313 8.217.015.033H8.672z"
-                                fill="white"
-                        ></path>
-                    </svg>
-                    <span>Attractions</span></a
-                >
-                <a class="btn-outlined-hover " href="../airport-taxis/airport-taxis.html">
-                    <svg aria-hidden="true" class="bk-icon -streamline-taxi_sign" focusable="false" height="20"
-                         role="presentation" viewBox="0 0 24 24" width="20">
-                        <path d="M21.75 15.5V8a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zm-16.5 0V8a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zM3 8.75h3a.75.75 0 0 0 0-1.5H3a.75.75 0 0 0 0 1.5zm6.75 6.75v-6a.75.75 0 0 1 1.5 0v6a.75.75 0 0 0 1.5 0v-6a2.25 2.25 0 0 0-4.5 0v6a.75.75 0 0 0 1.5 0zM9 13.25h3a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5zm5.304-4.971l3 7.5a.75.75 0 0 0 1.392-.557l-3-7.5a.75.75 0 0 0-1.392.557zm3-.558l-3 7.5a.75.75 0 0 0 1.392.557l3-7.5a.75.75 0 0 0-1.392-.557zM.75 5h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zm0 15h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5z"
-                              fill="white"></path>
-                    </svg>
-                    <span>Airport taxis</span></a
-                >
-            </nav>
-            <!--adaptive menu-->
-            <div class="menu menu--fade" id="menu-fade">
-                <div class="menu__content">
-                    <h2 class="text-left p-paired-md m-none">More</h2>
+    <!--ITS HEADER-->
     
-                    <nav class="menu-navigation">
-    
-                        <a href=""><span class="color-gray-darken5">UAH</span> Ukraine Hryvnia</a>
-                        <a href="">
-                            <span><img alt=""
-                                       class="bui-avatar__image"
-                                       src="https://cf.bstatic.com/static/img/flags/new/48-squared/us/fa2b2a0e643c840152ba856a8bb081c7ded40efa.png"></span>
-                            English (US)
-                        </a>
-                        <a href=""><span><svg aria-hidden="true" class="bk-icon -streamline-property_add" focusable="false"
-                                              height="24"
-                                              role="presentation" viewBox="0 0 24 24" width="24">
-                            <path d="M8.25 19h-3a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 0-1.5 0v7.5a2.25 2.25 0 0 0 2.25 2.25h3a.75.75 0 0 0 0-1.5zM1.234 9.823l8.782-7.43a.75.75 0 0 1 .969 0l7.279 6.159a.75.75 0 1 0 .968-1.146l-7.279-6.159a2.25 2.25 0 0 0-2.906 0L.265 8.678a.75.75 0 1 0 .968 1.146zM15.75 2.5h3L18 1.75v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0 0 1.5zm6.75 14.25a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0zm1.5 0a6.75 6.75 0 1 0-13.5 0 6.75 6.75 0 0 0 13.5 0zm-7.5-3v6a.75.75 0 0 0 1.5 0v-6a.75.75 0 0 0-1.5 0zm-2.25 3.75h6a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5z"></path>
-                        </svg></span>
-                            List your property</a>
-                        <h3>Help and support</h3>
-                        <a href="">
-                            <span><svg aria-hidden="true" class="bk-icon -streamline-question_mark_circle"
-                                       focusable="false"
-                                       height="24" role="presentation" viewBox="0 0 24 24" width="24"><path
-                                    d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"></path></svg></span>
-                            Contact Customer Service
-                        </a>
-    
-                        <a href="">
-                            <span><svg aria-hidden="true" class="bk-icon -streamline-handshake" focusable="false"
-                                       height="24" role="presentation" viewBox="0 0 24 24"
-                                       width="24"><path
-                                    d="M20.15 13.603l-5.16.986a.75.75 0 0 0 .28 1.474l5.16-.986a.75.75 0 0 0-.28-1.474zm-5.97-5.837l-3.467 1.146a.4.4 0 0 1-.489-.213.415.415 0 0 1 .187-.547l3.357-1.688a1.594 1.594 0 0 1 1.266-.074l4.973 1.82a.75.75 0 1 0 .516-1.41L15.55 4.983a3.093 3.093 0 0 0-2.457.142L9.735 6.813a1.915 1.915 0 0 0-.872 2.517 1.9 1.9 0 0 0 2.32 1.006L14.65 9.19a.75.75 0 1 0-.47-1.424zM3.686 15.098H6.13l-.56-.25 3.512 3.935a2.09 2.09 0 0 0 2.943.208c.46-.397.725-.975.725-1.583v-.615H12l-.278.696.175.07a2.406 2.406 0 0 0 3.299-2.233h-.75v.75h.489a2.218 2.218 0 0 0 1.774-3.548l-3.148-4.033a.75.75 0 1 0-1.182.922l3.139 4.022a.718.718 0 0 1-.583 1.137h-.489a.75.75 0 0 0-.75.75.904.904 0 0 1-1.242.84l-.176-.07a.75.75 0 0 0-1.028.697v.615a.592.592 0 0 1-1.04.386l-3.52-3.945a.75.75 0 0 0-.56-.251H3.685a.75.75 0 0 0 0 1.5zm7.375-8.452l-.358-.295a2.874 2.874 0 0 0-1.722-.58c-.363 0-.723.07-1.06.205l-4.448 1.78a.75.75 0 0 0 .556 1.392l4.451-1.78a1.35 1.35 0 0 1 1.3.166l.327.27a.75.75 0 0 0 .954-1.158zM.75 7.5h2c.147-.005.245.084.25.2v6.383c-.005.082-.103.172-.22.168L.75 14.25a.75.75 0 0 0 0 1.5h2c.91.038 1.706-.692 1.75-1.633V7.667c-.044-.976-.84-1.705-1.781-1.665L.75 6a.75.75 0 0 0 0 1.5zm22.5 6.75h-2c-.147.005-.245-.085-.25-.201V7.666c.005-.082.103-.171.219-.167l2.031.001a.75.75 0 0 0 0-1.5h-2c-.91-.039-1.706.69-1.75 1.632v6.451c.044.975.84 1.705 1.78 1.666l1.97.001a.75.75 0 0 0 0-1.5zm-10.72 2.013l-.978-.978a.75.75 0 1 0-1.06 1.06l.978.978a.75.75 0 1 0 1.06-1.06zm2.446-1.467l-1.468-1.468a.75.75 0 1 0-1.06 1.06l1.468 1.468a.75.75 0 1 0 1.06-1.06z"></path></svg></span>
-                            Partner dispute
-                        </a>
-    
-                        <h3>Inspiration</h3>
-                        <a
-                                href=""><span><svg aria-hidden="true" class="bk-icon -streamline-percentage_circle"
-                                                   focusable="false"
-                                                   height="24" role="presentation" viewBox="0 0 24 24"
-                                                   width="24"><path
-                                d="M22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12zM8.78 16.28l7.5-7.5a.75.75 0 0 0-1.06-1.06l-7.5 7.5a.75.75 0 1 0 1.06 1.06zM9.75 9a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.5 0a2.25 2.25 0 1 0-4.5 0 2.25 2.25 0 0 0 4.5 0zm4.5 6a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.5 0a2.25 2.25 0 1 0-4.5 0 2.25 2.25 0 0 0 4.5 0z"></path></svg></span>Deals</a>
-                        <a href=""><span><svg aria-hidden="true" class="bk-icon -streamline-book" focusable="false"
-                                              height="24"
-                                              role="presentation" viewBox="0 0 24 24" width="24"><path
-                                d="M21 22.5H5.25a1.5 1.5 0 0 1-1.5-1.5.75.75 0 0 0-1.5 0 3 3 0 0 0 3 3H21a.75.75 0 0 0 0-1.5zM6 0a3.75 3.75 0 0 0-3.75 3.75V21h1.5a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 0 1.5-1.5V1.5a1.5 1.5 0 0 0-1.5-1.5H6zm0 1.5h14.25V18h-15a3 3 0 0 0-3 3c0 1 1.5 1 1.5 0V3.75A2.25 2.25 0 0 1 6 1.5zm14.25 21.75v-4.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0z"></path></svg></span>Travel
-                            articles</a>
-                    </nav>
-    
-                    <a class="menu__close" href="#page">
-                        <svg height="24" role="presentation" viewBox="0 0 24 24" width="24"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 12l6.26-6.26a.73.73 0 0 0-1-1L12 11 5.74 4.71a.73.73 0 1 0-1 1L11 12l-6.29 6.26a.73.73 0 0 0 .52 1.24.73.73 0 0 0 .51-.21L12 13l6.26 6.26a.74.74 0 0 0 1 0 .74.74 0 0 0 0-1z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <!--end of adaptive menu-->
-        </div>
-    </header>
-<!-- end of header -->
-    <div class="bg-color-danger-lighten2 frame-1">
+    <!--HEADER ENDED-->
+
+    <!--CORONOVIRUS_INFO START-->
+    <div class=" coronovirus-unit p-md">
         <div class="container-xl ">
-            <div class="row ">
-                <div class="col pt-md icon"><i class="color-black-default fs-h2 fas    fa-info-circle pt-md"></i>
-                    <div class="col-5 p-md">
-                        <p class="fs-h5 fw-bold mb-xs mt-none lh-h4 color-gray-darken6">Clean cars. Flexible bookings. Socially distant rental counters.</p>
-                        <div class="mb-md fs-h5">We’re working with our partners to keep you safe and in the driving seat.</div>
-                        <a href="#" target="_blank" role="link" class="input-primary-md input-underline-hover input-lh-h3 fw-bold">Find out how</a>
-                    </div>
+            <div class="row align" >
+                <div><i class="fs-h1 fas fa-info-circle pt-md"></i></div>
+                <div class="pl-sm">
+                    <p class="textarea-1">Clean cars. Flexible    bookings. Socially distant rental counters.</p>
+                    <p class="textarea-2">We’re working with our    partners to keep you safe and in the driving seat.</p>
+                    <a href="#" target="_blank" role="link"     class="input-primary-md " style="font-weight: var(--fw-bold);font-size: var(--fs-body1);">Find out how</a>
                 </div>
-                
             </div>
+        </div>
+    </div>    
+    <!--CORONOVIRUS_INFO END-->
+
+    <!--Input-Unit START-->
+    <div class="input-unit">
+        <div class="container-xl">
+            <div class="row textarea-align">
+                <h1 class="heading-6 mt-lg mb-none">Car rentals for any kind of trip</h1>
+                <h2 class="textarea-3 mt-xs mb-md">Compare deals from the biggest car rental companies</h2>
+            </div>
+            <div class="row radio-align textarea-3">
+                <input type="radio" name="same-location" id="radio-1" class="chbx-lg"checked>
+                <label for="radio-1" class="textarea-3 ml-xs ">Return to same location</label>
+                <input type="radio" name="other-location" id="radio-2" class="chbx-lg m-sm">
+                <label for="radio-2 " class="textarea-3">Return to different location</label>
+            </div>
+            <div class="color-back mt-md mb-md">
+            <div class="row no-wrap ">
+                <div class="col-6 mr-xs">
+                <label>
+                    <input
+                      class="input-xxl input-img-car "
+                      type="text"
+                      placeholder="Pickup location"
+                    />
+                  </label>
+                </div>
+                <div class=" input-align-2">
+                <div class="mr-xs">
+                  <input
+                    class="input-xxl input-calendar-icon-xxl "
+                    type="text"
+                    placeholder="Wed, Aug 4, 10:00"
+                    />
+                </div>
+                <div class="mr-xs ">
+                    <input
+                      class="input-xxl input-calendar-icon-xxl "
+                      type="text"
+                      placeholder="Sat, Aug 7, 10:00"
+                      />
+                  </div>
+                  <div class="">
+                    <button name="primary-search-medium" type="button" class="btn btn-primary btn-xl btn-align">Search</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row checkbox pb-lg">
+            <input class="custom-checkbox-lg" type="checkbox" id="checkbox-md"/>
+            <label for="checkbox-md" class="label-style textarea-3"><span class="ml-sm">Driver aged between 30 - 65</span></label>
+            <i class="fs-h5 fas fa-info-circle p-md"></i>
+          </div>
         </div>
     </div>
 
-    <br/>
+    <!--Input-Unit END-->
 
+    <!-- RENTAL COMPANIES START-->
     <div class="bg-color-white-default">
         <div class="container-xl">
             <div class="row">
-                <div class="col">
-                        <h2 class="heading-1 fs-h2 lh-h1 fw-medium color-gray-darken6">Popular rental car companies</h2>
-                </div>
+                <h2 class="heading-1">Popular rental car companies</h2>
             </div>
-            <div class="row">
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif" alt="Europcar: car rental company logo">
-                </div>
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif" alt="Alamo: car rental company logo">
-                </div>
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif" alt="Sixt: car rental company logo">
-                </div>
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif" alt="Avis: car rental company logo">
-                </div>
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/enterprise_logo_lrg.gif" alt="Enterprise: car rental company logo">
-                </div>
-                <div class="col">
+            <div class="row sb-align">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif" alt="Europcar: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif" alt="Alamo: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif" alt="Sixt: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif" alt="Avis: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/enterprise_logo_lrg.gif" alt="Enterprise: car rental company logo">
                     <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif" alt="Dollar: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif" alt="Thriftly: car rental company logo">
+                    <img class="image-1" src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif" alt="Sicilybycar: car rental company logo">
             </div>
+        </div>
+    </div>
+    <!-- RENTAL COMPANIES END-->
 
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif" alt="Thriftly: car rental company logo">
-                </div>
-                <div class="col">
-                        <img class="image-1" src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif" alt="Sicilybycar: car rental company logo">
-                </div>
+    <!--POPULAR DESTINATIONS FOR CARS START-->
+    <div class="bg-color-white-default">
+        <div class="container-xl">
+            <div class="row">
+                <h2 class="heading-1">Popular rental car companies</h2>
             </div>
         </div>
     </div>
-    <div class="container-xl">
+
+    <div class="bg-color-white-default">
+    <div class="container-xl ">
         <div class="row">
-            <div class="col">
-                    <h2 class="heading-1 fs-h2 lh-h1 fw-medium color-gray-darken6">Popular destinations for car rentals</h2>
-            </div>
-        </div>
-    </div>
-    <div class="container-xl">
-        <div class="row">
-            <div class="col frame-2 mt-xxl">
-                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&amp;o=" alt="">
-                <div class="card-content p-md">
-                    <h3 class="color-black-default fw-bold lh-h4 m-none">London</h3>
-                    <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
+            <div class="col mr-lg">
+                <div class="frame-1">
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&amp;o=" alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">London</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
                     Car rentals in 75 pickup locations</h4>
-                    <div>
-                        <div class="car mb-md mt-md" >
-                            <i class="fas fa-car-alt fs-h1"></i>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
                             <div class="ml-md">
-                                <div class="fs-caption1 color-gray-darken6">From UAH 181 per day</div>
-                                <div class="color-gray-lighten1 fs-caption1">Mini car</div>
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
                             </div>
-                        </div>
                         <div>
-                            <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in London</a>
+                    </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col frame-2 mt-xxl  ">
-                <img class="image-2" src="https://cf.bstatic.com/xdata/images/city/360x240/619644.webp?k=5b21ac6d3d913a54274d6546e60adb2c3c138d661dd1a2bd7b3aed53e9df0b65&amp;o="  alt="">
-                <div class="card-content p-md">
-                    <h3 class="color-black-default fw-bold lh-h4 m-none">Milan</h3>
-                    <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
-                    Car rentals in 45 pickup locations</h4>
                     <div>
-                        <div class="car mb-md mt-md" >
-                            <i class="fas fa-car-alt fs-h1"></i>
-                            <div class="ml-md">
-                                <div class="fs-caption1 color-gray-darken6">From UAH 181 per day</div>
-                                <div class="color-gray-lighten1 fs-caption1">Mini car</div>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in Milan</a>
-                        </div>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in London</a>
                     </div>
                 </div>
+                </div>
+            </div>    
+            <div class="col mr-lg">
+                <div class="frame-1" >
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/619644.webp?k=5b21ac6d3d913a54274d6546e60adb2c3c138d661dd1a2bd7b3aed53e9df0b65&amp;o="  alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">Milan</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
+                    Car rentals in 75 pickup locations</h4>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
+                            <div class="ml-md">
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
+                            </div>
+                        <div>
+                    </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in Milan</a>
+                    </div>
+                </div>
+                </div>
+            </div>  
+            <div class="col">
+                <div class="frame-1">
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/613105.webp?k=1e85cf4dec7b0d5a6327be91c38cf9c1711f9da1a31c4cba736f9cb751443ff1&amp;o="  alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">Rome</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
+                    Car rentals in 75 pickup locations</h4>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
+                            <div class="ml-md">
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
+                            </div>
+                        <div>
+                    </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in Rome</a>
+                    </div>
+                </div>
+                </div>
+            </div>  
         </div>
-        <div class="col frame-2 mt-xxl ">
-            <img class="image-2" src="https://cf.bstatic.com/xdata/images/city/360x240/613105.webp?k=1e85cf4dec7b0d5a6327be91c38cf9c1711f9da1a31c4cba736f9cb751443ff1&amp;o=" alt="">
-            <div class="card-content p-md">
-                <h3 class="color-black-default fw-bold lh-h4 m-none">Rome</h3>
-                <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
-                Car rentals in 65 pickup locations</h4>
-                <div>
-                    <div class="car mb-md mt-md" >
-                        <i class="fas fa-car-alt fs-h1"></i>
-                        <div class="ml-md">
-                            <div class="fs-caption1 color-gray-darken6">From UAH 181 per day</div>
-                            <div class="color-gray-lighten1 fs-caption1">Economy car</div>
+        <div class="row pt-lg pb-lg">
+            <div class="col mr-lg">
+                <div class="frame-1">
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&amp;o="  alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">Paris</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
+                    Car rentals in 75 pickup locations</h4>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
+                            <div class="ml-md">
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
+                            </div>
+                        <div>
+                    </div>
                         </div>
                     </div>
                     <div>
-                        <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in Rome</a>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in Paris</a>
                     </div>
                 </div>
-            </div>
+                </div>
+            </div>    
+            <div class="col mr-lg">
+                <div class="frame-1">
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/968315.webp?k=14d0bad185930ec2663562b999ecf498fb6fcf492c16a4c33228504a15e2d119&amp;o="  alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">Barcelona</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
+                    Car rentals in 75 pickup locations</h4>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
+                            <div class="ml-md">
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
+                            </div>
+                        <div>
+                    </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in Barcelona</a>
+                    </div>
+                </div>
+                </div>
+            </div>  
+            <div class="col">
+                <div class="frame-1">
+                <img  src="https://cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&amp;o="  alt="" class="image">
+                <div class="card-content p-md ">
+                    <h3 class="heading-small m-none">Madrid</h3>
+                    <h4 class="heading-gray mb-sm mt-none">
+                    Car rentals in 75 pickup locations</h4>
+                    <div class="">
+                        <div class="car-icon mb-md mt-md" >
+                            <i class="fas fa-car-alt "></i>
+                            <div class="ml-md">
+                                <div class="text-sm">From UAH 181 per day</div>
+                                <div class="text-xs">Mini car</div>
+                            </div>
+                        <div>
+                    </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class=" input-grey-link" target="_blank" role="link" >Search car rentals in Madrid</a>
+                    </div>
+                </div>
+                </div>
+            </div>  
         </div>
     </div>
-    <div class="container-xl">
-        <div class="row">
-            <div class="col frame-2 mt-xxl mb-xxl ">
-                <img class="image-2" src="https://cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&amp;o="  alt="">
-                <div class="card-content p-md">
-                    <h3 class="color-black-default fw-bold lh-h4 m-none">Paris</h3>
-                    <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
-                    Car rentals in 90 pickup locations</h4>
-                    <div>
-                        <div class="car mb-md mt-md" >
-                            <i class="fas fa-car-alt fs-h1"></i>
-                            <div class="ml-md">
-                                <div class="fs-caption1 color-gray-darken6">From UAH 191 per day</div>
-                                <div class="color-gray-lighten1 fs-caption1">Economy car</div>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in Paris</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col frame-2 mt-xxl mb-xxl">
-                <img class="image-2" src="https://cf.bstatic.com/xdata/images/city/360x240/968315.webp?k=14d0bad185930ec2663562b999ecf498fb6fcf492c16a4c33228504a15e2d119&amp;o="   alt="">
-                <div class="card-content p-md">
-                    <h3 class="color-black-default fw-bold lh-h4 m-none">Barcelona</h3>
-                    <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
-                    Car rentals in 23 pickup locations</h4>
-                    <div>
-                        <div class="car mb-md mt-md" >
-                            <i class="fas fa-car-alt fs-h1"></i>
-                            <div class="ml-md">
-                                <div class="fs-caption1 color-gray-darken6">From UAH 181 per day</div>
-                                <div class="color-gray-lighten1 fs-caption1">Economy car</div>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in Barcelona</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col frame-2 mt-xxl mb-xxl ">
-                <img class="image-2" src="https://cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&amp;o="  alt="">
-                <div class="card-content p-md">
-                    <h3 class="color-black-default fw-bold lh-h4 m-none">Madrid</h3>
-                    <h4 class="color-gray-lighten1 fw-normal lh-h6 m-none">
-                    Car rentals in 40 pickup locations</h4>
-                    <div>
-                        <div class="car mb-md mt-md" >
-                            <i class="fas fa-car-alt fs-h1"></i>
-                            <div class="ml-md">
-                                <div class="fs-caption1 color-gray-darken6">From UAH 181 per day</div>
-                                <div class="color-gray-lighten1 fs-caption1">Mini car</div>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#" class=" input-primary-sm" target="_blank" role="link">Search car rentals in Madrid</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    </div>
-        <div class="bg-color-danger-lighten2 pb-xxl mb-md pt-md ">
-        <div class="container-xl mb-lg">
-            <h2 class="title-info fs-h2 lh-h1 fw-semi-Bold pt-xxl mb-sm">World's biggest online car rental service</h2>
-            <h3 class=" fs-h4 fs-body1 fw-normal lh-h6
-            mb-sm">Why you'll find the right car in the right place with us... </h3>
+    <!--POPULAR DESTINATIONS FOR CARS END -->
+
+    <!--World`s biggest START-->
+    <div class="background-size">
+        <div class="container-xl p-lg m-none">
+            <h2 class="heading-2 ">World's biggest online car rental service</h2>
+            <h3 class="heading-3 ">Why you'll find the right car in the right place with us... </h3>
             <div class="row">
                 <div class="col">
                     <div class="list-icon mb-md mt-md " >
                         <i class="fas fa-globe fs-h1"></i>
                         <div class="ml-md">
-                            <div class=" fw-bold fs-h4 color-black-default">60,000+</div>
-                            <div class="color-gray-darken6 fs-h4">locations</div>
+                            <div class="color-black-default fw-bold">60,000+</div>
+                            <div class="color-gray-darken6 ">locations</div>
                         </div>
                     </div>
                 </div>
@@ -405,8 +289,8 @@
                     <div class="list-icon mb-md mt-md " >
                         <i class="fas fa-globe-europe fs-h1"></i>
                         <div class="ml-md">
-                            <div class="fw-bold fs-h4 color-black-default">160</div>
-                            <div class="color-gray-darken6 fs-h4">countries</div>
+                            <div class="color-black-default fw-bold color-black-default">160</div>
+                            <div class="color-gray-darken6">countries</div>
                         </div>
                     </div>
                 </div>
@@ -414,8 +298,8 @@
                     <div class="list-icon mb-md mt-md " >
                         <i class="fas fa-comment fs-h1"></i>
                         <div class="ml-md">
-                            <div class="fw-bold fs-h4 color-black-default">43</div>
-                            <div class="color-gray-darken6 fs-h4">languages spoken</div>
+                            <div class="color-black-default fw-bold color-black-default">43</div>
+                            <div class="color-gray-darken6 ">languages spoken</div>
                         </div>
                     </div>
                 </div>
@@ -423,247 +307,120 @@
                     <div class="list-icon mb-md mt-md " >
                         <i class="fas fa-star fs-h1"></i>
                         <div class="ml-md">
-                            <div class="fw-bold fs-h4 color-black-default">3,500,000</div>
-                            <div class="color-gray-darken6 fs-h4">customer reviews</div>
+                            <div class="color-black-default fw-bold color-black-default">3,500,000</div>
+                            <div class="color-gray-darken6 ">customer reviews</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br/>
-    <div class="container-xl pb-xxl">
-        <div class="row">
-            <div class="col-2 title-3 bg-color-gray-default p-xxl">
-                <h3 class=" fs-h2 lh-h1 fw-semi-Bold pt-xxs mb-md mt-none ">Frequently Asked Questions</h3>
+    <!--World`s biggest END-->
+
+    <!--QUESTIONS START-->
+    <div class="container-xl m-xl ">
+        <div class="row mt-lg">
+            <div class="bg-color-gray-lighten1 p-lg">
+                <h3 class="heading-4 col">Frequently Asked Questions</h3>
             </div>
             <div class="col">
-                <details>
-                    <summary class="fs-h4 lh-h4 fw-medium pl-md pt-sm pb-sm pr-md frame-2 summary-hover">What do I need to rent a car?<i class="arrow fas fa-chevron-down"></i></summary>
-                    <p class="fs-caption1 pl-md mt-xl">
+                <details class="right-border">
+                    <summary class="accordion frame-1 m-none summary-hover fw-semi-bold">What do I need to rent a car?<i class="arrow fas fa-chevron-down"></i></summary>
+                    <p class="fs-body2 m-md">
                     When you’re booking a car, all you need is a debit or credit card.</p>
-
-<p class="fs-caption1 pl-md">At the rental counter, you’ll need:</p>
-<ul type="circle" class="fs-caption1 pl-md ">
-    <li>Your passport</li>
-    <li>Your voucher</li>
-    <li>A driver’s license for each driver</li>
-    <li>The main driver’s credit card (some companies accept debit cards, but most don’t).</li>
+<p class="fs-body2 m-md">At the rental counter, you’ll need:</p>
+<ul type="circle" class="fs-body2 pl-lg ">
+    <li class="pb-sm">Your passport</li>
+    <li class="pb-sm">Your voucher</li>
+    <li class="pb-sm">A driver’s license for each driver</li>
+    <li class="pb-sm">The main driver’s credit card (some companies accept debit cards, but most don’t).</li>
 </ul>
-<p class="fs-caption1 pl-md pb-md">Important: Check the car’s rental terms as well, because each company has its own rules. For example, they might need to see extra ID, might not accept certain types of credit cards, or might not rent to anybody who hasn’t held their driver's license for 36 months, etc.</p>
+<p class="fs-body2 m-md ">Important: Check the car’s rental terms as well, because each company has its own rules. For example, they might need to see extra ID, might not accept certain types of credit cards, or might not rent to anybody who hasn’t held their driver's license for 36 months, etc.</p>
                 </details>
-
-                <details>
-                    <summary class="fs-h4 lh-h4 fw-medium pl-md pt-sm pb-sm pr-md frame-2 summary-hover"> Am I old enough to rent a car?<i class="arrow fas fa-chevron-down"></i></summary>
-<p class="fs-caption1 pl-md mt-xl pb-md">Most companies will let you rent a car if you’re at least 21, and some will even rent to younger drivers. However, if you’re under 25, you might have to pay a "young driver fee."</p>
-
+                <details class="right-border">
+                    <summary class="accordion frame-1 m-none summary-hover fw-semi-bold"> Am I old enough to rent a car?<i class="arrow fas fa-chevron-down"></i></summary>
+<p class="fs-body2 m-md">Most companies will let you rent a car if you’re at least 21, and some will even rent to younger drivers. However, if you’re under 25, you might have to pay a "young driver fee."</p>
                 </details>
-                <details>
-                    <summary class="fs-h4 lh-h4 fw-medium pl-md pt-sm pb-sm pr-md frame-2 summary-hover">Can I book a rental car for someone else?<i class="arrow fas fa-chevron-down"></i></summary>
-                    <p class="fs-caption1 pl-md mt-xl pb-md">
+                <details class="right-border">
+                    <summary class="accordion frame-1 m-none summary-hover fw-semi-bold">Can I book a rental car for someone else?<i class="arrow fas fa-chevron-down"></i></summary>
+                    <p class="fs-body2 m-md">
                         Of course. Just put their info on the "Driver details" form when booking the car.</p>
                 </details>
-                <details>
-                    <summary class="fs-h4 lh-h4 fw-medium pl-md pt-sm pb-sm pr-md frame-2 summary-hover">Any tips for picking the right car?<i class="arrow fas fa-chevron-down"></i></summary>
-<ul type="circle" class="fs-caption1 pl-xl mt-xl pb-md">
+                <details class="right-border ">
+                    <summary class="accordion frame-1 m-none summary-hover fw-semi-bold">Any tips for picking the right car?<i class="arrow fas fa-chevron-down"></i></summary>
+<ul type="circle" class="fs-body2 m-md pl-md pr-lg">
     <li>Think about where you’re going. An SUV might be great for cruising down a Texas freeway, but a smaller car will be a lot easier for getting around Rome.</li>
     <li>See what other people think. You’ll find lots of reviews and ratings on our site, so check out what other customers liked (and didn’t like) about each company.</li>
     <li>Don’t forget the transmission. In some countries, almost everyone drives manual cars, while automatics are the norm in other ones. Make sure you rent a car you can drive!</li>
 </ul>
                 </details>
-                <details>
-                    <summary class="fs-h4 lh-h4 fw-medium pl-md pt-sm pb-sm pr-md frame-2 summary-hover">Are all fees included in the rental price?<i class="arrow fas fa-chevron-down"></i></summary>
-                        <p class="fs-caption1 pl-md mt-md">The price you see includes the car, mandatory coverage (e.g. Theft Protection, Collision Damage Waiver), and fees that, if they apply, are usually payable at pick-up (e.g. any one-way fees, airport surcharges, or local taxes)</p>
-                            <p class="fs-caption1 pl-md mt-md">It also includes any extras you already added (e.g. GPS, baby seats).</p>
-                            <p class="fs-caption1 pl-md mt-md">It doesn’t include any extra coverage you buy when you get to the rental counter.</p>
-                            <p class="fs-caption1 pl-md mt-md pb-md">Tip: There’s a full price breakdown on the Payment page.</p>
+                <details class="right-border bottom-border">
+                    <summary class="accordion frame-1 m-none summary-hover fw-semi-bold">Are all fees included in the rental price?<i class="arrow fas fa-chevron-down"></i></summary>
+                        <p class="fs-body2 m-md">The price you see includes the car, mandatory coverage (e.g. Theft Protection, Collision Damage Waiver), and fees that, if they apply, are usually payable at pick-up (e.g. any one-way fees, airport surcharges, or local taxes)</p>
+                            <p class="fs-body2 pl-md mt-md">It also includes any extras you already added (e.g. GPS, baby seats).</p>
+                            <p class="fs-body2 pl-md mt-md">It doesn’t include any extra coverage you buy when you get to the rental counter.</p>
+                            <p class="fs-body2 pl-md mt-md pb-md">Tip: There’s a full price breakdown on the Payment page.</p>
                 </details>
             </div>
         </div>
     </div>
-     <div class="container-xl">
-         <div class="row">
-             <div class="col">
-                <h2 class="heading-1 fs-h2 lh-h1 fw-medium color-gray-darken6">Top worldwide locations for car rentals</h2>
-             </div>
-         </div>
-     </div>
-     <div class="container-xl mb-xxl">
-         <div class="row">
-            <div class="col mr-md">
-                <div class=" img-container image-3">
-                    <img class=""src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow overlay"></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title fs-h4 fw-bold text-orange-hover">
-                            Dubai</div>
-                        <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mr-md">
-                <div class=" img-container image-3">
-                    <img class=""src="https://cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow overlay"></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title fs-h4 fw-bold text-orange-hover">
-                            Málaga</div>
-                        <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mr-md">
-                <div class="image-3 img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow overlay"></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title fs-h4 fw-bold text-orange-hover">Lisbon</div>
-                        <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mr-md">
-                <div class="image-3 img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/683175.webp?k=12ee6c35c41bf53f6677d9639e451b1c78be233ee572973cae23265f2c8bd1bd&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow overlay"></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title fs-h4 fw-bold text-orange-hover">Munich</div>
-                        <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;280 per day</div>
-             <div class="col-3">
-                <div class="image-3 z img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow "></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                        <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="image-3 img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow "></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                        <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="image-3 img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow "></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                        <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="image-3 img-container">
-                    <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                        alt="" />
-                    <div class="img-hover-shadow "></div>
-                    <div class="img-text-bottom">
-                        <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                        <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                    </div>
-                </div>
-            </div>
-             </div>
-         </div>
-     </div>
-     <div class="container-xl mb-xxl">
+    <!--QUESTIONS END-->
+
+    <!--IMAGE-2 START-->
+    <div class="container-xl">
         <div class="row">
-            <div class="col mr-md">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/654659.webp?k=9c4ac59d35869485631346dc1ee16d28e82ec5f79654bf56b4b4eaeef3388299&amp;o="
+            <div class="col">
+               <h2 class="heading-5">Top worldwide locations for car rentals</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xl mb-xxl">
+        <div class="row mb-lg">
+           <div class="col mr-lg  ">
+               <div class=" img-container ">
+                   <img class="frame-1 img-3"src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
                        alt="" />
                    <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Istanbul</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;192 per day</div>
+                   <div class="img-text-bottom text-orange-hover ">
+                       <div class="img-text-title fs-subtitle2 fw-bold lh-h6">
+                           Dubai</div>
+                       <div class="img-text-subtitle fs-body1 ">Car rentals from UAH&nbsp;181 per day</div>
                    </div>
                </div>
            </div>
-           <div class="col mr-md">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/972592.webp?k=786a11b191b86a238ec986b90fe732664cd9ca2f17dce9faa02bb08777749fc1&amp;o="
+           <div class="col mr-lg">
+               <div class=" img-container image-3">
+                   <img class="frame-1"src="https://cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&amp;o="
                        alt="" />
                    <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Frankfurt</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;186 per day</div>
+                   <div class="img-text-bottom text-orange-hover">
+                       <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">
+                           Málaga</div>
+                       <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
                    </div>
                </div>
            </div>
-           <div class="col mr-md">
+           <div class="col mr-lg">
                <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/644849.webp?k=f581ad57a3045790f8c1de80f578154b3369d4bd9f090a4a1146a4eab76224ad&amp;o="
+                   <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&amp;o="
                        alt="" />
                    <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Alicante</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
+                   <div class="img-text-bottom text-orange-hover">
+                       <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Lisbon</div>
+                       <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
                    </div>
                </div>
            </div>
-           <div class="col mr-md">
+           <div class="col">
                <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/972613.webp?k=bad433a74a80d55d3e6ce265ac7b61bac169cc0c7c54cdc576f6baf8730e2c8d&amp;o="
+                   <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/683175.webp?k=12ee6c35c41bf53f6677d9639e451b1c78be233ee572973cae23265f2c8bd1bd&amp;o="
                        alt="" />
                    <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4  fw-bold text-orange-hover">Berlin</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;246 per day</div>
-            <div class="col-3">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
+                   <div class="img-text-bottom text-orange-hover">
+                       <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Munich</div>
+                       <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;280 per day</div>
                    </div>
                </div>
            </div>
@@ -671,188 +428,104 @@
         </div>
     </div>
     <div class="container-xl mb-xxl">
-        <div class="row">
-            <div class="col mr-md">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/626991.webp?k=2e39cf151988e12f16bff255da7e0f2900498f12070771d0183499504775614d&amp;o=" alt="">
-                   <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Venice</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-                   </div>
-               </div>
+       <div class="row mb-lg">
+           <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/654659.webp?k=9c4ac59d35869485631346dc1ee16d28e82ec5f79654bf56b4b4eaeef3388299&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Istanbul</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;192 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/972592.webp?k=786a11b191b86a238ec986b90fe732664cd9ca2f17dce9faa02bb08777749fc1&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Frankfurt</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;186 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1"src="https://cf.bstatic.com/xdata/images/city/360x240/644849.webp?k=f581ad57a3045790f8c1de80f578154b3369d4bd9f090a4a1146a4eab76224ad&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Alicante</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/972613.webp?k=bad433a74a80d55d3e6ce265ac7b61bac169cc0c7c54cdc576f6baf8730e2c8d&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2  fw-bold lh-h6">Berlin</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;246 per day</div>
+                  </div>
+              </div>
+          </div>
            </div>
-           <div class="col mr-md">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/971983.webp?k=ba34c6155d25b9938999f108ba9d18c23e62b92fffacb3b53b2a04e46694e4c6&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Porto</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-                   </div>
-               </div>
+       </div>
+   </div>
+   <div class="container-xl mb-xxl">
+       <div class="row mb-lg">
+           <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/626991.webp?k=2e39cf151988e12f16bff255da7e0f2900498f12070771d0183499504775614d&amp;o=" alt="">
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Venice</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/971983.webp?k=ba34c6155d25b9938999f108ba9d18c23e62b92fffacb3b53b2a04e46694e4c6&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 lh-h6 fw-bold ">Porto</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mr-lg">
+              <div class="image-3 img-container">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/620036.webp?k=da1bb740e7026af0062b9bbab20fde0f05f522f18535bae387e66f72f4488703&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title fs-subtitle2 fw-bold lh-h6">Los Angeles</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;225 per day</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="image-3 img-container ">
+                  <img class="frame-1" src="https://cf.bstatic.com/xdata/images/city/360x240/639763.webp?k=0f28532f00c333c4be96a7ec57b84beb47856bf069dae8c5eb3b253b5c770674&amp;o="
+                      alt="" />
+                  <div class="img-hover-shadow overlay"></div>
+                  <div class="img-text-bottom text-orange-hover">
+                      <div class="img-text-title  fw-bold  fs-subtitle2 lh-h6">Catania</div>
+                      <div class="img-text-subtitle fs-body1">Car rentals from UAH&nbsp;181 per day</div>
+                  </div>
+              </div>
+          </div>
            </div>
-           <div class="col mr-md">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/620036.webp?k=da1bb740e7026af0062b9bbab20fde0f05f522f18535bae387e66f72f4488703&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title fs-h4 fw-bold text-orange-hover">Los Angeles</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;225 per day</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col mr-md">
-               <div class="image-3 img-container ">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/639763.webp?k=0f28532f00c333c4be96a7ec57b84beb47856bf069dae8c5eb3b253b5c770674&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow overlay"></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title  fw-bold text-orange-hover fs-h4">Catania</div>
-                       <div class="img-text-subtitle text-orange-hover">Car rentals from UAH&nbsp;181 per day</div>
-            <div class="col-3 ">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3 ">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3 ">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-           <div class="col-3">
-               <div class="image-3 img-container">
-                   <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&amp;o="
-                       alt="" />
-                   <div class="img-hover-shadow "></div>
-                   <div class="img-text-bottom">
-                       <div class="img-text-title h2 fw-bold text-orange-hover">Example text title</div>
-                       <div class="img-text-subtitle text-orange-hover">Example text subtitle</div>
-                   </div>
-               </div>
-           </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <footer>
-        <div class="subscribe ta-center mt-md">
-            <div class="text mb-lg">
-                <h2 class="mb-md fs-h3 fw-thin">Save time, save money!</h2>
-                <p>Sign up and we'll send the best deals to you</p>
-            </div>
-            <form action="#">
-                <input type="text" placeholder="Your email">
-                <input type="submit" class="btn btn-primary br-2  btn-xl lh-h3 fw-thin">
-                <label>
-                    <input type="checkbox">Send me a link to get the FREE Booking.com app!</label>
-            </form>
-        </div>
-        <div class="menu bg-color-primary-default">
-            <div class="menu-top bb-1-w-s ta-center" style="padding: 15px 0;">
-                <button class="btn btn-outlined fs-caption1 btn-outlined-hover p-xxs pr-md pl-md br-3" type="button">List your property
-                </button>
-            </div>
-            <div class="container-xl">
-                <nav>
-                    <a href="">Mobile version</a>
-                    <a href="">Your account</a>
-                    <a href="">Make changes online to your booking</a>
-                    <a href="">Contact Customer Service</a>
-                    <a href="">Become an affiliate</a>
-                    <a href="">Booking.com for Business</a>
-                </nav>
-            </div>
-        </div>
-        <div class="container-xl">
-            <nav class="flex links">
-                <div class="">
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                </div>
-                <div class="">
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                </div>
-                <div class="">
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                </div>
-                <div class="">
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                </div>
-                <div class="">
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem</a>
-                    <a href="">Lorem lorem</a>
-                </div>
-            </nav>
-            </div>
-            <div class="login"><a href="" class="color-gray-darken5">Extranet Login</a></div>
-            <div class="copyright">
-                <div class="container-xl">
-                    <p>Copyright © 1996–2021 Booking.com™. All rights reserved.
-                    </p>
-                    <p class="ta-center">Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
-                </div>
-            </div>
-            <div class="partners">
-                <img alt=""src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png">
-                <img alt="" src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" >
-                <img alt="" src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" >
-                <img alt="" src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" >
-                <img alt="" src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png">
-                <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" >
-            </div>
-    </footer>
-    </body>
+       </div>
+   </div>
+    <!--IMAGE-2 END-->
+</div>
+    
+</body>
 </html>
