@@ -84,7 +84,7 @@ summary{
     body{
         margin: var(--m-none);
     }
-.row{
+.row-car{
     display: flex;
 }
 .coronovirus-unit{
@@ -270,4 +270,49 @@ summary{
   .img-3{
       width: 100%;
       height: 100%;
+  }
+  /*INPUT_UNIT START*/
+  .input-unit{
+      background-color: var(--color-gray-lighten1);
+  }
+  .heading-6{
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h2);
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-gray-darken7);
+  }
+  .textarea-3{
+    font-size: var(--fs-body1);
+    font-weight: var(--fw-normal);
+    line-height: var(--lh-subtitle1);
+    align-items: center;
+  }
+  .textarea-align{
+    flex-direction: column;
+  }
+  .btn-align{
+      flex-grow: 1;
+  }
+  .input-align{
+     justify-content: space-between;
+  }
+  .input-align-2{
+      display: flex; 
+
+  }
+  .no-wrap{
+      flex-wrap:nowrap!important;
+  }
+  .color-back{
+      padding: var(--p-xs) ;
+      background-color:var(--color-warning-default);
+  }
+  .label-style{
+      background-color: var(--color-gray-lighten1)!important;
+      
+  }
+  .radio-align{
+      display: flex;
+      justify-content: flex-start;
+
   }

@@ -350,3 +350,13 @@ input{
 .bc-secondary-default-hov:hover .color-secondary-default-hov {
   color: var(--color-secondary-default);
 }
+.radio-align{
+  flex-direction: row;
+  justify-content: flex-start;
+  input{
+    max-width: 20px;
+    max-height: 100%;
+    align-self: center;
+    justify-content: flex-start;
+  }
+}
