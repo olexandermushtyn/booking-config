@@ -62,7 +62,9 @@
             </li>
             <li class="breadcrumb-item lh-subtitle2">
               <div class="breadcrumb-text">
-                <a class="color-secondary-default" href="">Washington, D.C.</a>
+                <a class="color-secondary-default" href="../car/car.html"
+                  >Washington, D.C.</a
+                >
               </div>
               <svg
                 class="breadcrumb-icon"
@@ -81,12 +83,12 @@
             </li>
           </ol>
         </nav>
-        <div class="row">
-          <div class="col-3">
+        <div class="row rows-wrapper">
+          <div class="col-3 side-bar">
             <section class="searchbox br-3 p-md">
               <form action="" method="GET">
                 <h2 class="searchbox-title">
-                  <span class="searchbox-title-text lh-h3 fw-semi-Bold"
+                  <span class="searchbox-title-text lh-h3 fw-semi-bold"
                     >Search</span
                   >
                 </h2>
@@ -104,7 +106,7 @@
                       pt-xs
                       pr-xs
                       pb-xs
-                      pl-xxl
+                      pl-lg
                       input-img-search input-none
                     "
                     type="text"
@@ -144,12 +146,14 @@
                     class="
                       select_lg
                       cursor-pointer
-                      lh-body1
+                      lh-subtitle1
                       bs-solid
                       bw-2
                       bc-white
+                      br-3
                       box-shadow-white-f
                       select-appearance select-img-arrow
+                      p-sm
                       pt-xs
                       pb-xs
                       pl-xs
@@ -170,7 +174,8 @@
                         class="
                           select_lg
                           cursor-pointer
-                          lh-body1
+                          lh-subtitle1
+                          br-3
                           bs-solid
                           bw-2
                           bc-white
@@ -196,7 +201,8 @@
                         class="
                           select_lg
                           cursor-pointer
-                          lh-body1
+                          lh-subtitle1
+                          br-3
                           bs-solid
                           bw-2
                           bc-white
@@ -217,9 +223,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="row mt-sm">
-                  <input type="checkbox" name="work-checkbox" id="" />
-                  <label for="work-checkbox">I`m travelling for work</label>
+                <div class="traveling-row mt-sm">
+                  <div class="traveling-for-work-input">
+                    <input type="checkbox" name="work-checkbox" id="" />
+                    <label class="fs-body2" for="work-checkbox"
+                      >I`m travelling for work</label
+                    >
+                  </div>
                   <div class="help-svg-block">
                     <svg viewBox="0 0 24 24">
                       <path
@@ -233,11 +243,10 @@
                     name="primary-search"
                     type="button"
                     class="
-                      btn
-                      btn-primary
-                      btn-xxl
-                      btn-rounded-noborder-md
-                      btn-primary-hover
+                      btn btn-primary btn-xxl btn-primary-hover
+                      fs-subtitle1
+                      lh-h6
+                      p-paired-sm
                     "
                   >
                     Search
@@ -246,176 +255,99 @@
               </form>
             </section>
             <section class="filter-box mt-sm">
-              <div class="filter-part">
-                <span class="filter-title">Filter by:</span>
+              <div class="filter-part pl-md pr-md pt-sm pb-sm">
+                <span class="filter-title fs-subtitle2 lh-h6">Filter by:</span>
               </div>
-              <div class="filter-part">
-                <span class="filter-part-title"> Health & safety</span>
+              <div class="filter-part pl-md pr-md pt-sm pb-sm">
+                <span class="filter-part-title lh-subtitle1">
+                  Health & safety</span
+                >
                 <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"
+                    <label class="pl-sm pt-sm" for="filter-item"
                       >Properties with additional health & safety
                       measures</label
                     >
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>192</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">192</span>
                   </div>
                 </div>
               </div>
-              <div class="filter-part">
-                <span class="filter-part-title"> Popular filters</span>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+              <div class="filter-part pl-md pr-md pt-sm pb-sm">
+                <span class="filter-part-title lh-subtitle1 mb-sm">
+                  Popular filters</span
+                >
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">5 stars</label>
+                    <label class="pl-sm" for="filter-item">5 Stars</label>
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>23</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">192</span>
                   </div>
                 </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">Indoor pool</label>
+                    <label class="pl-sm" for="filter-item">Hotels</label>
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>20</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">35</span>
                   </div>
                 </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">
-                      Wonderful: 9+</label
+                    <label class="pl-sm" for="filter-item">Indoor pool</label>
+                  </div>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">64</span>
+                  </div>
+                </div>
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="pl-sm" for="filter-item">Spa</label>
+                  </div>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">54</span>
+                  </div>
+                </div>
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="filter-item" id="" />
+                    <label class="pl-sm" for="filter-item"
+                      >The White House</label
                     >
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>43</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">23</span>
                   </div>
                 </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">
-                      The White House</label
-                    >
+                    <label class="pl-sm" for="filter-item">Playground</label>
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>34</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">64</span>
                   </div>
                 </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
+                <div class="filter-item mt-sm">
+                  <div class="checkbox-container">
                     <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> Playgrond</label>
+                    <label class="pl-sm" for="filter-item">Wonderful: 9+</label>
                   </div>
-                  <div class="col-2 filter-value">
-                    <span>2</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">Hotels</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>139</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">
-                      The White House</label
-                    >
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>34</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item">
-                      Swimming pool</label
-                    >
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>55</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> Spa</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>12</span>
-                  </div>
-                </div>
-              </div>
-              <div class="filter-part">
-                <span class="filter-part-title"> Star rating </span>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> 1 star</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>1</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> 2 star</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>8</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> 3 star</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>109</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> 4 star</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>86</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> 5 star</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>23</span>
-                  </div>
-                </div>
-                <div class="filter-item">
-                  <div class="col-10 checkbox-container">
-                    <input type="checkbox" name="filter-item" id="" />
-                    <label class="ml-xs" for="filter-item"> Unrated</label>
-                  </div>
-                  <div class="col-2 filter-value">
-                    <span>57</span>
+                  <div class="filter-value">
+                    <span class="fs-body2 color-gray-darken6">64</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <div class="col-9 ml-md">
+          <div class="col-9-lg ml-md items-part">
             <div class="title justify-content-between">
               <p class="fs-h4 lh-h2 fw-bold">
                 Washington, D.C.: 289 properties found
@@ -2233,7 +2165,11 @@
                   <a href="">...</a>
                 </li>
                 <li class="pagination-item pl-sm">
-                  <button class="fs-body1 lh-subtitle1 br-3">12</button>
+                  <button
+                    class="fs-body1 lh-subtitle1 br-3 color-secondary-default"
+                  >
+                    12
+                  </button>
                 </li>
                 <li class="pagination-item pl-sm">
                   <a
