@@ -5,6 +5,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media (max-width:992px) {
+        .container-xl  {
+           padding: var(--p-sm);
+           max-width: 992px;
+           
+        }
+        .no-wrap{
+            flex-wrap: nowrap !important;    
+               
+        }
+        .text-center{
+            text-align: center;
+        }
+        .container-sm{
+          padding: var(--p-sm);
+        }
+    }
     
 }
 .border-warning{
@@ -30,21 +48,468 @@
 
 
 
-  @media (max-width:992px) {
-      .container-xl  {
-         padding: var(--p-sm);
-         max-width: 992px;
+
+
+
+
+  body {
+    font-family: var(--ff-default);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bold {
+    font-weight: var(--fw-bold);
+  }
+  
+  //custom helpers
+  .td-none {
+    text-decoration: none;
+  }
+  
+  .ta-center {
+    text-align: center;
+  }
+  
+  .bb-2-w-s {
+    border-bottom: var(--bw-2) var(--color-white-default) var(--bs-solid);
+  }
+  
+  .bb-1-w-s {
+    border-bottom: var(--bw-1) var(--color-white-default) var(--bs-solid);
+  }
+  
+  .border-box {
+    box-sizing: border-box;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-inline {
+    display: inline;
+  }
+  
+  .br-3 {
+    border-radius: var(--br-3);
+  }
+  
+  .fw-light {
+    font-weight: var(--fw-light);
+  }
+  
+  
+  //
+  // Mixins
+  @mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    -ms-box-sizing: $type;
+    -o-box-sizing: $type;
+    box-sizing: $type;
+  }
+  
+  // Placeholders
+  %ruled-lines {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAYCAYAAAA7zJfaAAAAEElEQVQImWNgoD/oUXBrAAAEFAFzGDmq2wAAAABJRU5ErkJggg==");
+  }
+  
+  .menu--fade {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    color: #222;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
+  .menu__content {
+    @extend .clearfix;
+    background: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: var(--p-paired-md);
+    position: relative;
+  
+  }
+  
+  .menu__content > ul {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  
+  .menu__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .menu__close:focus,
+  .menu__close:hover,
+  .menu__close:active {
+    text-decoration: none;
+    background: #fff;
+  }
+  
+  #menu-fade:target {
+    box-sizing: border-box;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  #page:target .menu--fade {
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, width 0s ease 0.5s, height 0s ease 0.5s;
+    transition: opacity 0.5s, transform 0.5s, width 0s ease 0.5s, height 0s ease 0.5s;
+    padding: 1.5rem;
+  }
+  
+  
+  /* ==========================================================================
+     Helpers
+     ========================================================================== */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " "; /* 1 */
+    //display: table; /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    img {
+      max-width: 100% !important;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  header {
+    & .menu {
+      white-space: nowrap;
+      overflow-y: hidden;
+  
+      & > a {
+        padding: var(--p-md);
+        color: var(--color-white-default);
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: var(--fs-body1);
+        font-weight: var(--fw-bold);
+  
+        & span {
+          margin-left: var(--m-xs);
+        }
+  
+        &:hover {
+          background-color: var(--color-secondary-darken2);
+        }
       }
-      .no-wrap{
-          flex-wrap: nowrap;         
+    }
+  
+    & .burger {
+      display: none;
+    }
+  
+    .menu-navigation {
+      display: block;
+      overflow: scroll;
+  
+      & h3 {
+        font-size: var(--fs-body1);
+        padding: var(--p-md) var(--p-paired-md);
+        margin: 0;
       }
-      .text-center{
-          text-align: center;
+  
+      & a {
+        padding: var(--p-md) var(--p-paired-md);
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        font-size: var(--fs-body1);
+        text-decoration: none;
+        color: var(--color-gray-lighten8);
+        line-height: var(--lh-h6);
+  
+        &:active {
+          background: var(--color-gray-lighten1);
+        }
+  
+        & span {
+          margin-right: var(--m-sm);
+        }
+  
+        & img {
+          height: 24px;
+          width: 24px;
+          border-radius: 50%;
+        }
       }
-      .container-sm{
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    header {
+      & .menu {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+  
+      & .btn {
+        display: none;
+      }
+  
+      & .burger {
+        display: flex;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  footer {
+    .hover-warning-color:hover {
+      color: var(--color-warning-lighten1);
+    }
+  
+    & .form-mail {
+      margin-top: var(--m-md);
+      display: inline-flex;
+      flex-wrap: wrap;
+      max-width: 550px;
+  
+      & .btn {
+        padding: var(--p-sm) var(--p-lg);
+      }
+  
+      & > input {
+        font-size: var(--fs-h6);
+        font-weight: var(--fw-light);
+        line-height: var(--lh-h3);
+        border-radius: var(--br-3);
+        box-sizing: border-box;
+        border: none;
         padding: var(--p-sm);
+        font-family: var(--ff-default);
+  
       }
+  
+      & flex-next-line {
+        width: 100%;
+        color: #ff253a;
+      }
+    }
+  
+    & .footer-menu {
+      & a {
+        padding: var(--p-md);
+        color: var(--color-white-default);
+        display: inline-block;
+        font-size: var(--fs-body2);
+        font-weight: var(--fw-bold);
+      }
+    }
+  
+    & .usefull-links {
+      padding: var(--p-md) 0;
+  
+      & a {
+        margin-top: var(--m-sm);
+        color: var(--color-secondary-default);
+        font-size: var(--fs-body2);
+        text-decoration: none;
+        display: block;
+  
+        &:hover {
+          color: var(--color-warning-lighten1);
+        }
+      }
+    }
+  
+    & .partners {
+      padding: var(--p-md);
+      display: flex;
+      justify-content: center;
+      img:first-child {
+        margin-left: 0;
+      }
+      & img {
+        margin-left: var(--m-lg);
+        width: auto;
+      }
+    }
   }
 
 
-  
+  @media (max-width:992px) {
+    .container-xl  {
+       padding: var(--p-sm);
+       max-width: 992px;
+       
+    }
+    .no-wrap{
+        flex-wrap: nowrap !important;    
+           
+    }
+    .text-center{
+        text-align: center;
+    }
+    .container-sm{
+      padding: var(--p-sm);
+    }
+}
