@@ -1,0 +1,11 @@
+@import url(../config.css);
+
+$font-color: (
+  "black": var(--color-black-default),
+  "white": var(--color-white-default),
+  "grey": var(--color-grey-default),
+  "primary": var(--color-primary-default),
+  "secondary": var(--color-secondary-default),
+  "danger": var(--color-brown-default),
+  "success": var(--color-success-default),
+);
