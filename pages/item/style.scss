@@ -10,6 +10,10 @@ body {
 }
 
 //custom helpers
+.flex-grow0 {
+  flex-grow: 0;
+}
+
 .td-none {
   text-decoration: none;
 }
@@ -24,6 +28,10 @@ body {
 
 .bb-1-w-s {
   border-bottom: var(--bw-1) var(--color-white-default) var(--bs-solid);
+}
+
+.br-none {
+  border-radius: 0;
 }
 
 .border-box {
@@ -284,6 +292,7 @@ body {
   }
 }
 
+
 header {
   & .menu {
     white-space: nowrap;
@@ -350,24 +359,6 @@ header {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  header {
-    & .menu {
-      white-space: nowrap;
-      overflow-x: scroll;
-      overflow-y: hidden;
-    }
-
-    & .btn {
-      display: none;
-    }
-
-    & .burger {
-      display: flex;
-      text-decoration: none;
-    }
-  }
-}
 
 footer {
   .hover-warning-color:hover {
@@ -378,13 +369,15 @@ footer {
     margin-top: var(--m-md);
     display: inline-flex;
     flex-wrap: wrap;
-    max-width: 550px;
+    max-width: 560px;
 
     & .btn {
       padding: var(--p-sm) var(--p-lg);
+
     }
 
     & > input {
+      width: auto;
       font-size: var(--fs-h6);
       font-weight: var(--fw-light);
       line-height: var(--lh-h3);
@@ -393,9 +386,10 @@ footer {
       border: none;
       padding: var(--p-sm);
       font-family: var(--ff-default);
-
     }
-
+    & input[type=checkbox]{
+      width: 24px;
+    }
     & flex-next-line {
       width: 100%;
       color: #ff253a;
@@ -432,12 +426,46 @@ footer {
     padding: var(--p-md);
     display: flex;
     justify-content: center;
+
     img:first-child {
       margin-left: 0;
     }
+
     & img {
       margin-left: var(--m-lg);
       width: auto;
+    }
+  }
+
+  & #mobile-version {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    & .menu {
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+    & .btn {
+      display: none;
+    }
+
+    & .burger {
+      display: flex;
+      text-decoration: none;
+    }
+  }
+  footer {
+    & > *, .partners {
+      display: none;
+    }
+
+    & #mobile-version {
+      display: block;
     }
   }
 }
