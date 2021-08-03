@@ -1,6 +1,10 @@
-@import "../config.css";
-@import "../offsets/offsets.scss";
-@import "../../fonts/fontawesome/css/all.css";
+@import url("../config.css");
+@import url("../offsets/offsets.scss");
+@import url("../../fonts/fontawesome/css/all.css");
+
+input {
+  width: 100%;
+}
 
 .input-none:focus,
 .input-none:active {
@@ -158,11 +162,11 @@
 
 .input-xxxl {
   font-family: inherit;
-  font-size: 10px;
+  font-size: var(--fs-body1);
   border: var(--bw-3) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-4);
-  line-height: var(--lh-h2);
-  padding: var(--p-sm) var(--p-md) var(--p-sm) var(--p-xxxxl);
+  line-height: var(--lh-h6);
+  padding: var(--p-md) var(--p-md) var(--p-md) var(--p-paired-lg);
   box-sizing: border-box;
 }
 
@@ -190,12 +194,12 @@
 /* Main page */
 .input-xxl {
   font-family: inherit;
-  //font-size: var(--fs-h4);
-  line-height: var(--lh-h4);
+  font-size: var(--fs-body1);
+  line-height: var(--lh-subtitle1);
   align-items: center;
   border: var(--bw-3) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-3);
-  padding: var(--p-input-xs) var(--p-md) var(--p-input-xs) var(--p-xxxxl);
+  padding: var(--p-md) var(--p-lg) var(--p-md) var(--p-paired-lg);
   box-sizing: border-box;
 }
 
@@ -212,7 +216,7 @@
 }
 
 .input-calendar-icon-xxl {
-  background-position: 15px;
+  background-position: top 50% left 16px;
   background-image: url("../../src/img/ico/calendar1-xxl.svg");
   background-repeat: no-repeat;
 }
@@ -229,11 +233,10 @@
 .date-field {
   font-family: inherit;
   font-weight: var(--fw-medium);
-  //font-size: var(--fs-h4);
-  //border: var(--bw-3) var(--bs-solid) var(--color-transparent);
+  font-size: var(--fs-body1);
   border: var(--b-none);
-  line-height: var(--lh-h1);
-  padding: var(--p-xxxs) var(--p-lg) var(--p-xxxs) var(--p-xxxl);
+  line-height: var(--lh-subtitle1);
+  padding: var(--p-sm) var(--p-md) var(--p-sm) var(--p-lg);
   box-sizing: border-box;
 }
 
@@ -253,11 +256,12 @@
   display: flex;
   font-family: inherit;
   font-weight: var(--fw-normal);
-  font-size: var(--fs-h4);
-  border: var(--bw-3) var(--bs-solid) var(--color-gray-default);
+  font-size: var(--fs-body1);
+  border: var(--bw-1) var(--bs-solid) var(--color-gray-default);
   border-radius: var(--br-3);
-  line-height: var(--lh-h6);
+  line-height: var(--lh-subtitle1);
   box-sizing: border-box;
+  align-items: center;
 }
 
 /* Airoport taxis search inputs */
@@ -289,19 +293,19 @@
 
 .input-flight-icon-xxxl {
   background-image: url("../../src/img/ico/flight-xxxl.svg");
-  background-position: top 50% left 16px;
+  background-position: top 50% left 9px;
   background-repeat: no-repeat;
 }
 
 .input-calendar-xxxl {
   background-image: url("../../src/img/ico/calendar-xxxl.svg");
-  background-position: top 50% left 16px;
+  background-position: top 50% left 9px;
   background-repeat: no-repeat;
 }
 
 .input-calendar1-xxl {
   background-image: url("../../src/img/ico/calendar-xxl.svg");
-  background-position: top 50% left 9px;
+  background-position: top 50% left 6px;
   background-repeat: no-repeat;
 }
 
@@ -338,10 +342,6 @@
 
 .bc-secondary-default-hov:hover {
   border-color: var(--color-secondary-default);
-}
-
-.bc-secondary-default-hov:hover .fill-color-secondary-default-hov {
-  fill: var(--color-secondary-default);
 }
 
 .bc-secondary-default-hov:hover .color-secondary-default-hov {

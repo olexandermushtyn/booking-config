@@ -1,20 +1,35 @@
+@import url('../../scss/buttons/buttons.scss');
+@import url('../../scss/offsets/offsets.scss');
+@import url('../../scss/grid/style.scss');
+@import url('../../scss/inputs/input.scss');
+@import url('../item/style.scss');
+@import url('../../scss/config.css');
 
-@import "../../scss/buttons/buttons.scss";
-@import "../../scss/offsets/offsets.scss";
-@import "../../scss/config.css";
-@import "../../scss/grid/style.scss";
-@import "../../scss/inputs/input.scss";
-@import "../item/style.scss";
+
+
+.btn-xxl{
+  width: 100%
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.ta-center{
+  text-align: center;
+}
+
 :root{
-  --color-gray-lighten4: rgba(245, 245, 245, 1);
+  --color-gray-lighten2: rgba(245, 245, 245, 1);
+  --ta-center: center;
 }
 
-.color-gray-lighten4{
-  background-color: var(--color-gray-lighten4);
+.color-gray-lighten2{
+  background-color: var(--color-gray-lighten2);
 }
 
-.bg-color-gray-lighten4{
-  background-color: var(--color-gray-lighten4);
+.bg-color-gray-lighten2{
+  background-color: var(--color-gray-lighten2);
 }
 
 .bc-secondary-default{
@@ -36,6 +51,10 @@ input{
   justify-content: center;
 }
 
+.jc-space-between{
+  display: flex;
+  justify-content: space-between;
+}
 
 :root{
   --color-primary-darken2: rgba(5,55,126, 1);
@@ -105,94 +124,102 @@ input{
 .taxis-inform-title{
   line-height: var(--lh-h6);
   font-weight: var(--fw-bold);
+  font-size: var(--fs-body1);
+
 }
 
 .taxis-inform-subtitle{
-  font-size: var(--fs-body);
-  line-height: var(--lh-h6);
-  color: var(--color-gray-lighten1);
+  font-size: var(--fs-body1);
+  line-height: var(--lh-subtitle1);
+  color: var(--color-gray-darken6);
 }
 
-.made-easy{
-  margin: 64px 0;
-}
 
-.made-easy-header{
+
+.transportation-feauters-title{
   display: flex;
   justify-content: center;
-  font-weight: var(--fw-semi-Bold);
-  font-size: var(--lh-h1);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-h1);
 }
 
-.fs-body{
-  font-size: var(--fs-body);
+.transportation-features-header{
+  line-height: var(--lh-h4);
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-semi-bold);
 }
 
 .how-it-work{
+  padding: var(--p-lg) 0 0 0;
+}
+
+.how-it-work-map{
+  width: 420px;
+  height: 420px;
   position: relative;
-  margin: var(--m-md);
 }
 
 .work, .book, .confirmation, .arrive, .driver, .enjoy{
   text-align: var(--ta-center);
+  line-height: var(--lh-subtitle1);
   position: absolute;
-  font-size: var(--fs-body);
+  font-size: var(--fs-body1);
 }
 
 .work{
-  background-color: var(--color-gray-lighten3);
-  border-radius: var(--br-2);
-  padding: var(--p-xs);
-  top: -5px;
-  left: -5px;
+  background-color: var(--color-gray-lighten1);
+  line-height: var(--lh-subtitle1);
+  border-radius: var(--br-4);
+  padding: var(--p-sm);
+  top: -30px;
+  left: -10px;
 }
 
 .book{
   top: 140px;
-  left: 102px;
+  left: 110px;
 }
 
 .confirmation{
   top: 140px;
-  left: 232px;
+  left: 245px;
 }
 
 .arrive{
-  top: 300px;
-  left: 102px;
+  top: 310px;
+  left: 100px;
 }
 
 .driver{
-  top: 300px;
-  left: 247px;
+  top: 310px;
+  left: 255px;
 }
 
 .enjoy{
-  top: 400px;
-  left: -25px;
+  top: 425px;
+  left: -15px;
 }
 
 
 .number-passenger{
   padding: 0px;
+  margin: 0px;
   list-style: none;
   display: flex;
 }
 
 
-.active:active, .сhoose-number-passenger:active{
-  outline: var(--bw-1) var(--bs-solid) var(--color-secondary-t2-default);
-}
 
 .сhoose-number-passenger{
-  font-size: var(--fs-body);
+  font-size: var(--fs-body1);
   font-weight: var(--fw-normal);
-  border-width: var(--bw-3) 0px var(--bw-3) var(--bw-3);
+  line-height: var(--lh-subtitle1);
+  border-width: var(--bw-1);
   border-color: var(--color-secondary-default);
   border-style: var(--bs-solid);
   background-color: var(--color-white-default);
   color: var(--color-secondary-default);
-  padding: var(--p-xs) var(--p-md);
+  padding: var(--p-sm) var(--p-md);
 }
 
 .сhoose-number-passenger:hover{
@@ -201,48 +228,72 @@ input{
 
 
 .number-passenger li:first-child{
-  border-radius: var(--br-4) 0px 0px var(--br-4);
+  border-radius: var(--br-2) 0px 0px var(--br-2);
 }
 
 .number-passenger li:last-child{
-  border-radius:  0px var(--br-4) var(--br-4) 0px;
-  border-width: var(--bw-3) var(--bw-3) var(--bw-3) var(--bw-3);
+  border-radius:  0px var(--br-2) var(--br-2) 0px;
+  border-left-color: transparent;
 }
 
-.active{
+.active, .active:hover{
   background-color: var(--color-secondary-default);
   color: var(--color-white-default);
 }
 
-.active:hover{
-  background-color: var(--color-secondary-default);
+
+.active:active{
+  outline: var(--bw-3) var(--bs-solid) var(--color-secondary-t2-default);
+  z-index: 3;
 }
+/* --------------------------- */
 
-
-.card-airport {
-  height: 230px;
+.card-taxis {
   background-color: var(--color-white-default);
   padding: var(--p-md);
-  border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+  border: var(--bw-1) var(--bs-solid) var(--color-gray-lighten1);
 }
 
-.card-airport i{
+.card-taxis i{
   padding-right: var(--p-xs);
+}
+
+.card-taxis-header{
+  line-height: var(--lh-h6);
+  font-size: var(--fs-subtitle2);
+  font-weight: var(--fw-bold);
+}
+
+.card-taxis-items{
+  font-weight: var(--fw-normal);
+  padding: 0px var(--p-sm);
+  font-size: var(--fs-body1);
+  line-height: var(--lh-h6);
+}
+
+.card-taxis-items i{
+  padding-right: var(--p-sm);
 }
 
 .height-full{
   height: inherit;
 }
 
+/* ----------------------------- */
+
+
 .faq-title{
-  height: 90%;
-  padding-left: var(--p-lg);
-  padding-top: var(--p-lg);
+  border: var(--bw-1) var(--bs-solid) var(--color-gray-lighten1);
+  border-right: none;
+  background-color: var(--color-gray-lighten2);
+  padding: var(--p-paired-md);
+
 }
 
 
 .faq-list{
   padding: 0;
+  margin: 0;
   font-weight: var(--fw-medium);
   list-style: none;
   border: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
@@ -251,6 +302,63 @@ input{
 
 .faq-list li{
   padding: var(--p-md);
-  line-height: var(--lh-h4);
-  border-top: var(--bw-3) var(--bs-solid) var(--color-gray-lighten3);
+  line-height: var(--lh-h6);
+  border: var(--bw-1) var(--bs-solid) var(--color-gray-lighten1);
+}
+
+.faq-list li:hover{
+  background-color: var(--color-black-t1-default);
+}
+
+.faq-header{
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h2);
+  font-weight: var(--fw-semi-bold);
+}
+
+.faq-subheader{
+  margin-top: var(--m-sm);
+  font-size: var(--fs-body1);
+  line-height: var(--lh-subtitle1);
+  font-weight: var(--fw-medium);
+}
+
+
+
+
+/* Adaptive to lg */
+
+@media(max-width: 768px){
+
+    .container-xl{
+      max-width: 768px;
+      min-width: 576px;
+      padding-left: var(--p-paired-md);
+      padding-right: var(--p-paired-md);
+    }
+
+    .book-taxis-bg{
+      height: 500px;
+    }
+
+    .mb-xs-md{
+      margin-bottom: var(--m-xs);
+      margin-left: 0px;
+    }
+
+    .pl-xs{
+      padding: 0px;
+    }
+
+    .pr-xs-md{
+      padding-right: var(-p-xs);
+    }
+
+    .pl-xs-md{
+      padding-left: var(--p-xs);
+    }
+
+    .how-it-work{
+      display: none;
+    }
 }
