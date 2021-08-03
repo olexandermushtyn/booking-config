@@ -1,0 +1,86 @@
+@import url("../../../scss/config.css");
+
+body {
+    font-family: var(--ff-default);
+}
+
+.carousel-travelers {
+    margin-bottom: var(--m-lg);
+    color: var(--color-black-default);
+
+    .title-container {
+        margin-block-end: var(--m-md);
+    }
+
+    .title {
+        font-size: var(--fs-h4);
+        font-weight: var(--fw-bold);
+        line-height: var(--lh-h2);
+        padding: var(--p-none);
+        margin: var(--m-none);
+
+    }
+
+    .subtitle {
+        font-size: var(--fs-subtitle2);
+        font-weight: var(--fw-normal);
+        line-height: var(--lh-h6);
+        color: var(--color-gray-darken6);
+        padding: var(--p-none);
+        margin: var(--m-none);
+        margin-top: var(--m-xxs);
+    }
+
+    a {
+        text-decoration: none;
+        text-decoration-line: none;
+        color: var(--color-black-default);
+    }
+
+    .col {
+        margin-right: var(--m-md);
+    }
+
+    .col:last-child {
+        margin-right: var(--m-none);
+    }
+}
+
+.card-travelers {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .image-travelers {
+        height: 263px;
+        display: flex;
+        position: relative;
+
+        img {
+            border-radius: var(--br-2);
+        }
+    }
+
+    .content-travelers {
+        padding-top: var(--p-md);
+        max-width: 100%;
+        text-align: left;
+
+        h3 {
+            font-size: var(--fs-subtitle2);
+            font-weight: var(--fw-bold);
+            line-height: var(--lh-h6);
+            color: var(--color-black-default);
+            margin: var(--m-none);
+            padding: var(--p-none);
+        }
+
+        p {
+            font-size: var(--fs-body1);
+            font-weight: var(--fw-normal);
+            line-height: var(--lh-subtitle1);
+            color: var(--color-gray-darken6);
+            margin: var(--m-none);
+            padding: var(--p-none);
+        }
+    }
+}

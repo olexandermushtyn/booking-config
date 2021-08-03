@@ -249,6 +249,15 @@
 i {
     color: var(--color-success-default);
 }
-
+// input 
+.input_attractions {
+    border: none;
+    padding-left: 50px;
+    background: #fff 12px 12px url(./images/search.svg) no-repeat;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
 
 
