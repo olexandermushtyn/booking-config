@@ -88,6 +88,9 @@ summary{
 .row-car{
     display: flex;
 }
+#checkbox-md {
+    position: relative;
+}
 .coronovirus-unit{
     background-color: var(--color-danger-lighten1);
     border: var(--bw-1) solid var(--color-warning-lighten1);
