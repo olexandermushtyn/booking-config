@@ -1,5 +1,8 @@
 @import url("../../../scss/config.css");
 
+body{
+    font-family: var(--ff-default);
+}
 
 .carousel-explore {
     margin-bottom: var(--m-lg);
@@ -46,6 +49,7 @@
 .card-explore {
     box-sizing: border-box;
     overflow: hidden;
+    height: 284px;
 
     .image-explore {
         height: 207px;
