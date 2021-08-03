@@ -1,138 +1,5 @@
 @import url(../root.scss);
-@import url(../config.css);
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*item page*/
-body {
-    font-family: var(--ff-default);
-}
-
-.col-auto {
-    flex-grow: 1;
-}
-
-header > .container-xl {
-    padding: var(--p-sm) var(--p-md);
-    padding-bottom: 0px;
-}
-
-.main-logo {
-    padding: var(--p-xs) 0;
-}
-
-.control-menu > * {
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-.currency a {
-    font-size: 16px;
-}
-
-.language img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-}
-
-.bb-2-w-s {
-    border-bottom: var(--bw-2) var(--color-white-default) solid;
-}
-
-header nav a {
-    padding: var(--p-md);
-    display: inline-flex;
-    color: var(--color-white-default);
-    text-decoration: none;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-caption1);
-    align-items: center;
-}
-header nav a svg {
-    margin-right: 8px;
-}
-/*footer to bottom*/
-html, body {
-
-    height: 100%;
-}
-body {
-    display: flex;
-    max-height: 100vh;
-    flex-direction: column;
-}
-.content {
-    padding: 10px;
-    flex: 1;
-}
-/*footer*/
-
-  
-  
-  .img-footer {
-    height: auto;
-    width: auto;  
-  }
-  
-  
-  
-  .select select {
-      font-size: 14px;
-  }
-  
-  
-  
-   
-  
 
 *{
     margin: 0;
@@ -147,26 +14,37 @@ body {
 
 
 
-
-.flex{
-    display: flex;
-    justify-content: space-between;
+.input-radio-xl{
+    width: 20px;
+    height: 20px;
 }
+/*footer*/
 
-
-.fs-h6{
-    font-size: 16px;
-}
-.color-darken-t2{
-    color: #262626
-}
-.vertical{
-    line-height: 20px;
-    
-}
+  
+  
+.img-footer {
+    height: auto;
+    width: auto;  
+  }
 
 
 
-.color-gray-lighten1{
-    color: var(--color-gray-lighten1);
-}
+
+  @media (max-width:992px) {
+      .container-xl  {
+         padding: var(--p-sm);
+         max-width: 992px;
+      }
+      .no-wrap{
+          flex-wrap: nowrap;         
+      }
+      .text-center{
+          text-align: center;
+      }
+      .container-sm{
+        padding: var(--p-sm);
+      }
+  }
+
+
+  
