@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "prettier": "2.3.2",
     "sass": "^1.37.2"
   },
   "dependencies": {
