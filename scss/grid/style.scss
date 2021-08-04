@@ -1,105 +1,105 @@
-@import "mixins.scss";
-@import "variables.scss";
+// @import "mixins.scss";
+// @import "variables.scss";
 
-@for $i from $grid-columns through 1 {
-  .col-#{$i} {
-    width: $col-width * $i;
-  }
-}
+// @for $i from $grid-columns through 1 {
+//   .col-#{$i} {
+//     width: $col-width * $i;
+//   }
+// }
 
-@each $point, $scree-size in $grid-breakpoints {
-  @media screen and (max-width: $scree-size) {
-    @for $i from $grid-columns through 1 {
-      .col-#{$i}-#{$point} {
-        width: $col-width * $i;
-      }
-    }
-  }
-}
+// @each $point, $scree-size in $grid-breakpoints {
+//   @media screen and (max-width: $scree-size) {
+//     @for $i from $grid-columns through 1 {
+//       .col-#{$i}-#{$point} {
+//         width: $col-width * $i;
+//       }
+//     }
+//   }
+// }
 
-// Responsive containers that are 100% wide until a breakpoint
-@each $breakpoint, $container-max-width in $container-max-widths {
-  .container-#{$breakpoint} {
-    margin: 0 auto;
-    max-width: $container-max-width;
-  }
-}
+// // Responsive containers that are 100% wide until a breakpoint
+// @each $breakpoint, $container-max-width in $container-max-widths {
+//   .container-#{$breakpoint} {
+//     margin: 0 auto;
+//     max-width: $container-max-width;
+//   }
+// }
 
-.row {
-  @include make-row();
-}
+// .row {
+//   @include make-row();
+// }
 
-.col {
-  flex: 1 0 0%;
-}
+// .col {
+//   flex: 1 0 0%;
+// }
 
-.flex-row {
-  align-content: flex-start;
-  &-reverse {
-    align-content: flex-end;
-  }
-}
+// .flex-row {
+//   align-content: flex-start;
+//   &-reverse {
+//     align-content: flex-end;
+//   }
+// }
 
-.flex-column {
-  justify-content: flex-start;
-  &-reverse {
-    justify-content: flex-end;
-  }
-}
+// .flex-column {
+//   justify-content: flex-start;
+//   &-reverse {
+//     justify-content: flex-end;
+//   }
+// }
 
-.justify-content {
-  &-start {
-    justify-content: flex-start;
-  }
-  &-end {
-    justify-content: flex-end;
-  }
-  &-center {
-    justify-content: center;
-  }
-  &-between {
-    justify-content: space-between;
-  }
-  &-around {
-    justify-content: space-around;
-  }
-  &-evenly {
-    justify-content: space-evenly;
-  }
-}
+// .justify-content {
+//   &-start {
+//     justify-content: flex-start;
+//   }
+//   &-end {
+//     justify-content: flex-end;
+//   }
+//   &-center {
+//     justify-content: center;
+//   }
+//   &-between {
+//     justify-content: space-between;
+//   }
+//   &-around {
+//     justify-content: space-around;
+//   }
+//   &-evenly {
+//     justify-content: space-evenly;
+//   }
+// }
 
-.align-items {
-  &-start {
-    align-items: flex-start;
-  }
-  &-end {
-    align-items: flex-end;
-  }
-  &-center {
-    align-items: center;
-  }
-  &-baseline {
-    align-items: baseline;
-  }
-  &-stretch {
-    align-items: stretch;
-  }
-}
+// .align-items {
+//   &-start {
+//     align-items: flex-start;
+//   }
+//   &-end {
+//     align-items: flex-end;
+//   }
+//   &-center {
+//     align-items: center;
+//   }
+//   &-baseline {
+//     align-items: baseline;
+//   }
+//   &-stretch {
+//     align-items: stretch;
+//   }
+// }
 
-.align-self {
-  &-start {
-    align-self: flex-start;
-  }
-  &-end {
-    align-self: flex-end;
-  }
-  &-center {
-    align-self: center;
-  }
-  &-baseline {
-    align-self: baseline;
-  }
-  &-stretch {
-    align-self: stretch;
-  }
-}
+// .align-self {
+//   &-start {
+//     align-self: flex-start;
+//   }
+//   &-end {
+//     align-self: flex-end;
+//   }
+//   &-center {
+//     align-self: center;
+//   }
+//   &-baseline {
+//     align-self: baseline;
+//   }
+//   &-stretch {
+//     align-self: stretch;
+//   }
+// }
