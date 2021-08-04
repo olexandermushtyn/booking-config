@@ -1,6 +1,10 @@
+@import url('../../fonts/fontawesome/css/all.css');
 @import url('../config.css');
 @import url('../offsets/offsets.scss');
-@import url('../../fonts/fontawesome/css/all.css');
+
+:root{
+  --color-transparent: transparent;
+}
 
 input{
   width: 100%;
@@ -48,16 +52,25 @@ input{
   background-position-x: 13px;
 }
 .input-img-car {
-  background-image: url(../../src/img/ico/car.svg);
+  background-image: url(../../src/img/ico/car1-xxl.svg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 13px;
 }
+
+
 .input-img-search {
-  background-image: url(../../src/img/ico/search.svg);
-  background-position-y: center;
-  background-position-x: 5px;
+  background-image: url(../../src/img/ico/search-xxl.svg);
+  background-position-y: 50%;
+  background-position-x: 10px;
   background-repeat: no-repeat;
+
+  &-xl{
+    background-image: url(../../src/img/ico/search-xxl.svg);
+    background-position-y: 50%;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+  }
 }
 .select-img-arrow {
   background-image: url(../../src/img/ico/arrowdouble.svg);
@@ -162,9 +175,9 @@ input{
 
 
 .input-xxxl{
-  font-family: inherit;
+  font-family: var(--ff-default);
   font-size: var(--fs-body1);
-  border: var(--bw-3) var(--bs-solid) var(--color-transparent);
+  border: var(--bw-1) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-4);
   line-height: var(--lh-h6);
   padding: var(--p-md) var(--p-md) var(--p-md) var(--p-paired-lg);
@@ -194,11 +207,11 @@ input{
 
 /* Main page */
 .input-xxl {
-  font-family: inherit;
+  font-family: var(--ff-default);
   font-size: var(--fs-body1);
   line-height: var(--lh-subtitle1);
   align-items: center;
-  border: var(--bw-3) var(--bs-solid) var(--color-transparent);
+  border: var(--bw-1) var(--bs-solid) var(--color-transparent);
   border-radius: var(--br-3);
   padding: var(--p-md) var(--p-lg) var(--p-md) var(--p-paired-lg);
   box-sizing: border-box;
@@ -231,8 +244,8 @@ input{
 
 /* ------------------------- */
 
-.date-field {
-  font-family: inherit;
+.input-xl {
+  font-family: var(--ff-default);
   font-weight: var(--fw-medium);
   font-size: var(--fs-body1);
   border: var(--b-none);
@@ -241,21 +254,40 @@ input{
   box-sizing: border-box;
 }
 
-.date-field:hover,
-.date-field:focus {
+.input-xl:hover,
+.input-xl:focus {
   outline: none;
 }
 
-.date-field::-webkit-input-placeholder {
+
+
+.input-xl::-webkit-input-placeholder {
   opacity: 1;
   font-weight: var(--fw-normal);
 }
 
+
+.input-paired-lg{
+  font-family: var(--ff-default);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-h6);
+  border: none;
+  line-height: var(--lh-h5);
+  padding: var(--p-paired-sm);
+  box-sizing: border-box;
+}
+
+
+.border-input-white{
+  border-color: var(--color-white-default);
+  border-width: var(--bw-1);
+  border-radius: var(--br-1);
+}
 /* Availability */
 
 .date-checker {
   display: flex;
-  font-family: inherit;
+  font-family: var(--ff-default);
   font-weight: var(--fw-normal);
   font-size: var(--fs-body1);
   border: var(--bw-1) var(--bs-solid) var(--color-gray-default);
@@ -317,6 +349,9 @@ input{
   background-repeat: no-repeat;
 }
 
+
+
+
 .search-input:hover,
 .search-input:focus {
   outline: none;
@@ -338,7 +373,7 @@ input{
   flex-grow: 1;
 }
 
-.align-items {
+.align-items-center {
   align-items: var(--ai-center);
 }
 
