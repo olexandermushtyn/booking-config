@@ -2,8 +2,8 @@ const fs = require('fs')
 const sass = require('node-sass')
 
 //set up there your values
-const sass_path = 'path_to_scss_root_file'
-const css_path = 'path_to_css_folder'
+const sass_path = './scss/root.scss'
+const css_path = './pages/car'
 
 //converting scss to css
 const result = sass.renderSync({
@@ -11,6 +11,6 @@ const result = sass.renderSync({
 })
 
 //putting css to folder
-  fs.writeFile(css_path + '/style.css', result.css, (err) => {
-    if (err) throw err
-  })
+fs.writeFile(css_path + '/root.css', result.css, (err) => {
+  if (err) throw err
+})

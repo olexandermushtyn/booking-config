@@ -1,26 +1,34 @@
-/*item page*/
-body {
-  font-family: var(--ff-default);
-  padding: 0;
-  margin: 0;
-}
+// /*item page*/
+// body {
+//   font-family: var(--ff-default);
+//   padding: 0;
+//   margin: 0;
+// }
 
-.bold {
-  font-weight: var(--fw-bold);
-}
+// .bold {
+//   font-weight: var(--fw-bold);
+// }
 
-//custom helpers
-.flex-grow0 {
-  flex-grow: 0;
-}
+// //custom helpers
+// .flex-grow0 {
+//   flex-grow: 0;
+// }
 
-.td-none {
-  text-decoration: none;
-}
+// .td-none {
+//   text-decoration: none;
+// }
 
-.ta-center {
-  text-align: center;
-}
+// .ta-center {
+//   text-align: center;
+// }
+
+// .br-none {
+//   border-radius: 0;
+// }
+
+// .border-box {
+//   box-sizing: border-box;
+// }
 
 .bb-2-w-s {
   border-bottom: var(--bw-2) var(--color-white-default) var(--bs-solid);
@@ -30,33 +38,25 @@ body {
   border-bottom: var(--bw-1) var(--color-white-default) var(--bs-solid);
 }
 
-.br-none {
-  border-radius: 0;
-}
+// .display-block {
+//   display: block;
+// }
 
-.border-box {
-  box-sizing: border-box;
-}
+// .display-inline {
+//   display: inline;
+// }
 
-.display-block {
-  display: block;
-}
+// .br-3 {
+//   border-radius: var(--br-3);
+// }
 
-.display-inline {
-  display: inline;
-}
-
-.br-3 {
-  border-radius: var(--br-3);
-}
-
-.fw-light {
-  font-weight: var(--fw-light);
-}
-
+// .fw-light {
+//   font-weight: var(--fw-light);
+// }
 
 //
-// Mixins
+
+// Mixins for adaptive
 @mixin box-sizing($type) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
@@ -67,7 +67,7 @@ body {
 
 // Placeholders
 %ruled-lines {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAYCAYAAAA7zJfaAAAAEElEQVQImWNgoD/oUXBrAAAEFAFzGDmq2wAAAABJRU5ErkJggg==");
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAYCAYAAAA7zJfaAAAAEElEQVQImWNgoD/oUXBrAAAEFAFzGDmq2wAAAABJRU5ErkJggg==');
 }
 
 .menu--fade {
@@ -88,17 +88,15 @@ body {
 
 .menu__content {
   @extend .clearfix;
-  background: white;
+  background: var(--color-white-default);
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   padding-top: var(--p-paired-md);
   position: relative;
-
 }
 
 .menu__content > ul {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,14 +112,14 @@ body {
   top: 1rem;
   right: 1rem;
   text-decoration: none;
-  color: #000;
+  color: var(--color-black-default);
 }
 
 .menu__close:focus,
 .menu__close:hover,
 .menu__close:active {
   text-decoration: none;
-  background: #fff;
+  background: var(--color-white-default);
 }
 
 #menu-fade:target {
@@ -136,11 +134,12 @@ body {
 }
 
 #page:target .menu--fade {
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, width 0s ease 0.5s, height 0s ease 0.5s;
-  transition: opacity 0.5s, transform 0.5s, width 0s ease 0.5s, height 0s ease 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, width 0s ease 0.5s,
+    height 0s ease 0.5s;
+  transition: opacity 0.5s, transform 0.5s, width 0s ease 0.5s,
+    height 0s ease 0.5s;
   padding: 1.5rem;
 }
-
 
 /* ==========================================================================
    Helpers
@@ -149,7 +148,6 @@ body {
 .hidden {
   display: none !important;
 }
-
 
 .visuallyhidden {
   border: 0;
@@ -194,7 +192,7 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
+  content: ' '; /* 1 */
   //display: table; /* 2 */
 }
 
@@ -238,11 +236,11 @@ body {
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   /*
@@ -250,9 +248,9 @@ body {
    * or use the `javascript:` pseudo protocol
    */
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
 
   pre,
@@ -291,7 +289,6 @@ body {
     page-break-after: avoid;
   }
 }
-
 
 header {
   & .menu {
@@ -359,7 +356,6 @@ header {
   }
 }
 
-
 footer {
   .hover-warning-color:hover {
     color: var(--color-warning-lighten1);
@@ -373,7 +369,6 @@ footer {
 
     & .btn {
       padding: var(--p-sm) var(--p-lg);
-
     }
 
     & > input {
@@ -387,7 +382,7 @@ footer {
       padding: var(--p-sm);
       font-family: var(--ff-default);
     }
-    & input[type=checkbox]{
+    & input[type='checkbox'] {
       width: 24px;
     }
     & flex-next-line {
@@ -460,7 +455,8 @@ footer {
     }
   }
   footer {
-    & > *, .partners {
+    & > *,
+    .partners {
       display: none;
     }
 
