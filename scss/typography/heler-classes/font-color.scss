@@ -1,0 +1,7 @@
+@import "../typography.scss";
+
+@each $name, $value in $font-color {
+  .fc-#{$name} {
+    color: $value !important;
+  }
+}

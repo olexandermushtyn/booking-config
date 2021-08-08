@@ -1,0 +1,661 @@
+@import "../typography.scss";
+
+.h1 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h1);
+  line-height: map-get($line-height, h1);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.h2 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h2);
+  line-height: map-get($line-height, h2);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.h3 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h3);
+  line-height: map-get($line-height, h3);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.h4 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h4);
+  line-height: map-get($line-height, h4);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.h5 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h5);
+  line-height: map-get($line-height, h5);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.h6 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, h6);
+  line-height: map-get($line-height, h6);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+  }
+}
+
+.subtitle1 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, subtitle1);
+  line-height: map-get($line-height, subtitle1);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+}
+
+.subtitle2 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, subtitle2);
+  line-height: map-get($line-height, subtitle2);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+}
+
+.body1 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, body1);
+  line-height: map-get($line-height, body1);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+}
+
+.body2 {
+  font-family: $ff-default;
+  font-size: map-get($font-size, body2);
+  line-height: map-get($line-height, body2);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+}
+
+.caption {
+  font-family: $ff-default;
+  font-size: map-get($font-size, body2);
+  line-height: map-get($line-height, body2);
+  &-black {
+    color: map-get($font-color, black);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-white {
+    color: map-get($font-color, white);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-primary {
+    color: map-get($font-color, primary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-secondary {
+    color: map-get($font-color, secondary);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+  &-grey {
+    color: map-get($font-color, grey);
+    &-bold {
+      font-weight: map-get($font-weight, bold);
+    }
+    &-semi-bold {
+      font-weight: map-get($font-weight, semi-bold);
+    }
+    &-medium {
+      font-weight: map-get($font-weight, medium);
+    }
+    &-normal {
+      font-weight: map-get($font-weight, normal);
+    }
+    &-light {
+      font-weight: map-get($font-weight, light);
+    }
+  }
+}
